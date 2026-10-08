@@ -81,3 +81,6 @@ html body :is(.nav-links){font-size:11px;font-weight:600;letter-spacing:.16em}
 .heart.on svg{fill:var(--dark);stroke:var(--dark)}
 /* Острые углы везде (решение заказчика, созвон 8 октября) */
 *,*::before,*::after{border-radius:0!important}
+/* Круглыми остаются: избранное, виджет связи, переключатель валют, плей на видео */
+.heart,.favorites-badge,.contact-widget-toggle,.contact-channel-icon,.video-play{border-radius:50%!important}
+.favorites-badge,.currency-switch,.currency-switch button{border-radius:99px!important}
