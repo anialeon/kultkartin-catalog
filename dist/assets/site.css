@@ -113,3 +113,6 @@ body,.nav,.ideas,.why,.nav-links{background:#fbf6ee}
 .nav.scrolled{box-shadow:0 6px 18px rgba(68,5,18,.08)}
 /* Кнопки без жирности */
 html body :is(.btn,.c-cta,.fav-btn,.order,.contact-channel,.category,.category b,.reason-tab,button){font-weight:400!important}
+/* Тонкий крестик в вопросах: две линии по 1px */
+.faq summary:after{content:'';flex:0 0 auto;width:18px;height:18px;background:linear-gradient(var(--dark),var(--dark)) center/18px 1px no-repeat,linear-gradient(var(--dark),var(--dark)) center/1px 18px no-repeat;transition:transform .25s}
+.faq details[open] summary:after{content:'';background:linear-gradient(var(--dark),var(--dark)) center/18px 1px no-repeat;transform:rotate(180deg)}
