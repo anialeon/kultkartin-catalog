@@ -101,3 +101,8 @@ body,.nav,.ideas,.why,.nav-links{background:#fbf6ee}
 .youtube p,.youtube .eyebrow{color:rgba(247,237,221,.72)}
 .youtube .btn{background:#f7eddd;color:var(--dark)}
 .youtube .btn:hover{background:#fff}
+/* Над тёмными блоками кнопка виджета становится сливочной */
+.contact-widget-toggle{transition:background .25s,color .25s,transform .2s}
+.contact-widget.on-dark .contact-widget-toggle{background:#f7eddd;color:var(--dark)}
+.contact-widget.on-dark .contact-widget-toggle:hover{background:#fff}
+.contact-widget.on-dark .contact-widget-toggle::before,.contact-widget.on-dark .contact-widget-toggle::after{background:#f7eddd}
