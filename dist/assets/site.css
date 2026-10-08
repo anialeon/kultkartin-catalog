@@ -204,3 +204,7 @@ html body .contact .f-rv.f-in{opacity:1;transform:none}
 /* Вкладки каталога: картина в раме без серой подложки, у всех одинаковая высота */
 html body .categories .category img{height:66px;width:auto;max-width:80px;object-fit:contain;background:none;filter:none}
 @media(max-width:520px){html body .categories .category img{height:56px;max-width:64px}}
+
+/* Миниатюры вкладок ниже — больше воздуха в плашке */
+html body .categories .category img{height:48px;max-width:60px}
+@media(max-width:520px){html body .categories .category img{height:42px;max-width:52px}}
