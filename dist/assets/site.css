@@ -133,3 +133,12 @@ html body .idea-grid{margin-left:0}
 /* Каталог и карточка ждут реальные данные и плавно проявляются */
 #products,#app{transition:opacity .5s ease}
 html.kk-wait #products,html.kk-wait #app{opacity:0}
+
+/* Кнопки на винном фоне: обводка, при наведении — заливка молочным */
+html body .c-cta,html body .youtube .btn{background:transparent;color:#f7eddd;border:1px solid rgba(247,237,221,.7);transition:background .3s ease,color .3s ease,border-color .3s ease,transform .3s ease}
+html body .c-cta:hover,html body .youtube .btn:hover{background:#f7eddd;color:var(--dark);border-color:#f7eddd}
+/* Тонкая стрелка «→» у «Смотреть каталог» и «Смотреть видео» */
+.btn:has(.btn-arrow){display:inline-flex;align-items:center;justify-content:center;gap:10px}
+.btn-arrow{flex:none;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.btn:hover .btn-arrow{transform:translateX(5px)}
+@media(prefers-reduced-motion:reduce){.btn-arrow{transition:none}}
