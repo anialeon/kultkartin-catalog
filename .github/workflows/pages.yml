@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */4 * * *'  # каждые 4 часа: свежая таблица → страницы картин, sitemap, llms.txt
 permissions:
   contents: read
   pages: write
@@ -18,6 +20,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: SEO-сборка из Google Таблицы
+        run: python3 work/build_seo.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

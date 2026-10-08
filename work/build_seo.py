@@ -191,7 +191,7 @@ def seo_text(w):
 
 
 def product_url(w):
-    return f'{SITE}/product.html?id={w["id"]}'
+    return f'{SITE}/kartiny/{w["id"]}.html'
 
 
 def jsonld(works, faq):
@@ -233,7 +233,7 @@ def catalog_cards(works):
             f'<article class="product" data-product-id="{w["id"]}">\n<div class="product-image">\n'
             f'<img loading="lazy" src="{e(w["thumb"])}" alt="{e(w["alt"] or w["name"])}">\n'
             f'<button class="heart" data-id="{w["id"]}" aria-label="Добавить в избранное">{heart}</button>\n</div>\n'
-            f'<h3><a href="product.html?id={w["id"]}">{e(w["name"])}</a></h3>\n<div class="meta">{e(meta)}</div>\n'
+            f'<h3><a href="kartiny/{w["id"]}.html">{e(w["name"])}</a></h3>\n<div class="meta">{e(meta)}</div>\n'
             f'<div class="price">{"от " if w["from"] else ""}{money(w["rub"])} ₽</div>\n</article>')
     return '\n'.join(cards)
 
@@ -249,7 +249,7 @@ def llms(works, sizes, faq):
         '# КУЛЬТКАРТИН',
         '',
         '> Авторские картины, графика и иллюстрации для интерьера. Каждая работа продаётся в раме с паспарту, '
-        'в одном из четырёх размеров по фиксированной цене. Студия декора «Культкартин» в Астане (Казахстан), '
+        'в нескольких размерах по фиксированной цене (всего 10 форматов: 5 прямоугольных и 5 квадратных). Студия декора «Культкартин» в Астане (Казахстан), '
         'онлайн-заказ в Москве (Россия). Помогаем подобрать картину, формат и оформление под интерьер.',
         '',
         '## Контакты',
@@ -289,6 +289,59 @@ def llms(works, sizes, faq):
     return '\n'.join(lines)
 
 
+def product_jsonld(w):
+    url = product_url(w)
+    offers = []
+    for s in w['sizes']:
+        for cur, price, city in (('KZT', s['kzt'], 'Астана'), ('RUB', s['rub'], 'Москва')):
+            if price:
+                offers.append({'@type': 'Offer', 'name': f'Размер {s["code"]}' + (f', {s["dims"]}' if s['dims'] else ''), 'price': price,
+                               'priceCurrency': cur, 'availability': 'https://schema.org/InStock' if w['available'] else 'https://schema.org/MadeToOrder',
+                               'url': url, 'areaServed': {'@type': 'City', 'name': city}, 'seller': {'@id': SITE + '/#store'}})
+    rooms = w['rooms'] or ROOMS_BY_THEME.get(w['theme'].lower(), 'спальня, гостиная, кухня')
+    product = {'@type': 'Product', '@id': url + '#product', 'name': w['name'], 'image': [w['img']], 'url': url,
+               'description': w['description'] or seo_text(w), 'sku': str(w['id']), 'category': w['material'] or 'Картина',
+               'brand': {'@type': 'Brand', 'name': 'КУЛЬТКАРТИН'},
+               'keywords': ', '.join(['картина для интерьера', 'картина в Астане', 'картина в Москве'] + ['картина ' + r.strip() for r in rooms.split(',')])}
+    if offers:
+        product['offers'] = offers
+    data = {'@context': 'https://schema.org', '@graph': [product, {'@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': SITE + '/'},
+        {'@type': 'ListItem', 'position': 2, 'name': 'Каталог', 'item': SITE + '/#catalog'},
+        {'@type': 'ListItem', 'position': 3, 'name': w['name'], 'item': url}]}]}
+    return json.dumps(data, ensure_ascii=False).replace('<', '\\u003c')
+
+
+def product_page(template, w):
+    """Готовая страница картины для поисковиков и ИИ-ботов, которые не выполняют JavaScript. Скрипт потом рисует её как обычно."""
+    e = lambda s: html.escape(s or '', quote=True)
+    url = product_url(w)
+    title = f'{w["name"]} — картина для интерьера | КУЛЬТКАРТИН'
+    desc = seo_text(w)[:300]
+    page = template.replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n<base href="../">', 1)
+    page = re.sub(r'<title>.*?</title>', f'<title>{e(title)}</title>', page, count=1, flags=re.S)
+    for attr, value in (('name="description"', desc), ('property="og:title"', title), ('property="og:description"', desc),
+                        ('property="og:url"', url), ('property="og:image"', w['img']), ('name="twitter:title"', title),
+                        ('name="twitter:description"', desc), ('name="twitter:image"', w['img'])):
+        page = re.sub(rf'(<meta {attr} content=")[^"]*(")', lambda m: m.group(1) + e(value) + m.group(2), page, count=1)
+    page = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), page, count=1)
+    page = page.replace('</head>', f'<script type="application/ld+json" id="productJsonLd">{product_jsonld(w)}</script>\n</head>', 1)
+    page = page.replace('<body>', f'<body data-product-id="{w["id"]}" data-canonical="{url}">', 1)
+    page = page.replace('href="#contacts"', f'href="kartiny/{w["id"]}.html#contacts"')
+    price = ('от ' if w['from'] else '') + f'{money(w["rub"])} ₽ / {money(w["kzt"])} ₸' if w['rub'] or w['kzt'] else 'Цена по запросу'
+    sizes = ''.join(f'<li><span class="size-code">{e(s["code"])}</span><span class="size-dim">{e("Общий габарит " + s["dims"] if s["dims"] else "")}</span>'
+                    f'<span class="size-price">{money(s["rub"])} ₽ / {money(s["kzt"])} ₸ за шт.</span></li>' for s in w['sizes'])
+    meta = ', '.join(x for x in (w['material'], w['meta_size']) if x)
+    app = (f'<a class="back" href="index.html#catalog"><span>←</span>Вернуться в каталог</a><div class="product-layout"><div class="gallery"><div class="main-image">'
+           f'<img src="{e(w["img"])}" alt="{e(w["alt"] or w["name"])}"></div></div><div class="product-info"><h1>{e(w["name"])}</h1><p class="meta">{e(meta)}</p>'
+           f'<p class="price">{price}</p><div class="product-details">' + (f'<p>{e(w["description"])}</p>' if w['description'] else '')
+           + (f'<p>На фото: {e(w["photo"])}</p>' if w['photo'] else '')
+           + (f'<h3>Доступно в следующих размерах</h3><ul class="size-list">{sizes}</ul><p class="details-note">Цены фиксированные и уже включают раму, паспарту, декор, иллюстрацию и бумагу.</p>' if sizes else '')
+           + '</div></div></div>')
+    page = page.replace('<div class="product-page" id="app"></div>', f'<div class="product-page" id="app">{app}</div>', 1)
+    return page
+
+
 def main():
     works, sizes = load()
     today = datetime.date.today().isoformat()
@@ -314,6 +367,18 @@ def main():
     open(os.path.join(DIST, 'robots.txt'), 'w', encoding='utf-8').write('\n'.join(robots))
 
     open(os.path.join(DIST, 'llms.txt'), 'w', encoding='utf-8').write(llms(works, sizes, faq))
+
+    # готовые страницы картин + список для ссылок на сайте (assets/pages.js)
+    pages_dir = os.path.join(DIST, 'kartiny')
+    os.makedirs(pages_dir, exist_ok=True)
+    for name in os.listdir(pages_dir):
+        if name.endswith('.html'):
+            os.remove(os.path.join(pages_dir, name))
+    template = open(os.path.join(DIST, 'product.html'), encoding='utf-8').read()
+    for w in works:
+        open(os.path.join(pages_dir, f'{w["id"]}.html'), 'w', encoding='utf-8').write(product_page(template, w))
+    open(os.path.join(DIST, 'assets', 'pages.js'), 'w', encoding='utf-8').write(
+        '// Сгенерировано work/build_seo.py: картины, у которых есть готовая страница kartiny/ID.html\nwindow.kkStaticPages=' + json.dumps([w['id'] for w in works]) + ';\n')
     print(f'ok: {len(works)} картин, {len(sizes)} размеров, {len(faq)} вопросов')
 
 
