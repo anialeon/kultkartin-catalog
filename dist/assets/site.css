@@ -111,3 +111,5 @@ body,.nav,.ideas,.why,.nav-links{background:#fbf6ee}
 /* Шапка: заметная линия, при скролле — мягкая тень */
 .nav{border-bottom:1px solid #e3d3c0;transition:box-shadow .25s}
 .nav.scrolled{box-shadow:0 6px 18px rgba(68,5,18,.08)}
+/* Кнопки без жирности */
+html body :is(.btn,.c-cta,.fav-btn,.order,.contact-channel,.category,.category b,.reason-tab,button){font-weight:400!important}
