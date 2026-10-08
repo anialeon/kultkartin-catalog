@@ -197,3 +197,6 @@ html body .contact .f-rv{opacity:0;transform:translateY(30px);transition:opacity
 html body .contact .f-rv.f-in{opacity:1;transform:none}
 @media(max-width:850px){.foot-inner{align-items:flex-start}.foot-credit{margin-left:0;white-space:normal}.c-logo{margin-bottom:32px}.c-logo img{height:24px}}
 .c-logo img{height:auto;width:240px}@media(max-width:850px){.c-logo img{width:180px;height:auto}}
+
+/* Сдвиг появления не выходит за футер (была светлая полоса снизу) */
+.contact{overflow:hidden}
