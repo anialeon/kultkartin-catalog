@@ -208,3 +208,6 @@ html body .categories .category img{height:66px;width:auto;max-width:80px;object
 /* Миниатюры вкладок ниже — больше воздуха в плашке */
 html body .categories .category img{height:48px;max-width:60px}
 @media(max-width:520px){html body .categories .category img{height:42px;max-width:52px}}
+
+/* Отступ слева у миниатюры = отступу сверху и снизу */
+@media(min-width:521px){html body .categories .category{padding:0 15px}}
