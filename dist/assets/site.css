@@ -263,3 +263,6 @@ html body .hero .btn{text-transform:uppercase;letter-spacing:.1em;font-size:13px
 html body .hero .hero-actions{margin-top:48px}
 @media(max-width:850px){html body .hero .hero-actions{margin-top:36px}}
 html body .hero .btn{padding:17px 28px}
+
+/* Все кнопки капсом с разрядкой, как на первом экране */
+html body :is(.btn,.c-cta,.fav-btn,.order){text-transform:uppercase;letter-spacing:.1em;font-size:13px}
