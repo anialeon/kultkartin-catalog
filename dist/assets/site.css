@@ -106,3 +106,5 @@ body,.nav,.ideas,.why,.nav-links{background:#fbf6ee}
 .contact-widget.on-dark .contact-widget-toggle{background:#f7eddd;color:var(--dark)}
 .contact-widget.on-dark .contact-widget-toggle:hover{background:#fff}
 .contact-widget.on-dark .contact-widget-toggle::before,.contact-widget.on-dark .contact-widget-toggle::after{background:#f7eddd}
+.faq summary:after{font:300 34px/.7 var(--sans);color:var(--dark)}
+.faq summary:focus-visible{outline:1px solid var(--dark);outline-offset:4px}
