@@ -145,6 +145,9 @@ def load():
             'description': text(r, 'Описание'),
             'photo': text(r, 'На фото'),
             'alt': text(r, 'Alt-текст'),
+            'theme': text(r, 'Тема'),
+            'seo': text(r, 'SEO-описание'),
+            'rooms': text(r, 'Комнаты'),
             'available': yes(text(r, 'В наличии')),
             'visible': yes(text(r, 'Показывать на сайте')),
         }
@@ -172,6 +175,21 @@ def faq_from_html(page):
     return items
 
 
+ROOMS_BY_THEME = {'абстракция': 'гостиная, кабинет, прихожая', 'архитектура': 'гостиная, кабинет, прихожая',
+                  'города и берега': 'гостиная, кабинет, прихожая', 'автоспорт': 'кабинет, гостиная, детская',
+                  'пейзаж': 'гостиная, спальня, столовая', 'вазы': 'гостиная, столовая, спальня', 'живопись': 'гостиная, спальня, столовая'}
+
+
+def seo_text(w):
+    """Как seoText() в site.js: только для поисковиков и нейросетей, на сайте не показывается."""
+    if w['seo']:
+        return w['seo']
+    rooms = w['rooms'] or ROOMS_BY_THEME.get(w['theme'].lower(), 'спальня, гостиная, кухня')
+    theme = f', {w["theme"].lower()}' if w['theme'] else ''
+    return (f'{w["name"]} — картина для интерьера{theme}, в раме с паспарту. Для интерьера: {rooms}. '
+            'Купить картину в Астане (студия на Кабанбай батыра) или заказать с доставкой в Москве.')
+
+
 def product_url(w):
     return f'{SITE}/product.html?id={w["id"]}'
 
@@ -194,7 +212,7 @@ def jsonld(works, faq):
         store,
         {'@type': 'WebSite', '@id': SITE + '/#website', 'url': SITE + '/', 'name': 'КУЛЬТКАРТИН', 'inLanguage': 'ru', 'publisher': {'@id': SITE + '/#store'}},
         {'@type': 'ItemList', 'name': 'Каталог картин КУЛЬТКАРТИН', 'itemListElement': [
-            {'@type': 'ListItem', 'position': i + 1, 'url': product_url(w), 'name': w['name']} for i, w in enumerate(works)]},
+            {'@type': 'ListItem', 'position': i + 1, 'url': product_url(w), 'name': w['name'], 'description': seo_text(w)} for i, w in enumerate(works)]},
     ]
     if faq:
         graph.append({'@type': 'FAQPage', 'mainEntity': [
@@ -261,7 +279,7 @@ def llms(works, sizes, faq):
         price = ('от ' if w['from'] else '') + f'{money(w["rub"])} ₽ / {money(w["kzt"])} ₸'
         if w['sizes']:
             meta += '; размеры: ' + ', '.join(f'{s["code"]} {s["dims"]}'.strip() for s in w['sizes'])
-        extra = f' {w["description"]}' if w['description'] else ''
+        extra = (f' {w["description"]}' if w['description'] else '') + ' ' + seo_text(w)
         lines.append(f'- [{w["name"]}]({product_url(w)}): {meta}, {price}{", в наличии" if w["available"] else ""}.{extra}')
     lines.append('')
     if faq:
