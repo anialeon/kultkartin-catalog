@@ -156,3 +156,7 @@ html body .foot-legal{border-top:0;padding-top:0;margin:0;max-width:none}
 .to-top:focus-visible{outline:1px solid #f7eddd;outline-offset:4px}
 @media(max-width:850px){.foot-inner{flex-direction:column-reverse;gap:20px}}
 @media(min-width:851px) and (max-width:1280px){.foot-inner{padding-right:76px}}
+/* «Наверх» без круга: только текст и тонкая стрелка */
+.to-top{gap:8px}
+.to-top svg,.to-top:hover svg{width:16px;height:16px;padding:0;border:0;background:none;color:currentColor}
+.to-top:hover svg{transform:translateY(-3px)}
