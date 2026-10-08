@@ -251,3 +251,6 @@ html body .hero>div>p{max-width:none}
 @media(max-width:850px){html body.home .nav:has(.nav-links.open){-webkit-backdrop-filter:none;backdrop-filter:none}}
 @media(max-width:850px){html body.home .nav:has(.nav-links.open) .currency-switch{border-color:#e2d3c2}html body.home .nav:has(.nav-links.open) .currency-switch button{color:#58615a}html body.home .nav:has(.nav-links.open) .currency-switch button.active{background:var(--dark);color:#fff}html body.home .nav:has(.nav-links.open) .favorites-badge{background:var(--dark);color:#fff}html body.home .nav:has(.nav-links.open) .header-heart.has-favorites{color:var(--dark)}}
 .hero::before{background:linear-gradient(180deg,rgba(9,8,8,.78) 0%,rgba(9,8,8,.58) 38%,rgba(9,8,8,.6) 62%,rgba(9,8,8,.84) 100%),url('https://m-files.cdn1.cc/lpfile/7/7/0/77056e9e2370283bdae3243517f28784/-/resize/1500/f.jpg?93544182') center/cover}
+
+/* Светлая шапка: пункты меню мягче, темнеют при наведении */
+@media(min-width:851px){html body .nav-links a{color:#7a716b;font-weight:500;transition:color .25s}html body .nav-links a:hover{color:var(--ink)}}
