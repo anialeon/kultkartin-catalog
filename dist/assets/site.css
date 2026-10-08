@@ -119,3 +119,9 @@ html body :is(.btn,.c-cta,.fav-btn,.order,.contact-channel,.category,.category b
 /* Вкладки каталога: тонкая обводка у активной, текст по центру */
 .categories .category.active{box-shadow:none}
 .categories .category>span{flex:1;text-align:center}
+/* Вкладка «Наличие» скрыта (2026-10-08) */
+.category[data-cat="available"]{display:none!important}
+html body .categories{grid-template-columns:repeat(3,220px)}
+@media(min-width:851px) and (max-width:1000px){html body .categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){html body .categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:520px){html body .categories{gap:8px}html body .categories .category{flex-direction:column;gap:6px;padding:8px 6px;min-height:0}html body .categories .category img{width:56px;height:56px}html body .categories .category b{font-size:13px}}
