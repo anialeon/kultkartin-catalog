@@ -200,3 +200,7 @@ html body .contact .f-rv.f-in{opacity:1;transform:none}
 
 /* Сдвиг появления не выходит за футер (была светлая полоса снизу) */
 .contact{overflow:hidden}
+
+/* Вкладки каталога: картина в раме без серой подложки, у всех одинаковая высота */
+html body .categories .category img{height:66px;width:auto;max-width:80px;object-fit:contain;background:none;filter:none}
+@media(max-width:520px){html body .categories .category img{height:56px;max-width:64px}}
