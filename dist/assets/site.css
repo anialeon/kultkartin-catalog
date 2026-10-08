@@ -145,3 +145,14 @@ html body .c-cta:hover,html body .youtube .btn:hover{background:#f7eddd;color:va
 /* Нижняя линия футера по ширине контента, как верхняя */
 html body .foot{border-top:0;padding-top:0}
 html body .foot-legal{border-top:1px solid var(--c-line);padding-top:24px}
+
+/* Футер: линия по ширине контента, справа кнопка «Наверх» */
+html body .foot-legal{border-top:0;padding-top:0;margin:0;max-width:none}
+.foot-inner{max-width:1120px;margin:0 auto;padding-top:24px;border-top:1px solid var(--c-line);display:flex;align-items:flex-start;justify-content:space-between;gap:32px}
+.to-top{flex:none;display:inline-flex;align-items:center;gap:10px;padding:0;border:0;background:none;color:#f7eddd;font:400 13px/1 var(--sans);cursor:pointer;opacity:.8;transition:opacity .3s}
+.to-top svg{width:34px;height:34px;padding:8px;box-sizing:border-box;border:1px solid rgba(247,237,221,.5);border-radius:50%!important;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s cubic-bezier(.22,1,.36,1),background .3s,color .3s,border-color .3s}
+.to-top:hover{opacity:1}
+.to-top:hover svg{transform:translateY(-3px);background:#f7eddd;color:var(--dark);border-color:#f7eddd}
+.to-top:focus-visible{outline:1px solid #f7eddd;outline-offset:4px}
+@media(max-width:850px){.foot-inner{flex-direction:column-reverse;gap:20px}}
+@media(min-width:851px) and (max-width:1280px){.foot-inner{padding-right:76px}}
