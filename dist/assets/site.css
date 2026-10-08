@@ -116,3 +116,6 @@ html body :is(.btn,.c-cta,.fav-btn,.order,.contact-channel,.category,.category b
 /* Тонкий крестик в вопросах: две линии по 1px */
 .faq summary:after{content:'';flex:0 0 auto;width:18px;height:18px;background:linear-gradient(var(--dark),var(--dark)) center/18px 1px no-repeat,linear-gradient(var(--dark),var(--dark)) center/1px 18px no-repeat;transition:transform .25s}
 .faq details[open] summary:after{content:'';background:linear-gradient(var(--dark),var(--dark)) center/18px 1px no-repeat;transform:rotate(180deg)}
+/* Вкладки каталога: тонкая обводка у активной, текст по центру */
+.categories .category.active{box-shadow:none}
+.categories .category>span{flex:1;text-align:center}
