@@ -200,6 +200,7 @@ def jsonld(works, faq):
         graph.append({'@type': 'FAQPage', 'mainEntity': [
             {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]})
     data = json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False, indent=1)
+    data = data.replace('<', '\\u003c')  # текст из таблицы не закроет <script>
     return f'<script type="application/ld+json">\n{data}\n</script>'
 
 
