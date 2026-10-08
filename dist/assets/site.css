@@ -84,3 +84,12 @@ html body :is(.nav-links){font-size:11px;font-weight:600;letter-spacing:.16em}
 /* Круглыми остаются: избранное, виджет связи, переключатель валют, плей на видео */
 .heart,.favorites-badge,.contact-widget-toggle,.contact-channel-icon,.video-play{border-radius:50%!important}
 .favorites-badge,.currency-switch,.currency-switch button{border-radius:99px!important}
+/* Виджет связи: мягкие волны и покачивание иконки, пока меню закрыто */
+.contact-widget-toggle::before,.contact-widget-toggle::after{content:"";position:absolute;inset:0;border-radius:50%!important;background:var(--dark);z-index:-1;pointer-events:none;animation:widget-wave 3.2s cubic-bezier(.2,.6,.35,1) infinite}
+.contact-widget-toggle::after{animation-delay:1.1s}
+.widget-icon-chat svg{transform-origin:50% 60%;animation:widget-nudge 3.2s ease-in-out infinite}
+.contact-widget.open .contact-widget-toggle::before,.contact-widget.open .contact-widget-toggle::after,.contact-widget-toggle:hover::before,.contact-widget-toggle:hover::after{animation:none;opacity:0}
+.contact-widget.open .widget-icon-chat svg{animation:none}
+@keyframes widget-wave{0%{transform:scale(1);opacity:.35}70%,100%{transform:scale(1.75);opacity:0}}
+@keyframes widget-nudge{0%,62%,100%{transform:none}68%{transform:rotate(-10deg) scale(1.06)}74%{transform:rotate(8deg) scale(1.06)}80%{transform:rotate(-5deg)}86%{transform:none}}
+@media(prefers-reduced-motion:reduce){.contact-widget-toggle::before,.contact-widget-toggle::after,.widget-icon-chat svg{animation:none}}
