@@ -1,0 +1,61 @@
+User-agent: *
+Allow: /
+Disallow: /favorites.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /favorites.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Claude-User
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /favorites.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /favorites.html
+
+User-agent: YandexBot
+Allow: /
+Disallow: /favorites.html
+
+User-agent: YandexAdditional
+Allow: /
+Disallow: /favorites.html
+
+User-agent: Bingbot
+Allow: /
+Disallow: /favorites.html
+
+Sitemap: https://catalog.kultkartin.com/sitemap.xml

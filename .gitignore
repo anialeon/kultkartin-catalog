@@ -1,0 +1,9 @@
+*
+!.gitignore
+!dist/
+!dist/**
+!work/
+!work/build_seo.py
+!.github/
+!.github/**
+.DS_Store
