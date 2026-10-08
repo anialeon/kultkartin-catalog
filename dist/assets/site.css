@@ -254,3 +254,6 @@ html body .hero>div>p{max-width:none}
 
 /* Светлая шапка: пункты меню мягче, темнеют при наведении */
 @media(min-width:851px){html body .nav-links a{color:#7a716b;font-weight:500;transition:color .25s}html body .nav-links a:hover{color:var(--ink)}}
+
+/* Тёмная шапка: счётчик избранного винный с тёмным кольцом, чтобы не сливался с сердцем */
+html body.home .nav:not(.solid) .favorites-badge{background:var(--dark);color:#f7eddd;box-shadow:0 0 0 2px #14100f}
