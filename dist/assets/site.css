@@ -96,3 +96,8 @@ html body :is(.nav-links){font-size:11px;font-weight:600;letter-spacing:.16em}
 /* Палитра: винный #440512 + сливочный #F7EDDD (проба, 8 октября) */
 body,.nav,.ideas,.why,.nav-links{background:#fbf6ee}
 .category,.category:hover,.category.active,.reason-tab{background:#fffcf7}
+.youtube{background:var(--dark);color:#f7eddd}
+.youtube h2{color:#f7eddd}
+.youtube p,.youtube .eyebrow{color:rgba(247,237,221,.72)}
+.youtube .btn{background:#f7eddd;color:var(--dark)}
+.youtube .btn:hover{background:#fff}
