@@ -418,3 +418,6 @@ html body.home .hero{min-height:82svh}
 }
 @media(max-width:850px) and (max-height:760px){html body.home .hero{min-height:90svh}}
 html body .nav .header-heart.has-favorites{color:var(--dark)}
+
+/* «Листайте вниз» над стрелкой и на телефоне */
+@media(max-width:850px){html body .hero-scroll span{display:block;font-size:10px;letter-spacing:.24em}html body .hero-scroll{gap:8px;bottom:18px}}
