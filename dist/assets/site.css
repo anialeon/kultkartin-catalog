@@ -424,3 +424,4 @@ html body .nav .header-heart.has-favorites{color:var(--dark)}
 
 /* Лёгкие WebP-версии фото на телефоне */
 @media(max-width:850px){html body .parallax-scene{background-image:url('img/parallax-900.webp')}}
+@media(max-width:850px){.hero::before{background:linear-gradient(180deg,rgba(9,8,8,.84) 0%,rgba(9,8,8,.66) 38%,rgba(9,8,8,.68) 62%,rgba(9,8,8,.88) 100%),url('img/hero-1100.webp') center/cover}}
