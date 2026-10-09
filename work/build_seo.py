@@ -59,9 +59,9 @@ def money(v):
     return f'{v:,}'.replace(',', ' ')
 
 
-def drive_image(url, width):
+def drive_image(url, width, fmt='rw'):
     m = re.search(r'drive\.google\.com/(?:file/d/|open\?id=|uc\?(?:export=\w+&)?id=|thumbnail\?id=)([\w-]{20,})|googleusercontent\.com/d/([\w-]{20,})', url or '')
-    return f'https://lh3.googleusercontent.com/d/{m.group(1) or m.group(2)}=w{width}-rj' if m else url
+    return f'https://lh3.googleusercontent.com/d/{m.group(1) or m.group(2)}=w{width}-{fmt}' if m else url
 
 
 def first_link(value):
@@ -135,9 +135,10 @@ def load():
             'order': number(r, 'Порядок на сайте', 'Порядок') or 1000 + ti * 1000 + i,
             'tab': ti,
             'name': text(r, 'Название'),
-            'img': drive_image(first_link(text(r, 'URL изображения')), 1600),
-            'thumb': drive_image(first_link(text(r, 'URL изображения')), 800),
-            'images': [drive_image(u, 1600) for u in re.split(r'[\s,;]+', text(r, 'URL изображения')) if u.startswith('http')],
+            'img': drive_image(first_link(text(r, 'URL изображения')), 1200),
+            'og': drive_image(first_link(text(r, 'URL изображения')), 1200, 'rj'),
+            'thumb': drive_image(first_link(text(r, 'URL изображения')), 560),
+            'images': [drive_image(u, 1200) for u in re.split(r'[\s,;]+', text(r, 'URL изображения')) if u.startswith('http')],
             'format': fmt,
             'frame': text(r, 'Рама'),
             'sizes_allowed': text(r, 'Размеры в продаже'),
@@ -300,7 +301,7 @@ def product_jsonld(w):
                                'priceCurrency': cur, 'availability': 'https://schema.org/InStock' if w['available'] else 'https://schema.org/MadeToOrder',
                                'url': url, 'areaServed': {'@type': 'City', 'name': city}, 'seller': {'@id': SITE + '/#store'}})
     rooms = w['rooms'] or ROOMS_BY_THEME.get(w['theme'].lower(), 'спальня, гостиная, кухня')
-    product = {'@type': 'Product', '@id': url + '#product', 'name': w['name'], 'image': [w['img']], 'url': url,
+    product = {'@type': 'Product', '@id': url + '#product', 'name': w['name'], 'image': [w['og']], 'url': url,
                'description': w['description'] or seo_text(w), 'sku': str(w['id']), 'category': w['material'] or 'Картина',
                'brand': {'@type': 'Brand', 'name': 'КУЛЬТКАРТИН'},
                'keywords': ', '.join(['картина для интерьера', 'картина в Астане', 'картина в Москве'] + ['картина ' + r.strip() for r in rooms.split(',')])}
@@ -322,8 +323,8 @@ def product_page(template, w):
     page = template.replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n<base href="../">', 1)
     page = re.sub(r'<title>.*?</title>', f'<title>{e(title)}</title>', page, count=1, flags=re.S)
     for attr, value in (('name="description"', desc), ('property="og:title"', title), ('property="og:description"', desc),
-                        ('property="og:url"', url), ('property="og:image"', w['img']), ('name="twitter:title"', title),
-                        ('name="twitter:description"', desc), ('name="twitter:image"', w['img'])):
+                        ('property="og:url"', url), ('property="og:image"', w['og']), ('name="twitter:title"', title),
+                        ('name="twitter:description"', desc), ('name="twitter:image"', w['og'])):
         page = re.sub(rf'(<meta {attr} content=")[^"]*(")', lambda m: m.group(1) + e(value) + m.group(2), page, count=1)
     page = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), page, count=1)
     page = page.replace("<script>document.documentElement.classList.add('kk-wait')</script>\n", '', 1)
