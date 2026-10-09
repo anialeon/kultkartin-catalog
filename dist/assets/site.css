@@ -396,3 +396,25 @@ html body .ideas+.faq{padding-top:8px}
 }
 /* счётчик избранного: кольцо цвета шапки, кружок прижат к сердцу */
 html body .favorites-badge{top:-2px;right:-6px;min-width:16px;height:16px;line-height:16px;font-size:9.5px;box-shadow:0 0 0 2px #fbf6ee}
+
+/* Бургер и иконки-кнопки не синие в Safari: берут цвет шапки */
+button.icon{color:inherit;-webkit-tap-highlight-color:transparent}
+html body .nav .icon{color:var(--ink)}
+/* Карточка товара открывается без подскока */
+html body .product-page{animation:none}
+/* Стрелка «Смотреть каталог» мягко зовёт и без наведения (на телефоне наведения нет) */
+.hero .btn .btn-arrow{animation:arrow-nudge 2.6s cubic-bezier(.45,0,.55,1) 2.2s infinite}
+.hero .btn:hover .btn-arrow{animation:none}
+@keyframes arrow-nudge{0%,55%,100%{translate:0 0}70%{translate:6px 0}85%{translate:0 0}}
+@media(max-width:850px){
+/* футер без лишней пустоты после «Наверх» */
+html body .foot{padding-bottom:28px}
+/* карточка товара: меньше отступы вокруг «Вернуться в каталог» */
+html body .product-page{padding-top:18px}
+html body .product-page .back{margin-bottom:18px}
+/* первый экран на телефоне: темнее и выше */
+html body.home .hero{min-height:82svh}
+.hero::before{background:linear-gradient(180deg,rgba(9,8,8,.84) 0%,rgba(9,8,8,.66) 38%,rgba(9,8,8,.68) 62%,rgba(9,8,8,.88) 100%),url('https://m-files.cdn1.cc/lpfile/7/7/0/77056e9e2370283bdae3243517f28784/-/resize/1500/f.jpg?93544182') center/cover}
+}
+@media(max-width:850px) and (max-height:760px){html body.home .hero{min-height:90svh}}
+html body .nav .header-heart.has-favorites{color:var(--dark)}

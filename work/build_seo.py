@@ -137,6 +137,7 @@ def load():
             'name': text(r, 'Название'),
             'img': drive_image(first_link(text(r, 'URL изображения')), 1600),
             'thumb': drive_image(first_link(text(r, 'URL изображения')), 800),
+            'images': [drive_image(u, 1600) for u in re.split(r'[\s,;]+', text(r, 'URL изображения')) if u.startswith('http')],
             'format': fmt,
             'frame': text(r, 'Рама'),
             'sizes_allowed': text(r, 'Размеры в продаже'),
@@ -325,6 +326,7 @@ def product_page(template, w):
                         ('name="twitter:description"', desc), ('name="twitter:image"', w['img'])):
         page = re.sub(rf'(<meta {attr} content=")[^"]*(")', lambda m: m.group(1) + e(value) + m.group(2), page, count=1)
     page = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), page, count=1)
+    page = page.replace("<script>document.documentElement.classList.add('kk-wait')</script>\n", '', 1)
     page = page.replace('</head>', f'<script type="application/ld+json" id="productJsonLd">{product_jsonld(w)}</script>\n</head>', 1)
     page = page.replace('<body>', f'<body data-product-id="{w["id"]}" data-canonical="{url}">', 1)
     page = page.replace('href="#contacts"', f'href="kartiny/{w["id"]}.html#contacts"')
@@ -332,8 +334,11 @@ def product_page(template, w):
     sizes = ''.join(f'<li><span class="size-code">{e(s["code"])}</span><span class="size-dim">{e("Общий габарит " + s["dims"] if s["dims"] else "")}</span>'
                     f'<span class="size-price">{money(s["rub"])} ₽ / {money(s["kzt"])} ₸ за шт.</span></li>' for s in w['sizes'])
     meta = ', '.join(x for x in (w['material'], w['meta_size']) if x)
-    app = (f'<a class="back" href="index.html#catalog"><span>←</span>Вернуться в каталог</a><div class="product-layout"><div class="gallery"><div class="main-image">'
-           f'<img src="{e(w["img"])}" alt="{e(w["alt"] or w["name"])}"></div></div><div class="product-info"><h1>{e(w["name"])}</h1><p class="meta">{e(meta)}</p>'
+    images = w['images'] or [w['img']]
+    thumbs = ''.join(f'<button class="thumb{"" if i else " active"}" type="button" data-src="{e(src)}" aria-label="Фото {i + 1}"><img src="{e(src)}" alt=""></button>' for i, src in enumerate(images))
+    fit = ' class="fit"' if w['material'] == 'Живопись' else ''
+    app = (f'<a class="back" href="index.html#catalog"><span>←</span>Вернуться в каталог</a><div class="product-layout"><div class="gallery"><div class="thumbs">{thumbs}</div><div class="main-image">'
+           f'<img{fit} src="{e(w["img"])}" alt="{e(w["alt"] or w["name"])}"></div></div><div class="product-info"><h1>{e(w["name"])}</h1><p class="meta">{e(meta)}</p>'
            f'<p class="price">{price}</p><div class="product-details">' + (f'<p>{e(w["description"])}</p>' if w['description'] else '')
            + (f'<p>На фото: {e(w["photo"])}</p>' if w['photo'] else '')
            + (f'<h3>Доступно в следующих размерах</h3><ul class="size-list">{sizes}</ul><p class="details-note">Цены фиксированные и уже включают раму, паспарту, декор, иллюстрацию и бумагу.</p>' if sizes else '')
