@@ -328,6 +328,7 @@ def product_page(template, w):
         page = re.sub(rf'(<meta {attr} content=")[^"]*(")', lambda m: m.group(1) + e(value) + m.group(2), page, count=1)
     page = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), page, count=1)
     page = page.replace("<script>document.documentElement.classList.add('kk-wait')</script>\n", '', 1)
+    page = page.replace('</head>', f'<link rel="preload" as="image" href="{e(w["img"])}" fetchpriority="high">\n</head>', 1)
     page = page.replace('</head>', f'<script type="application/ld+json" id="productJsonLd">{product_jsonld(w)}</script>\n</head>', 1)
     page = page.replace('<body>', f'<body data-product-id="{w["id"]}" data-canonical="{url}">', 1)
     page = page.replace('href="#contacts"', f'href="kartiny/{w["id"]}.html#contacts"')
@@ -339,7 +340,7 @@ def product_page(template, w):
     thumbs = ''.join(f'<button class="thumb{"" if i else " active"}" type="button" data-src="{e(src)}" aria-label="Фото {i + 1}"><img src="{e(src)}" alt=""></button>' for i, src in enumerate(images))
     fit = ' class="fit"' if w['material'] == 'Живопись' else ''
     app = (f'<a class="back" href="index.html#catalog"><span>←</span>Вернуться в каталог</a><div class="product-layout"><div class="gallery"><div class="thumbs">{thumbs}</div><div class="main-image">'
-           f'<img{fit} src="{e(w["img"])}" alt="{e(w["alt"] or w["name"])}"></div></div><div class="product-info"><h1>{e(w["name"])}</h1><p class="meta">{e(meta)}</p>'
+           f'<img{fit} src="{e(w["img"])}" alt="{e(w["alt"] or w["name"])}" fetchpriority="high"></div></div><div class="product-info"><h1>{e(w["name"])}</h1><p class="meta">{e(meta)}</p>'
            f'<p class="price">{price}</p><div class="product-details">' + (f'<p>{e(w["description"])}</p>' if w['description'] else '')
            + (f'<p>На фото: {e(w["photo"])}</p>' if w['photo'] else '')
            + (f'<h3>Доступно в следующих размерах</h3><ul class="size-list">{sizes}</ul><p class="details-note">Цены фиксированные и уже включают раму, паспарту, декор, иллюстрацию и бумагу.</p>' if sizes else '')
