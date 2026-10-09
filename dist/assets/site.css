@@ -274,3 +274,71 @@ html body .kk-r.kk-media:not(.kk-in){translate:0 0;scale:1.04}
 /* Первый экран проигрывается заново, когда к нему возвращаются */
 .hero.kk-hero-reset .hl,.hero.kk-hero-reset>div>p,.hero.kk-hero-reset .hero-actions,.hero.kk-hero-reset .hero-scroll,.hero.kk-hero-reset::before{animation:none!important;opacity:0}
 .hero.kk-hero-reset::before{opacity:1}
+
+/* ===== Мобильная версия (2026-10-09) ===== */
+.menu-extra,.cat-dock{display:none}
+@media(max-width:850px){
+/* первый экран: 70% высоты, кнопки одной ширины */
+html body.home .hero{min-height:70svh}
+html body .hero .hero-actions-bottom{flex-direction:column;align-items:stretch;width:min(300px,100%);margin:0 auto}
+html body .hero .hero-actions-bottom .btn{width:100%;justify-content:center}
+/* «Идеи для дома»: карточки меньше, в экран попадает больше одной */
+html body .idea-grid{--idea-card:46vw;--idea-gap:10px;--idea-shift:calc(-138vw - 30px)}
+/* бургер: тонкие пункты с засечками, внизу — город по валюте и соцсети */
+html body .nav .nav-links a,html body.home .nav .nav-links a{font-family:var(--serif);font-size:27px;font-weight:400;text-transform:none;letter-spacing:0;color:#3b3431!important;padding:13px 0;border-bottom-color:#ece2d4}
+.menu-extra{display:grid;gap:22px;width:100%;margin-top:30px;color:#6f6762;font-size:14px;line-height:1.55}
+.menu-city-name{font:400 22px/1.2 var(--serif);color:var(--ink);margin:0 0 6px}
+.menu-extra p{margin:0}
+.menu-extra .menu-city a{display:inline-block;margin-top:8px;margin-right:18px;color:var(--dark);border:0!important;padding:0!important;font:400 14px/1.4 var(--sans)!important;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#d7c3ae}
+.menu-social{display:flex;flex-wrap:wrap;gap:8px 20px}
+.menu-social a{border:0!important;padding:0!important;font:400 14px/1.4 var(--sans)!important;color:#6f6762!important}
+/* каталог: вместо плиток — плавающая полоса тегов снизу */
+html body .categories{display:none}
+.cat-dock{display:flex;position:fixed;z-index:25;left:12px;right:76px;bottom:max(14px,env(safe-area-inset-bottom));padding:5px;gap:4px;background:rgba(251,246,238,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid #e3d3c0;box-shadow:0 10px 28px rgba(68,5,18,.12);transform:translateY(calc(100% + 30px));opacity:0;transition:transform .45s cubic-bezier(.16,1,.3,1),opacity .3s}
+.cat-dock.show{transform:none;opacity:1}
+.cat-dock button{flex:1;min-width:0;border:0;background:none;padding:11px 4px;font:400 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#6f6762;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s}
+.cat-dock button.active{background:var(--dark);color:#f7eddd}
+/* фото с девушкой: горизонтальный кадр с параллаксом */
+html body .parallax-scene{height:58vw;min-height:0;max-height:none;background-size:auto 128%}
+/* «Почему нас выбирают»: картинка и текст меняются по мере прокрутки */
+html body .reasons{display:flex;flex-direction:column;gap:0;height:calc(50svh + 250px + 150svh)}
+html body .reason-image{position:sticky;top:80px;height:50svh;min-height:0;order:-1;margin-bottom:18px}
+html body .reason-list{position:sticky;top:calc(80px + 50svh + 18px);display:block}
+html body .reason-item:not(.active){display:none}
+html body .reason-item{border-color:transparent!important;background:none!important;padding:0 2px}
+html body .reason-item.active{animation:reason-in .7s cubic-bezier(.16,1,.3,1)}
+/* карточка картины: дополнительные фото в одну строку с прокруткой */
+html body .gallery .thumbs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+html body .gallery .thumbs::-webkit-scrollbar{display:none}
+html body .gallery .thumb{flex:0 0 64px}
+}
+@keyframes reason-in{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
+/* футер компактнее на телефоне — тот же контент */
+@media(max-width:640px){
+html body .contact{padding-top:56px}
+html body .c-slogan{font-size:30px;margin-bottom:36px}
+html body .c-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:20px}
+html body .c-intro{grid-column:1/-1;margin-bottom:6px}
+html body .c-intro h2{font-size:30px;margin-bottom:10px}
+html body .c-intro p{font-size:14px;margin-bottom:18px}
+html body .c-city{grid-row:auto;display:block;padding:20px 0 0;margin-top:22px;border-top:1px solid var(--c-line);border-left:0}
+html body .c-city h3{font-size:22px;margin:0 0 6px}
+html body .c-city p{font-size:12.5px;line-height:1.5;margin:0 0 10px}
+html body .c-city .c-phone{font-size:15px;letter-spacing:0}
+html body .c-city .c-links{gap:8px;margin-top:10px}
+html body .c-city .c-link{font-size:13px;gap:7px}
+html body .c-divider,html body .c-social-title,html body .c-social{grid-column:1/-1}
+html body .c-social-title{padding:26px 0 10px}
+html body .c-social{grid-template-columns:1fr 1fr;row-gap:10px;padding-bottom:24px}
+html body .c-social .c-link{font-size:13px}
+html body .foot-legal{font-size:10.5px}
+}
+@media(max-width:850px){
+html body .nav .nav-links a,html body.home .nav .nav-links a{font-size:25px;padding:11px 0}
+html body .nav-links .menu-extra{font-weight:400;letter-spacing:0;text-transform:none}
+html body .nav-links .menu-extra a,html body.home .nav .nav-links .menu-extra a{width:auto;font:400 14px/1.4 var(--sans)!important;letter-spacing:0;text-transform:none;padding:0!important;border:0!important}
+html body .nav-links .menu-city-name{letter-spacing:0}
+html body .nav-links .menu-city a{color:var(--dark)!important}
+html body .nav-links .menu-social a{color:#6f6762!important}
+}
+@media(max-width:850px){html body .reasons{height:calc(44svh + 250px + 150svh)}html body .reason-image{height:44svh}html body .reason-list{top:calc(80px + 44svh + 18px)}}
