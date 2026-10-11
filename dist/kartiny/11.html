@@ -151,7 +151,7 @@
 <script>
 const productApp=document.querySelector('#app'),productId=Number(new URLSearchParams(location.search).get('id')||document.body.dataset.productId)||1;let work;
 const workSeries=seriesKey;
-catalogWorks=()=>{const same=workSeries(work);return works.filter(w=>w.id!==work.id).map(w=>({w,score:(workSeries(w)===same?100:0)+(work.theme&&w.theme===work.theme?50:0)+(work.material&&w.material===work.material?5:0)+(w.format===work.format?2:0)})).sort((a,b)=>b.score-a.score||Math.abs(a.w.id-work.id)-Math.abs(b.w.id-work.id)).slice(0,4).map(x=>x.w)};
+catalogWorks=()=>{if(!work)return[];const same=workSeries(work);return works.filter(w=>w.id!==work.id).map(w=>({w,score:(workSeries(w)===same?100:0)+(work.theme&&w.theme===work.theme?50:0)+(work.material&&w.material===work.material?5:0)+(w.format===work.format?2:0)})).sort((a,b)=>b.score-a.score||Math.abs(a.w.id-work.id)-Math.abs(b.w.id-work.id)).reduce((picked,x)=>{const key=workSeries(x.w);if(picked.length<4&&!picked.some(p=>workSeries(p)===key))picked.push(x.w);return picked},[])};
 const sizeMoney=value=>new Intl.NumberFormat('ru-RU').format(value),sizePrice=size=>selectedCurrency==='KZT'?(size.kzt?sizeMoney(size.kzt)+' ₸':size.rub?sizeMoney(Math.round(size.rub*5.33/100)*100)+' ₸':''):(size.rub?sizeMoney(size.rub)+' ₽':size.kzt?sizeMoney(Math.round(size.kzt/5.33/100)*100)+' ₽':'');
 const seoSite='https://catalog.kultkartin.com';
 function setMeta(selector,attr,value){const el=document.head.querySelector(selector);if(el)el.setAttribute(attr,value)}

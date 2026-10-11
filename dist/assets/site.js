@@ -4,8 +4,8 @@ window.kkWaitData=(()=>{try{return!localStorage.getItem('kk-catalog-v1')}catch(e
 const htmlText=value=>value.replace(/[&<>"']/g,char=>'&#'+char.charCodeAt(0)+';'),plainText=value=>String(value).replace(/&#(\d+);/g,(_,code)=>String.fromCharCode(code));
 // Серия: колонка «Серия», иначе по названию — без римской цифры («Шиповник IV») или до точки («Античная ваза. Кубок»).
 // Не показываются в выдаче каталога, но есть в «С этой картиной покупают» и на своих страницах (решение Анны, 2026-10-11):
-// Новое — из архитектуры только «Городской дворец» (скрыты Палаццо I–II, Вилла с парадной лестницей, Особняк с лепниной I–II, Триумфальная арка); Популярные — без «Греческого храма»
-const catalogHiddenIds=new Set([74,75,76,77,79,80,81]);
+// Новое — из архитектуры только «Городской дворец» (скрыты Палаццо I–II, Вилла с парадной лестницей, Особняк с лепниной I–II, Триумфальная арка); Популярные — без «Греческого храма» и «Нежной розы» I–II (из роз — только «Белые розы»)
+const catalogHiddenIds=new Set([74,75,76,77,79,80,81,11,12]);
 const productPage=id=>(window.kkStaticPages||[]).includes(Number(id))?`kartiny/${id}.html`:`product.html?id=${id}`;
 const seriesKey=w=>{if(w.series)return plainText(w.series).toLowerCase().trim();const name=plainText(w.name||'').replace(/\.\s*Вариант\s+\d+$/i,'').trim(),numbered=name.replace(/\s+[IVXLC]+$/,'');return(numbered!==name?numbered:name.split('. ')[0]).toLowerCase().trim()};
 // SEO-текст только для поисковиков и нейросетей: колонки «SEO-описание» и «Комнаты», иначе собирается из названия и темы.
