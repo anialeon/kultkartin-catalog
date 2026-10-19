@@ -359,7 +359,7 @@ def main():
     page = replace_block(page, 'catalog', catalog_cards(works))
     open(index_path, 'w', encoding='utf-8').write(page)
 
-    urls = [(SITE + '/', '1.0'), (SITE + '/osen/', '0.9')] + [(product_url(w), '0.8') for w in works]  # /osen/ — лукбук «Осень» 2026
+    urls = [(SITE + '/', '1.0'), (SITE + '/autumn/', '0.9')] + [(product_url(w), '0.8') for w in works]  # /autumn/ — лукбук «Осень» 2026
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f'<url><loc>{html.escape(u)}</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>' for u, p in urls]
     sitemap.append('</urlset>')
