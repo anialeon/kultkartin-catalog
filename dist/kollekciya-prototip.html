@@ -139,8 +139,11 @@ function render(){
  }else{
   v.innerHTML=`<div class="ov"><div>${groups.map(([t,ws],i)=>`<section class="ov-sec" id="t${i}"><h3>${t}<span>${ws.length}</span></h3><div class="mosaic">${ws.map(w=>thumb(w,220)).join('')}</div></section>`).join('')}</div><nav class="index">${groups.map(([t,ws],i)=>`<a href="#t${i}">${t}<span>${ws.length}</span></a>`).join('')}</nav></div>`;
  }
- document.documentElement.style.setProperty('--stick',(document.querySelector('.bar').getBoundingClientRect().bottom-0)+'px');
+ setStick();
 }
+/* заголовок темы прилипает сразу под шапкой и панелью фильтров (их закреплённая высота, а не текущее положение) */
+function setStick(){const top=document.querySelector('.top').offsetHeight,bar=document.querySelector('.bar');document.querySelector('.bar').style.top=top+'px';document.documentElement.style.setProperty('--stick',(top+bar.offsetHeight)+'px')}
+addEventListener('resize',setStick);
 tEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;drawThemes();render()});
 document.getElementById('views').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;document.querySelectorAll('#views button').forEach(x=>x.classList.toggle('on',x===b));render()});
 document.getElementById('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;fmt=b.dataset.f;document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x===b));drawThemes();render()});
