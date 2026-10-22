@@ -9,7 +9,7 @@ import datetime, html, json, os, re, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, 'dist')
-SITE = 'https://catalog.kultkartin.com'
+SITE = 'https://kultkartin.com'
 SHEET_ID = '1ApEOrnflSSqiTu9kDIQwuAk9LsWOL5Syw9VfSZWJh80'
 LOGO = 'https://m-files.cdnvideo.ru/lpfile/4/d/a/4da194dee1cc6ff27866dae3de89ba90.png'
 OG_IMAGE = 'https://m-files.cdn1.cc/lpfile/a/d/a/ada8b3fd3760b96661d479a01bc9d5b2.jpg'

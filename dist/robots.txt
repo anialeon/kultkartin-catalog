@@ -58,4 +58,4 @@ User-agent: Bingbot
 Allow: /
 Disallow: /favorites.html
 
-Sitemap: https://catalog.kultkartin.com/sitemap.xml
+Sitemap: https://kultkartin.com/sitemap.xml
