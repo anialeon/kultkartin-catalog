@@ -252,7 +252,7 @@ body.schema [data-block]{outline:1px dashed rgba(154,74,42,.28);outline-offset:-
 .hdr.ondark{background:rgba(68,5,18,.78);color:#f1e6dc;border-color:rgba(241,230,220,.1)}.hdr.ondark .logo small{color:#c7a597}.hdr.ondark .pill{border-color:rgba(241,230,220,.25)}.hdr.ondark .schema-tg[aria-pressed=true]{background:rgba(241,230,220,.14);border-color:rgba(241,230,220,.3)}
 .logo{display:flex;align-items:center;gap:16px;line-height:1}
 .logo i{display:block;width:150px;height:44px;background:currentColor;-webkit-mask:url(assets/logo.png) left center/contain no-repeat;mask:url(assets/logo.png) left center/contain no-repeat}
-.logo u{display:block;width:1px;height:26px;background:currentColor;opacity:.3}
+.logo>a{display:block;color:inherit}.logo u{display:block;width:1px;height:26px;background:currentColor;opacity:.3}
 .logo small{font:600 10.5px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase;white-space:nowrap}
 .nav{display:flex;gap:26px;margin:0 auto;white-space:nowrap;font:600 11px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase}
 .pill svg,.heart-ic{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
@@ -657,7 +657,7 @@ body.on-theme .chapter{opacity:0}
 <div class="progress" id="progress"></div>
 
 <header class="hdr" id="hdr">
-  <a href="#/" class="logo" aria-label="Культкартин — каталог Осень 2026"><i></i><u></u><small>Каталог «Осень» 2026</small></a>
+  <div class="logo"><a href="https://catalog.kultkartin.com/" aria-label="Культкартин — основной каталог"><i></i></a><u></u><a href="#/"><small>Каталог «Осень» 2026</small></a></div>
   <nav class="nav" id="nav">
     <a href="#concept" data-go>Концепция</a>
     <a href="#rooms" data-go>Интерьеры</a>
