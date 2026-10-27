@@ -169,7 +169,7 @@ const drawThemes=()=>{const base=DATA.filter(w=>inKind(w)&&(!fmt||w.f===fmt));th
 const list=()=>DATA.filter(w=>inKind(w)&&(!theme||w.t===theme)&&(!fmt||w.f===fmt));
 let flat=[];
 const thumb=w=>`<button data-id="${w.id}" aria-label="${w.n}"><img loading="lazy" decoding="async" src="${img(w)}" width="${w.w}" height="${w.h}" alt="${w.n}"><i>${w.id}</i></button>`;
-function render(){
+function libRender(){
  const items=list();flat=items;const groups=byCount(items).map(([t])=>[t,items.filter(w=>w.t===t)]);
  document.getElementById('count').textContent=`${items.length} ${plural(items.length,'работа','работы','работ')}`;
  const v=document.getElementById('view');
@@ -186,10 +186,10 @@ function render(){
 /* заголовок темы прилипает сразу под шапкой и панелью фильтров (их закреплённая высота, а не текущее положение) */
 function setStick(){const top=document.querySelector('.nav').offsetHeight,bar=document.querySelector('.bar');document.querySelector('.bar').style.top=top+'px';document.documentElement.style.setProperty('--stick',(top+bar.offsetHeight)+'px')}
 addEventListener('resize',setStick);
-document.getElementById('kinds').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;kind=b.dataset.k;theme='';drawThemes();render()});
-tEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;drawThemes();render()});
-document.getElementById('views').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;document.querySelectorAll('#views button').forEach(x=>x.classList.toggle('on',x===b));render()});
-document.getElementById('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;fmt=b.dataset.f;document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x===b));drawThemes();render()});
+document.getElementById('kinds').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;kind=b.dataset.k;theme='';drawThemes();libRender()});
+tEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;drawThemes();libRender()});
+document.getElementById('views').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;document.querySelectorAll('#views button').forEach(x=>x.classList.toggle('on',x===b));libRender()});
+document.getElementById('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;fmt=b.dataset.f;document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x===b));drawThemes();libRender()});
 /* лайтбокс: листаем внутри серии */
 const lb=document.getElementById('lb');let cur=null;
 const seriesOf=w=>DATA.filter(x=>x.s===w.s&&x.t===w.t);
@@ -201,7 +201,7 @@ lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
 document.getElementById('lbp').onclick=()=>step(-1);document.getElementById('lbn').onclick=()=>step(1);
 addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
 let x0=null;lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>40)step(dx<0?1:-1)},{passive:true});
-drawThemes();render();
+drawThemes();libRender();
 </script>
 </body>
 </html>
