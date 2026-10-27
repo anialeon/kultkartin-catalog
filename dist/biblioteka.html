@@ -20,6 +20,9 @@ body{background:#fbf6ee}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 img{display:block}
 .nav-links a[aria-current]{color:var(--wine)}
+/* шапка и футер по сетке библиотеки: 1320 − 2×24 */
+html body .lib h1{font-weight:300}
+@media(min-width:851px){.nav-inner{width:min(1272px,calc(100% - 48px))}html body .c-slogan,html body .c-grid,html body .foot-inner{max-width:1272px}}
 .lib{background:var(--bg)}
 .wrap{max-width:1320px;margin:auto;padding:0 24px}
 h1{font:300 clamp(56px,9vw,120px)/.95 var(--serif);letter-spacing:-.01em;margin:56px 0 14px}
