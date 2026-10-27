@@ -34,29 +34,6 @@ img{display:block}
 .lib-top:hover{background:#440512;color:#f7eddd}
 .lib-top svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
 @media(max-width:850px){.lib-top{right:22px;bottom:84px;width:40px;height:40px}.lib-back{margin-top:22px}}
-/* навигация, вариант 2: типы вкладками, темы выбранного типа одной лентой, справа формат и вид */
-.bar{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:14px 0 12px}
-.themes-wrap{position:relative;min-width:0;display:flex;align-items:center}
-.themes{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth;gap:6px 22px;min-width:0}
-.themes::-webkit-scrollbar{display:none}
-.th-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:32px;height:32px;display:none;align-items:center;justify-content:center;color:var(--ink);background:var(--bg)}
-.th-arr.l{left:0;box-shadow:12px 0 12px var(--bg)}.th-arr.r{right:0;box-shadow:-12px 0 12px var(--bg)}
-.th-arr.show{display:flex}.th-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
-.th-arr:hover{color:var(--wine)}
-.tools{flex-direction:row;align-items:center;gap:22px}
-.tools .fmt{order:-1}
-.tools-btn{display:none}
-@media(max-width:850px){
-.bar{grid-template-columns:minmax(0,1fr);gap:10px}
-.th-arr{display:none!important}
-.themes-wrap{gap:10px}.themes{margin:0;padding:0;flex:1}
-.tools-btn{display:flex;flex:none;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--line);color:var(--ink)}
-.tools-btn[aria-expanded="true"]{background:var(--wine);color:var(--cream);border-color:var(--wine)}
-.tools-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
-.tools{display:none;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.bar.tools-open .tools{display:flex}
-.tools .fmt{order:0}
-}
 /* шапка и футер по сетке библиотеки: 1320 − 2×24 */
 html body .lib h1{font-weight:300}
 @media(min-width:851px){.nav-inner{width:min(1272px,calc(100% - 48px))}html body .c-slogan,html body .c-grid,html body .foot-inner{max-width:1272px}}
@@ -142,6 +119,29 @@ h1{margin-top:34px}
 .ov{grid-template-columns:1fr}.index{display:none}
 .mosaic{grid-template-columns:repeat(5,1fr);gap:4px}
 .lb-in{grid-template-columns:1fr;gap:14px;text-align:center}.lb img{max-height:58vh}.lb h4{font-size:30px}.lb-nav{justify-content:center}
+}
+/* навигация, вариант 2: типы вкладками, темы выбранного типа одной лентой, справа формат и вид */
+.bar{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:14px 0 12px}
+.themes-wrap{position:relative;min-width:0;display:flex;align-items:center}
+.themes{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth;gap:6px 22px;min-width:0}
+.themes::-webkit-scrollbar{display:none}
+.th-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:32px;height:32px;display:none;align-items:center;justify-content:center;color:var(--ink);background:var(--bg)}
+.th-arr.l{left:0;box-shadow:12px 0 12px var(--bg)}.th-arr.r{right:0;box-shadow:-12px 0 12px var(--bg)}
+.th-arr.show{display:flex}.th-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
+.th-arr:hover{color:var(--wine)}
+.tools{flex-direction:row;align-items:center;gap:22px}
+.tools .fmt{order:-1}
+.tools-btn{display:none}
+@media(max-width:850px){
+.bar{grid-template-columns:minmax(0,1fr);gap:10px}
+.th-arr{display:none!important}
+.themes-wrap{gap:10px}.themes{margin:0;padding:0;flex:1}
+.tools-btn{display:flex;flex:none;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--line);color:var(--ink)}
+.tools-btn[aria-expanded="true"]{background:var(--wine);color:var(--cream);border-color:var(--wine)}
+.tools-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
+.tools{display:none;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.bar.tools-open .tools{display:flex}
+.tools .fmt{order:0}
 }
 </style>
 <!-- Yandex.Metrika counter -->
