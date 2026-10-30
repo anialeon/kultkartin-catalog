@@ -1216,7 +1216,6 @@ function renderGallery(){
   let html='';
   CATALOG.forEach((w,i)=>{
     html+=cardHTML(w,mob?(i%5===0?2:1):SPANS[i%SPANS.length]);
-    if(i===6)html+=`<div class="inter rv" data-block="12 · Вставка «в интерьере»" data-anim="фото-разрыв внутри выдачи, как разворот в журнале"><div class="ph has-img clip"><img src="assets/works/w/147-1.webp" alt="Discovery на тёмной стене рядом с торшером" loading="lazy"></div><div><span class="eyebrow">Лукбук</span><h3>Осень в интерьере</h3><p>Как работы каталога выглядят вместе: подсказки по сочетаниям и развеске.</p><a class="btn ink" data-open="${CATALOG[0].id}" data-tab="interior">Смотреть образ<svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15"/><path d="M14 7l5 5-5 5"/></svg></a></div></div>`;
   });
   $('#gallery').innerHTML=html;
   stagger($('#gallery'));
