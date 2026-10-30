@@ -34,6 +34,8 @@ img{display:block}
 .lib-top:hover{background:#440512;color:#f7eddd}
 .lib-top svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
 @media(max-width:850px){.lib-top{right:22px;bottom:84px;width:40px;height:40px}.lib-back{margin-top:22px}}
+/* крупный просмотр: работа на бежевой подложке-паспарту, чтобы не были видны края вырезки */
+.lb img{background:#f3ece1;padding:clamp(18px,3.2vw,44px);box-sizing:border-box}
 /* шапка и футер по сетке библиотеки: 1320 − 2×24 */
 html body .lib h1{font-weight:300}
 @media(min-width:851px){.nav-inner{width:min(1272px,calc(100% - 48px))}html body .c-slogan,html body .c-grid,html body .foot-inner{max-width:1272px}}
