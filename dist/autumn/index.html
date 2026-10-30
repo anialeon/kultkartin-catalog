@@ -137,7 +137,7 @@ body.schema [data-block]{outline:1px dashed rgba(154,74,42,.28);outline-offset:-
 .sw{flex:1;position:relative;overflow:hidden;cursor:pointer;transition:flex 1s var(--ease);display:flex;flex-direction:column;justify-content:space-between;padding:22px;color:#fff}
 .sw.on{flex:3.4}
 .sw .nm,.sw .desc,.sw .more{position:relative;z-index:1}
-.sw-terra::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(45,18,12,.45),rgba(45,18,12,.08) 30%,rgba(45,18,12,.08) 55%,rgba(45,18,12,.6));pointer-events:none} /* мраморный фон — затемнение под текст */
+.sw-terra{color:#3a2216}.sw-terra::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(250,242,232,.35),rgba(250,242,232,0) 30%,rgba(250,242,232,0) 55%,rgba(250,242,232,.45));pointer-events:none} /* светлый мрамор — тёмный текст и лёгкое осветление под ним */
 .sw .nm{font:400 clamp(26px,2.6vw,38px)/1 var(--serif);white-space:nowrap}
 .sw .code{font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
 .sw .more{display:flex;gap:18px;align-items:flex-end;opacity:0;transform:translateY(20px);transition:.6s var(--out)}
@@ -1021,7 +1021,7 @@ const words=$$('.w',wEl);
 /* ---------- palette ---------- */
 // Работы каталога в каждом оттенке палитры
 const TONE_W={ochre:['r153','r103','r99'],terra:['r147','r110','r134'],wine:['r148','r137','r89'],olive:['r146','r86','r142'],cream:['r30','r56','r156']}; // по одной работе из серии, без повторов между цветами
-$('#swatches').innerHTML=TONES.map((t,i)=>`<div class="sw sw-${t.k}${i===0?' on':''}" style="background:${t.c} url(assets/palette/${({ochre:'ochre',terra:'terra',wine:'wine',olive:'olive',cream:'linen'})[t.k]}.webp?v=20261030) center/cover;${t.k==='cream'?'color:#3a2f28':''}" data-i="${i}">
+$('#swatches').innerHTML=TONES.map((t,i)=>`<div class="sw sw-${t.k}${i===0?' on':''}" style="background:${t.c} url(assets/palette/${({ochre:'ochre',terra:'terra',wine:'wine',olive:'olive',cream:'linen'})[t.k]}.webp?v=20261030b) center/cover;${t.k==='cream'?'color:#3a2f28':''}" data-i="${i}">
   <div><div class="desc">${t.d}</div></div>
   <div><div class="more">${TONE_W[t.k].map(id=>byId(id)).map(w=>`<span class="sw-w"><img src="${thumb(w.img[0])}" alt="${w.name}"></span>`).join('')}</div><div class="nm" style="margin-top:16px">${t.n}</div></div></div>`).join('');
 const sws=$$('.sw'),swOn=i=>sws.forEach((x,k)=>x.classList.toggle('on',k===i));
