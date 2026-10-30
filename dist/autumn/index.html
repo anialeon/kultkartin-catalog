@@ -1018,7 +1018,7 @@ const words=$$('.w',wEl);
 
 /* ---------- palette ---------- */
 // Работы каталога в каждом оттенке палитры
-const TONE_W={ochre:['r153','r103','r99'],terra:['r147','r110','r134'],wine:['r148','r101','r111'],olive:['r146','r102','r112'],cream:['r30','r31','r32']}; // только вертикальные работы в рамах
+const TONE_W={ochre:['r153','r103','r99'],terra:['r147','r110','r134'],wine:['r148','r137','r89'],olive:['r146','r86','r142'],cream:['r30','r56','r156']}; // по одной работе из серии, без повторов между цветами
 $('#swatches').innerHTML=TONES.map((t,i)=>`<div class="sw${i===0?' on':''}" style="background:${t.c} url(assets/palette/${({ochre:'ochre',terra:'terra',wine:'wine',olive:'olive',cream:'linen'})[t.k]}.webp) center/cover;${t.k==='cream'?'color:#3a2f28':''}" data-i="${i}">
   <div><div class="desc">${t.d}</div></div>
   <div><div class="more">${TONE_W[t.k].map(id=>byId(id)).map(w=>`<span class="sw-w"><img src="${thumb(w.img[0])}" alt="${w.name}"></span>`).join('')}</div><div class="nm" style="margin-top:16px">${t.n}</div></div></div>`).join('');
