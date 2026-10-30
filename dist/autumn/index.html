@@ -1297,7 +1297,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeFav()}
 $('#mgrBtn').onclick=()=>$('#mgr').classList.toggle('open');
 
 /* ---------- reveal observer ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){(e.target._clip||e.target).classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){if(e.target._clip)e.target._clip.classList.add('in');if(!e.target._clip||e.target.classList.contains('rv'))e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
 // .clip скрыт clip-path'ом, и Chrome может считать его невидимым — следим за родителем
 function observe(root=document){$$('.rv:not(.in)',root).forEach(el=>io.observe(el));$$('.clip:not(.in)',root).forEach(el=>{const p=el.parentElement;p._clip=el;io.observe(p)})}
 
