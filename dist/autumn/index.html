@@ -515,7 +515,11 @@ body.on-theme .chapter{opacity:0}
 .sheet-close button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);font-size:18px}
 .sheet-body{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;padding:30px 28px 40px}
 .sheet .main-ph{aspect-ratio:4/5;background:#cfc7bc}
-.thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/4);gap:8px;margin-top:8px;padding:3px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#cfc6b8 transparent}
+.thumbs{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/4);gap:8px;margin-top:8px;padding:3px 3px 14px;overflow-x:auto;scroll-snap-type:x proximity}
+.thumbs::-webkit-scrollbar{height:5px}
+.thumbs::-webkit-scrollbar-track{background:#e4ddd1;border-radius:3px}
+.thumbs::-webkit-scrollbar-thumb{background:#8f8576;border-radius:3px}
+@supports not selector(::-webkit-scrollbar){.thumbs{scrollbar-width:thin;scrollbar-color:#8f8576 #e4ddd1}}
 .thumbs button{scroll-snap-align:start}
 .thumbs button .ph{aspect-ratio:1;transition:opacity .3s}
 .thumbs button{outline:1px solid transparent;outline-offset:2px}
