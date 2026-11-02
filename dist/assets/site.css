@@ -443,3 +443,6 @@ html body .reason-list{overflow-x:clip}
 
 /* шапка: пункты меню как в каталоге «Осень» — Manrope 600, 11px, капс, разрядка .22em (только компьютер; сетка шапки прежняя) */
 @media(min-width:851px){html body .nav .nav-links,html body.home .nav .nav-links{gap:26px}html body .nav .nav-links>a,html body.home .nav .nav-links>a{font:600 11px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase}}
+
+/* подборка в конце ленты: показываем целиком на белом */
+.product-image img.pod{object-fit:contain;background:#fff}
