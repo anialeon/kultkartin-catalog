@@ -90,18 +90,24 @@ for w in DATA:
     if w['t'] not in seen:
         seen.append(w['t'])
 groups += [(None, t, t) for t in seen]
+seen_s = []
+for w in DATA:
+    if w['s'] not in seen_s:
+        seen_s.append(w['s'])
+groups += [('s', ser, ser) for ser in seen_s]  # серии: ссылка ?seriya=, ключ 's:<серия>', адрес s-<slug>
 links = {}
 for kind, tema, label in groups:
-    works = [w for w in DATA if (w['m'] == kind if kind else w['t'] == tema)]
+    works = [w for w in DATA if (w['s'] == tema if kind == 's' else w['m'] == kind if kind else w['t'] == tema)]
     # для превью — по одной работе из разных серий
     by_series = []
     for w in works:
         if w['s'] not in [x['s'] for x in by_series]:
             by_series.append(w)
     picks = (by_series + [w for w in works if w not in by_series])[:3]
-    name = slug(label)
+    name = ('s-' if kind == 's' else '') + slug(label)
     collage(name, picks)
-    target = f"../biblioteka.html?{'type=' + kind if kind else 'tema=' + urllib.parse.quote(tema)}"
+    target = ('../biblioteka.html?' + ('seriya=' + urllib.parse.quote(tema) if kind == 's' else
+              'type=' + kind if kind else 'tema=' + urllib.parse.quote(tema)))
     n = len(works)
     title = f"{label} — Библиотека картин КУЛЬТКАРТИН"
     desc = f"{n} работ: печатаем и оформляем в раму на заказ. Назовите менеджеру артикул понравившейся."
@@ -109,6 +115,11 @@ for kind, tema, label in groups:
            .format(title=html.escape(title), desc=html.escape(desc), page=f"{SITE}/biblioteka/{name}.html",
                    image=f"{SITE}/assets/lib/og/{name}.jpg", art=''))
     open(os.path.join(ROOT, 'biblioteka', name + '.html'), 'w', encoding='utf-8').write(out)
-    links[kind or tema] = name
+    links[('s:' + tema) if kind == 's' else (kind or tema)] = name
 json.dump(links, open(os.path.join(ROOT, 'biblioteka', 'links.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+# адреса подборок — в страницу библиотеки (кнопки «Поделиться»)
+lib_path = os.path.join(ROOT, 'biblioteka.html')
+lib = open(lib_path, encoding='utf-8').read()
+lib = re.sub(r'const SHARE_PAGES=\{.*?\};', lambda m: 'const SHARE_PAGES=' + json.dumps(links, ensure_ascii=False, separators=(',', ':')) + ';', lib, count=1, flags=re.S)
+open(lib_path, 'w', encoding='utf-8').write(lib)
 print('ok:', len(groups), 'подборок')
