@@ -4,6 +4,7 @@
 !dist/**
 !work/
 !work/build_seo.py
+!work/build_library.py
 !.github/
 !.github/**
 .DS_Store

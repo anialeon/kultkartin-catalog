@@ -6,6 +6,13 @@
 <title>Библиотека картин | КУЛЬТКАРТИН</title>
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#440512">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="КУЛЬТКАРТИН">
+<meta property="og:title" content="Библиотека картин | КУЛЬТКАРТИН">
+<meta property="og:description" content="Работы, которые мы печатаем и оформляем в раму на заказ. Назовите менеджеру артикул понравившейся.">
+<meta property="og:image" content="https://kultkartin.com/assets/lib/og/ptitsy.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -280,8 +287,11 @@ document.getElementById('toolsBtn').addEventListener('click',e=>{const open=docu
 const toast=document.createElement('div');toast.className='lib-toast';document.body.appendChild(toast);
 const say=t=>{toast.textContent=t;toast.classList.add('show');clearTimeout(say.t);say.t=setTimeout(()=>toast.classList.remove('show'),2200)};
 async function share(url,title){if(navigator.share&&matchMedia('(pointer:coarse)').matches){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url);say('Ссылка скопирована')}catch(e){prompt('Скопируйте ссылку',url)}}
-document.getElementById('libShare').addEventListener('click',()=>{const label=theme||(KINDS.find(([k])=>k===kind)||[,''])[1];share(stateURL(),'Библиотека картин'+(label&&label!=='Все'?' — '+label:'')+' | КУЛЬТКАРТИН')});
-document.getElementById('lbShare').addEventListener('click',()=>{if(cur)share(stateURL(cur.id),`${cur.n} — Библиотека картин | КУЛЬТКАРТИН`)});
+const SHARE_PAGES={"bot":"botanika","fauna":"zhivotnye-i-ptitsy","sea":"more","arch":"arhitektura-i-istoriya","kids":"detskie","style":"moda-i-dekor","Тропики":"tropiki","Цветы":"tsvety","Орхидеи":"orhidei","Птицы":"ptitsy","Деревья и травы":"derevya-i-travy","Огород":"ogorod","Сад Эйхштетта":"sad-eyhshtetta","Рыбы":"ryby","Морские обитатели":"morskie-obitateli","Кораллы":"korally","Ракушки и звёзды":"rakushki-i-zvezdy","Звери":"zveri","Насекомые":"nasekomye","История":"istoriya","Классика":"klassika","Восток":"vostok","Игрушки":"igrushki","Сказки":"skazki","Зверята":"zveryata","Мода":"moda","Декор":"dekor"};
+/* ссылка с превью: своя страница у работы, типа и темы (work/build_library.py); с формат/вид — обычный адрес */
+const shareURL=art=>{const base=location.origin+'/biblioteka/';if(art)return base+art+'.html';if(fmt||view!=='series')return stateURL();const k=theme||kind;return k&&SHARE_PAGES[k]?base+SHARE_PAGES[k]+'.html':stateURL()};
+document.getElementById('libShare').addEventListener('click',()=>{const label=theme||(KINDS.find(([k])=>k===kind)||[,''])[1];share(shareURL(),'Библиотека картин'+(label&&label!=='Все'?' — '+label:'')+' | КУЛЬТКАРТИН')});
+document.getElementById('lbShare').addEventListener('click',()=>{if(cur)share(shareURL(cur.id),`${cur.n} — Библиотека картин | КУЛЬТКАРТИН`)});
 const libTop=document.getElementById('libTop');
 addEventListener('scroll',()=>libTop.classList.toggle('show',scrollY>innerHeight*.8),{passive:true});
 libTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
