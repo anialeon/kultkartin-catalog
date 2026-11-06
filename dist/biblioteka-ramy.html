@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Картины в раме | КУЛЬТКАРТИН</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#440512">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="КУЛЬТКАРТИН">
+<meta property="og:title" content="Картины в раме | КУЛЬТКАРТИН">
+<meta property="og:description" content="Картины в раме КУЛЬТКАРТИН: размер, рама и паспарту — в артикуле. Назовите его менеджеру.">
+<meta property="og:image" content="https://kultkartin.com/assets/ramy/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="assets/site.css?v=20261102">
+<style>
+.lib,.lb{--bg:#fbf6ee;--paper:#f3ece2;--ink:#1d1a19;--muted:#7a716b;--line:#e3d3c0;--wine:#440512;--cream:#f7eddd;--serif:'Cormorant Garamond',Georgia,serif;--sans:Manrope,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fbf6ee}
+.lib{color:var(--ink);font:400 15px/1.5 var(--sans);padding-bottom:90px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{display:block}
+.nav-links a[aria-current]{color:var(--wine)}
+/* защита от сохранения: клик и меню попадают на кнопку, а не на картинку; на телефоне нет меню «Сохранить» по долгому нажатию */
+.lib img,.lb img{pointer-events:none;-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.lib,.lb{-webkit-touch-callout:none}
+.lb-in>img+div,.lb-in{position:relative}
+/* ← на главную и плавающая «Наверх» */
+.lib-back{display:inline-flex;align-items:center;gap:8px;margin-top:34px;color:var(--muted);font:500 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
+.lib-back svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.4;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.lib-back:hover{color:var(--wine)}.lib-back:hover svg{transform:translateX(-3px)}
+.lib .lib-back+h1{margin-top:18px}
+.lib-top{position:fixed;z-index:29;right:30px;bottom:96px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:#fbf6ee;border:1px solid #e3d3c0;color:#440512;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .3s,transform .3s cubic-bezier(.16,1,.3,1),background .2s,color .2s}
+.lib-top.show{opacity:1;transform:none;pointer-events:auto}
+.lib-top:hover{background:#440512;color:#f7eddd}
+.lib-top svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
+@media(max-width:850px){.lib-top{right:22px;bottom:84px;width:40px;height:40px}.lib-back{margin-top:22px}}
+/* крупный просмотр: работа на бежевой подложке-паспарту, чтобы не были видны края вырезки */
+/* белая бумага и края вырезки растворяются в подложке: картинка умножается на её цвет */
+.lb-mat{background:#f3ece1;padding:clamp(18px,3.2vw,44px);isolation:isolate;justify-self:center;max-width:100%}
+.lb-mat img{mix-blend-mode:multiply;max-height:calc(82vh - 88px)}
+.lib img{mix-blend-mode:multiply}
+@media(max-width:850px){.lb-mat img{max-height:calc(58vh - 36px)}}
+/* поделиться: подборкой (тип/тема/формат) и отдельной работой */
+.count-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:22px 0 6px}.count-row .count{margin:0}
+.lib-share{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font:500 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+.lib-share:hover{color:var(--wine)}.lib-share svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5}
+.lib-share-btn{display:block;margin-top:12px;color:rgba(247,237,221,.75);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px}
+.lib-share-btn:hover{color:var(--cream)}
+.lib-toast{position:fixed;left:50%;bottom:28px;z-index:60;transform:translate(-50%,20px);background:#1d1a19;color:#f7eddd;font:500 13px/1 var(--sans);padding:13px 18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.lib-toast.show{opacity:1;transform:translate(-50%,0)}
+/* воздух перед футером */
+main.wrap.lib{padding-bottom:clamp(67px,7vw,105px)}
+.theme:last-child .row:last-child{border-bottom:0;padding-bottom:0}
+/* поделиться серией и метка выбранной серии */
+.ser-share{display:inline-block;margin-top:8px;color:var(--muted);font:500 11px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;transition:color .2s}
+.ser-share:hover{color:var(--wine)}
+.row-meta span{display:block}
+.ser-chip{color:var(--wine);font:inherit;border-bottom:1px solid currentColor}.ser-chip span{margin-left:4px}
+/* шапка и футер по сетке библиотеки: 1320 − 2×24 */
+html body .lib h1{font-weight:300}
+@media(min-width:851px){.nav-inner{width:min(1272px,calc(100% - 48px))}html body .c-slogan,html body .c-grid,html body .foot-inner{max-width:1272px}}
+.lib{background:var(--bg)}
+.wrap{max-width:1320px;margin:auto;padding:0 24px}
+h1{font:300 clamp(56px,9vw,120px)/.95 var(--serif);letter-spacing:-.01em;margin:56px 0 14px}
+.lib-lead{color:var(--muted);max-width:560px;font-size:16px;margin:0}
+.bar{position:sticky;top:63px;z-index:8;background:var(--bg);border-bottom:1px solid var(--line);margin-top:34px;padding:16px 0 14px;display:grid;grid-template-columns:1fr auto;gap:14px 28px;align-items:start}
+.themes{display:flex;flex-wrap:wrap;gap:6px 22px}
+.themes button{font:400 21px/1.2 var(--serif);color:var(--muted);padding:2px 0;transition:color .2s;white-space:nowrap}
+.themes button sup{font:500 10px var(--sans);margin-left:2px;vertical-align:super}
+.themes button.on{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.themes button:hover{color:var(--ink)}
+.tools{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.seg{display:flex;border:1px solid var(--line)}
+.seg button{padding:8px 14px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px;transition:background .2s,color .2s}
+.seg button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.3}
+.seg button.on{background:var(--wine);color:var(--cream)}
+.fmt{display:flex;gap:14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.fmt button{color:var(--muted)}.fmt button.on{color:var(--wine)}
+/* типы работ */
+.kinds{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px 26px;padding-bottom:12px;border-bottom:1px solid #eee3d5;margin-bottom:2px}
+.kinds button{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:4px 0;position:relative}
+.kinds button sup{font-size:9px;margin-left:3px}
+.kinds button.on{color:var(--wine)}
+.kinds button.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--wine)}
+.count{font-size:13px;color:var(--muted);margin:22px 0 6px}
+/* серии */
+.theme{margin:34px 0 10px}
+.theme h2{position:sticky;top:var(--stick,150px);z-index:5;background:var(--bg);font:400 38px/1.1 var(--serif);padding:10px 0 12px;border-bottom:1px solid var(--line)}
+.theme h2 sup{font:500 11px var(--sans);color:var(--muted);margin-left:4px;vertical-align:super}
+.row{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;padding:22px 0;border-bottom:1px solid #eee3d5}
+.row-meta b{display:block;font:400 22px/1.15 var(--serif);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-meta span{font-size:13px;color:var(--muted)}
+.strip{display:flex;flex-wrap:wrap;gap:26px 12px;padding-top:4px}
+.strip button{flex:none;position:relative}
+.strip button i,.mosaic button i{position:absolute;left:0;bottom:-15px;font:500 10px var(--sans);font-style:normal;color:var(--muted);letter-spacing:.04em;z-index:1;background:var(--bg);padding-right:4px;line-height:1.2}
+.strip{padding-bottom:16px}.mosaic{row-gap:20px}.mosaic button{position:relative}
+.strip img{height:170px;width:auto;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.strip button:hover img{transform:translateY(-4px)}
+/* сетка */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:34px 22px;margin-top:20px}
+.tile{display:block;min-width:0}.tile .box{aspect-ratio:1/1;display:flex;align-items:flex-end;justify-content:center}.tile img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:opacity .3s}
+.tile:hover img{opacity:.88}
+.tile b{display:block;font:400 19px/1.2 var(--serif);margin-top:12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile span{display:block;font-size:12px;color:var(--muted);text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* обзор */
+.ov{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:32px;margin-top:20px}
+.ov-sec{margin-bottom:34px}
+.ov-sec h3{font:400 24px/1 var(--serif);margin:0 0 12px;display:flex;align-items:baseline;gap:8px}
+.ov-sec h3 span{font:500 11px var(--sans);color:var(--muted)}
+.mosaic{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:6px}
+.mosaic button{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}.mosaic img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:transform .3s,opacity .3s}
+.mosaic button:hover img{transform:scale(1.06);opacity:.9}
+.index{position:sticky;top:170px;align-self:start;display:grid;gap:6px;font-size:13px}
+.index a{color:var(--muted);text-decoration:none;display:flex;justify-content:space-between;border-bottom:1px solid #eee3d5;padding:4px 0}
+.index a:hover{color:var(--wine)}
+/* лайтбокс */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,14,13,.9);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.open{display:flex}
+.lb-in{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:30px;max-width:1100px;width:100%;align-items:center;color:var(--cream)}
+.lb img{max-height:82vh;max-width:100%;margin:auto;object-fit:contain}
+.lb h4{font:300 40px/1.05 var(--serif);margin-bottom:8px}
+.lb p{color:rgba(247,237,221,.7);font-size:14px;margin-bottom:22px}
+.lb a{display:inline-block;border:1px solid rgba(247,237,221,.6);color:var(--cream);padding:13px 20px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.lb-nav{display:flex;gap:10px;margin-top:22px}
+.lb-nav button,.lb-x{color:var(--cream);border:1px solid rgba(247,237,221,.35);width:44px;height:44px;font-size:20px}
+.lb-x{position:absolute;top:18px;right:18px}
+@media(max-width:850px){
+.kinds{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px 12px}
+.kinds button{white-space:nowrap}
+.wrap{padding:0 16px}
+h1{margin-top:34px}
+.bar{grid-template-columns:1fr;top:57px}
+.themes{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.themes button{font-size:19px}
+.tools{flex-direction:row;justify-content:space-between;align-items:center}
+.seg button span{display:none}
+.theme h2{font-size:30px}
+.row{grid-template-columns:1fr;gap:10px;padding:18px 0}
+.strip img{height:130px}
+.grid{grid-template-columns:repeat(2,1fr);gap:24px 12px}
+.ov{grid-template-columns:1fr}.index{display:none}
+.mosaic{grid-template-columns:repeat(5,1fr);gap:4px}
+.lb-in{grid-template-columns:1fr;gap:14px;text-align:center}.lb img{max-height:58vh}.lb h4{font-size:30px}.lb-nav{justify-content:center}
+}
+/* навигация, вариант 2: типы вкладками, темы выбранного типа одной лентой, справа формат и вид */
+.bar{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:14px 0;row-gap:14px}
+.kinds{margin-bottom:0}
+.themes-wrap{position:relative;min-width:0;display:flex;align-items:center}
+.themes{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth;gap:6px 22px;min-width:0}
+.themes::-webkit-scrollbar{display:none}
+.th-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;display:none;align-items:center;justify-content:center;color:var(--wine);background:var(--bg);border:1px solid var(--line);transition:background .2s,color .2s,border-color .2s}
+.th-arr.l{left:0;box-shadow:12px 0 12px var(--bg)}.th-arr.r{right:0;box-shadow:-12px 0 12px var(--bg)}
+.th-arr.show{display:flex}.th-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
+.th-arr:hover{background:var(--wine);color:var(--cream);border-color:var(--wine)}
+.tools{flex-direction:row;align-items:center;gap:22px}
+.tools .fmt{order:-1}
+.tools-btn{display:none}
+@media(max-width:850px){
+.bar{grid-template-columns:minmax(0,1fr);gap:10px}
+.th-arr{width:32px;height:32px}.themes-wrap{position:relative}.th-arr.r{right:46px}
+.themes-wrap{gap:10px}.themes{margin:0;padding:0;flex:1}
+.tools-btn{display:flex;flex:none;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--line);color:var(--ink)}
+.tools-btn[aria-expanded="true"]{background:var(--wine);color:var(--cream);border-color:var(--wine)}
+.tools-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.4}
+.tools{display:none;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.bar.tools-open .tools{display:flex}
+.tools .fmt{order:0}
+}
+/* картины в раме: фото уже обрезано по раме — без подложки и умножения */
+.lib img,.lb-mat img{mix-blend-mode:normal}.lb-mat{background:none;padding:0}
+.lb-mat img{box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.kinds .k-lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:4px 0}
+.row-meta span+span{margin-top:2px}
+.strip img,.tile img{box-shadow:0 4px 14px rgba(29,26,25,.14)}
+.tile b,.strip button i{font-variant-numeric:lining-nums}
+.lb h4{font-size:34px;font-variant-numeric:lining-nums;word-break:break-word}
+.lb-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0 0 22px;font-size:14px}
+.lb-dl dt{color:rgba(247,237,221,.55)}.lb-dl dd{color:var(--cream);margin:0}
+.empty{color:var(--muted);margin:40px 0}
+.krow{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px 32px;padding-bottom:12px;border-bottom:1px solid #eee3d5}
+.krow .kinds{border:0;padding-bottom:0;margin:0;min-width:0;gap:4px 17px}
+.prc{flex:none}
+@media(max-width:850px){.krow{flex-direction:column;align-items:stretch;padding-bottom:10px}.krow .kinds{padding:0 16px;margin:0 -16px}.prc{overflow-x:auto;scrollbar-width:none;white-space:nowrap;margin:0 -16px;padding:0 16px}.prc::-webkit-scrollbar{display:none}}
+@media(max-width:850px){.lb .lib-share-btn{margin-left:auto;margin-right:auto}.lb-dl{justify-content:center;text-align:left;width:max-content;margin:0 auto 18px}}
+</style>
+<!-- Yandex.Metrika counter -->
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113787938','ym');ym(113787938,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113787938" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<header class="nav">
+<div class="nav-inner">
+<a class="brand" href="index.html">
+<img class="brand-logo" src="assets/img/logo.webp" width="196" height="57" alt="КУЛЬТКАРТИН"></a>
+<nav class="nav-links" id="siteNav">
+<a href="index.html#catalog">Каталог</a>
+<a href="index.html#why">Почему мы</a>
+<a href="index.html#youtube">Как выбрать картину</a>
+<a href="biblioteka.html">Библиотека</a>
+<a href="#contacts">Контакты</a>
+</nav>
+<div class="icons">
+<a class="icon header-instagram" href="https://www.instagram.com/kultkartin/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle><circle cx="17.3" cy="6.8" r=".7" fill="currentColor"></circle></svg></a>
+<a class="icon header-heart" href="favorites.html" aria-label="Избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg><span class="favorites-badge" aria-hidden="true">0</span></a>
+<button class="icon menu" id="mobileMenuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="siteNav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"></path></svg></button>
+</div>
+</div>
+</header>
+<main class="wrap lib">
+<a class="lib-back" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>Вернуться на главную</a>
+<h1>Картины в раме</h1>
+<p class="lib-lead" id="lead"></p>
+<div class="bar">
+<div class="krow"><nav class="kinds" id="kinds" aria-label="Рама"></nav><div class="fmt prc" id="prc" aria-label="Цена"></div></div>
+<div class="themes-wrap"><button class="th-arr l" type="button" aria-label="Темы левее"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><nav class="themes" id="themes" aria-label="Темы"></nav><button class="th-arr r" type="button" aria-label="Темы правее"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><button class="tools-btn" id="toolsBtn" type="button" aria-label="Вид и формат" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button></div>
+<div class="tools">
+<div class="seg" id="views">
+<button data-v="series" class="on"><svg viewBox="0 0 16 16"><path d="M1 3h14M1 8h14M1 13h14"/></svg><span>Серии</span></button>
+<button data-v="grid"><svg viewBox="0 0 16 16"><rect x="1.5" y="1.5" width="5.5" height="5.5"/><rect x="9" y="1.5" width="5.5" height="5.5"/><rect x="1.5" y="9" width="5.5" height="5.5"/><rect x="9" y="9" width="5.5" height="5.5"/></svg><span>Сетка</span></button>
+<button data-v="overview"><svg viewBox="0 0 16 16"><path d="M1 1h3v3H1zM6.5 1h3v3h-3zM12 1h3v3h-3zM1 6.5h3v3H1zM6.5 6.5h3v3h-3zM12 6.5h3v3h-3zM1 12h3v3H1zM6.5 12h3v3h-3zM12 12h3v3h-3z"/></svg><span>Обзор</span></button>
+</div>
+<div class="fmt" id="fmt"><button data-f="" class="on">Все</button><button data-f="v">Вертикальные</button><button data-f="h">Горизонтальные</button><button data-f="s">Квадратные</button></div>
+</div>
+</div>
+<div class="count-row"><p class="count" id="count"></p><button class="lib-share" id="libShare" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h.01M12 12h.01"/><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4"/></svg><span>Поделиться подборкой</span></button></div>
+<div id="view"></div>
+</main>
+<button class="lib-top" id="libTop" type="button" aria-label="Наверх"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
+<footer class="contact" id="contacts"><div class="c-slogan"><span>Искусство,</span><span>которое живёт</span><span>у&nbsp;вас дома</span></div><div class="c-grid"><div class="c-intro"><h2>Контакты</h2><p>Поможем выбрать картину, формат и оформление для вашего интерьера. Быстрее всего ответим в WhatsApp.</p><a class="c-cta" href="https://wa.me/77071010814?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%83." target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>Написать менеджеру</a><a class="c-link c-mail" href="mailto:zakaz@kultkartin.ru"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg><span>zakaz@kultkartin.ru</span></a></div><article class="c-city"><h3>Астана</h3><p>Студия декора «Культкартин»<br>Кабанбай батыра 60/10, офис&nbsp;2</p><a class="c-phone" href="tel:+77071010814">+7 707 101 08 14</a><div class="c-links"><a class="c-link" href="https://wa.me/77071010814" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg><span>WhatsApp</span></a><a class="c-link" href="tel:+77071010814" ><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg><span>Позвонить</span></a><a class="c-link" href="https://2gis.kz/astana/firm/70000001063937568/tab/info" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg><span>Открыть в 2ГИС</span></a></div></article><article class="c-city"><h3>Москва</h3><p>Работаем онлайн<br>Консультация и заказ в мессенджерах</p><a class="c-phone" href="tel:+79000969793">+7 900 096 97 93</a><div class="c-links"><a class="c-link" href="https://wa.me/79000969793" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg><span>WhatsApp</span></a><a class="c-link" href="https://t.me/kult_kartin" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg><span>Telegram</span></a><a class="c-link" href="https://max.ru/u/f9LHodD0cOJloE29Q-VzMJYECs3BGioSGMVeFyr-atLdFYsCHGdBmR42H_4" target="_blank" rel="noopener"><svg class="ln ln-max" viewBox="90 90 820 820" aria-hidden="true"><path fill-rule="evenodd" d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z"/></svg><span>MAX</span></a></div></article><div class="c-divider" aria-hidden="true"></div><div class="c-social-title">Мы в соцсетях</div><div class="c-social"><a class="c-link" href="https://www.instagram.com/kultkartin/" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg><span>Instagram</span></a><a class="c-link" href="https://www.threads.com/@kultkartin" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 7.5c-1.333 -3 -3.667 -4.5 -7 -4.5c-5 0 -8 2.5 -8 9s3.5 9 8 9s7 -3 7 -5s-1 -5 -7 -5c-2.5 0 -3 1.25 -3 2.5c0 1.5 1 2.5 2.5 2.5c2.5 0 3.5 -1.5 3.5 -5s-2 -4 -3 -4s-1.833 .333 -2.5 1" /></svg><span>Threads</span></a><a class="c-link" href="https://t.me/kultkartin" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg><span>Telegram</span></a><a class="c-link" href="https://www.youtube.com/@kultkartin" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8" /><path d="M10 9l5 3l-5 3l0 -6" /></svg><span>YouTube</span></a></div></div><div class="foot"><div class="foot-inner"><p class="foot-legal">© Любое использование либо копирование материалов или подборки материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: <a href="https://kultkartin.com" target="_blank" rel="noopener">kultkartin.com</a></p><a class="foot-credit" href="https://leontevadesign.com" target="_blank" rel="noopener">Дизайн и разработка — Анна Леонтьева</a><button class="to-top" type="button" aria-label="Наверх"><span>Наверх</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="M7 10l5-5 5 5"/></svg></button></div></div></footer>
+<aside class="contact-widget" aria-label="Связаться с нами"></aside>
+<div class="products" id="products" hidden></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="lb-x" id="lbx" aria-label="Закрыть">×</button><div class="lb-in"><div class="lb-mat"><img id="lbimg" alt=""></div><div><h4 id="lbt"></h4><p id="lbs"></p><dl class="lb-dl" id="lbd"></dl><a id="lba" href="#" target="_blank" rel="noopener">Спросить про эту картину</a><button class="lib-share-btn" id="lbShare" type="button">Поделиться ссылкой</button><div class="lb-nav"><button id="lbp" aria-label="Предыдущая">←</button><button id="lbn" aria-label="Следующая">→</button></div></div></div></div>
+<script src="assets/pages.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/ramy/data.js"></script>
+<script>
+catalogWorks=()=>[];render();
+const DATA=window.RAMY||[];
+const img=w=>'assets/ramy/s/'+w.id+'.webp',big=w=>'assets/ramy/'+w.id+'.webp',plural=(n,a,b,c)=>n%10==1&&n%100!=11?a:n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?b:c;
+const pics=n=>`${n} ${plural(n,'картина','картины','картин')}`;
+const MAT={W1:'бумага'};
+const QS=new URLSearchParams(location.search);
+/* цена: по букве размера (лист «Размеры» таблицы каталога), валюта — переключатель сайта */
+const curr=()=>{try{return selectedCurrency}catch(e){return'KZT'}};
+const money=w=>{const rub=curr()==='RUB',v=rub?w.rub:w.kzt;return v?new Intl.NumberFormat('ru-RU').format(v)+(rub?' ₽':' ₸'):'Цена по запросу'};
+const BANDS={KZT:[[0,80000,'до 80 000 ₸'],[80000,130000,'80–130 000 ₸'],[130000,1e9,'от 130 000 ₸']],RUB:[[0,15000,'до 15 000 ₽'],[15000,22000,'15–22 000 ₽'],[22000,1e9,'от 22 000 ₽']]};
+const inBand=(w,b)=>{if(!b)return true;const[lo,hi]=BANDS[curr()][b-1],v=curr()==='RUB'?w.rub:w.kzt;return v>=lo&&v<hi};
+let theme=QS.get('tema')||'',rama=QS.get('rama')||'',view=['series','grid','overview'].includes(QS.get('view'))?QS.get('view'):'series',fmt=['v','h','s'].includes(QS.get('format'))?QS.get('format'):'',cena=+QS.get('cena')||0;
+if(!(cena>=1&&cena<=3))cena=0;
+if(theme&&!DATA.some(w=>w.t===theme))theme='';
+if(rama&&!DATA.some(w=>w.r===rama))rama='';
+document.querySelectorAll('#views button').forEach(x=>x.classList.toggle('on',x.dataset.v===view));
+document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x.dataset.f===fmt));
+const stateURL=(art)=>{const q=new URLSearchParams();if(theme)q.set('tema',theme);if(rama)q.set('rama',rama);if(fmt)q.set('format',fmt);if(cena)q.set('cena',cena);if(view!=='series')q.set('view',view);if(art)q.set('art',art);const t=q.toString();return location.origin+location.pathname+(t?'?'+t:'')};
+const syncURL=()=>history.replaceState(null,'',stateURL(cur&&lb.classList.contains('open')?cur.id:''));
+const byCount=list=>{const m=new Map();list.forEach(w=>m.set(w.t,(m.get(w.t)||0)+1));return[...m].sort((a,b)=>b[1]-a[1])};
+const pass=(w,skip)=>(skip==='t'||!theme||w.t===theme)&&(skip==='r'||!rama||w.r===rama)&&(skip==='f'||!fmt||w.f===fmt)&&(skip==='c'||inBand(w,cena));
+document.getElementById('lead').textContent=`${pics(DATA.length)} в раме — так работы выглядят уже оформленными. Под каждой — артикул: в нём размер, рама и паспарту. Назовите артикул менеджеру.`;
+const tEl=document.getElementById('themes');
+const FRAMES=[...new Set(DATA.map(w=>w.r))].sort();
+let drawThemes=()=>{
+ const base=DATA.filter(w=>pass(w,'t'));const counts=Object.fromEntries(byCount(base));const themes=byCount(DATA).map(x=>x[0]).filter(t=>counts[t]||t===theme);
+ tEl.innerHTML=`<button data-t="" class="${theme?'':'on'}">Все<sup>${base.length}</sup></button>`+themes.map(t=>`<button data-t="${t}" class="${t===theme?'on':''}">${t}<sup>${counts[t]||0}</sup></button>`).join('');
+ const fb=DATA.filter(w=>pass(w,'r'));
+ document.getElementById('kinds').innerHTML=`<span class="k-lbl">Рама</span><button data-k="" class="${rama?'':'on'}">Все<sup>${fb.length}</sup></button>`+FRAMES.map(r=>{const n=fb.filter(w=>w.r===r).length;return n||r===rama?`<button data-k="${r}" class="${r===rama?'on':''}">${r}<sup>${n}</sup></button>`:''}).join('');
+ document.getElementById('prc').innerHTML=`<button data-c="0" class="${cena?'':'on'}">Любая цена</button>`+BANDS[curr()].map((b,i)=>`<button data-c="${i+1}" class="${cena===i+1?'on':''}">${b[2]}</button>`).join('');
+};
+const list=()=>DATA.filter(w=>pass(w));
+/* ряд = серия в одной раме, паспарту и декоре */
+const rowKey=w=>w.t+'|'+w.s+'|'+w.r+w.pp+w.d;
+const rowInfo=w=>[`рама ${w.r}`,`паспарту ${w.pp}`,w.d&&`декор ${w.d}`].filter(Boolean).join(' · ');
+const rowPrice=sw=>{const m=sw.reduce((a,w)=>(curr()==='RUB'?w.rub:w.kzt)<(curr()==='RUB'?a.rub:a.kzt)?w:a);return(sw.some(w=>w.kzt!==m.kzt)?'от ':'')+money(m)};
+const thumb=w=>`<button data-id="${w.id}" aria-label="${w.id}"><img loading="lazy" decoding="async" src="${img(w)}" width="${w.w}" height="${w.h}" alt="Картина в раме, артикул ${w.id}"><i>${w.id}</i></button>`;
+function libRender(){
+ const items=list();const groups=byCount(items).map(([t])=>[t,items.filter(w=>w.t===t)]);
+ document.getElementById('count').textContent=pics(items.length);
+ const v=document.getElementById('view');
+ if(!items.length){v.innerHTML='<p class="empty">Под эти фильтры картин нет — снимите один из них.</p>'}
+ else if(view==='series'){
+  v.innerHTML=groups.map(([t,ws])=>{const ser=new Map();ws.forEach(w=>{const k=rowKey(w);if(!ser.has(k))ser.set(k,[]);ser.get(k).push(w)});const rows=[...ser.values()].sort((a,b)=>a[0].s.localeCompare(b[0].s,'ru')||b.length-a.length);
+   return `<section class="theme"><h2>${t}<sup>${ws.length}</sup></h2>${rows.map(sw=>`<div class="row"><div class="row-meta"><b>${sw[0].s}</b><span>${rowInfo(sw[0])}</span><span>${pics(sw.length)} · ${rowPrice(sw)}</span></div><div class="strip">${sw.map(thumb).join('')}</div></div>`).join('')}</section>`}).join('');
+ }else if(view==='grid'){
+  v.innerHTML=`<div class="grid">${items.map(w=>`<button class="tile" data-id="${w.id}"><span class="box"><img loading="lazy" decoding="async" src="${img(w)}" width="${w.w}" height="${w.h}" alt="Картина в раме, артикул ${w.id}"></span><b>${w.id}</b><span>${w.s} · ${money(w)}</span></button>`).join('')}</div>`;
+ }else{
+  v.innerHTML=`<div class="ov"><div>${groups.map(([t,ws],i)=>`<section class="ov-sec" id="t${i}"><h3>${t}<span>${ws.length}</span></h3><div class="mosaic">${ws.map(thumb).join('')}</div></section>`).join('')}</div><nav class="index">${groups.map(([t,ws],i)=>`<a href="#t${i}">${t}<span>${ws.length}</span></a>`).join('')}</nav></div>`;
+ }
+ setStick();
+}
+function setStick(){const top=document.querySelector('.nav').offsetHeight,bar=document.querySelector('.bar');bar.style.top=top+'px';document.documentElement.style.setProperty('--stick',(top+bar.offsetHeight)+'px')}
+addEventListener('resize',setStick);
+const redraw=()=>{drawThemes();libRender();syncURL()};
+document.getElementById('kinds').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;rama=b.dataset.k;redraw()});
+tEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;redraw()});
+document.getElementById('prc').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cena=+b.dataset.c;redraw()});
+document.getElementById('views').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;document.querySelectorAll('#views button').forEach(x=>x.classList.toggle('on',x===b));libRender();syncURL()});
+document.getElementById('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;fmt=b.dataset.f;document.querySelectorAll('#fmt button').forEach(x=>x.classList.toggle('on',x===b));redraw()});
+/* смена валюты в шапке/футере: цены и диапазоны пересчитываются */
+document.addEventListener('click',e=>{if(e.target.closest('[data-currency]'))setTimeout(()=>{redraw();if(cur&&lb.classList.contains('open'))show(cur)},0)});
+/* крупный просмотр: листаем внутри ряда */
+const lb=document.getElementById('lb');let cur=null;
+const rowOf=w=>DATA.filter(x=>rowKey(x)===rowKey(w));
+function show(w){cur=w;const s=rowOf(w),i=s.indexOf(w);document.getElementById('lbimg').src=big(w);document.getElementById('lbt').textContent='Арт. '+w.id;
+ document.getElementById('lbs').innerHTML=`${w.t} · ${w.s}${s.length>1?` · ${i+1} из ${s.length}`:''}`;
+ document.getElementById('lbd').innerHTML=[[`Размер`,w.cm?w.cm+' см':w.sz],['Рама',w.r],['Паспарту',w.pp],w.d&&['Декор',w.d],w.mat&&['Материал',MAT[w.mat]||w.mat],['Цена',money(w)]].filter(Boolean).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('');
+ document.getElementById('lba').href='https://wa.me/77071010814?text='+encodeURIComponent(`Здравствуйте! Интересует картина в раме, артикул ${w.id}.`);lb.classList.add('open');syncURL()}
+const step=d=>{if(!cur)return;const s=rowOf(cur);show(s[(s.indexOf(cur)+d+s.length)%s.length])};
+document.getElementById('view').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(!b)return;show(DATA.find(w=>w.id==b.dataset.id))});
+const closeLb=()=>{lb.classList.remove('open');syncURL()};
+document.getElementById('lbx').onclick=closeLb;
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+document.getElementById('lbp').onclick=()=>step(-1);document.getElementById('lbn').onclick=()=>step(1);
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+let x0=null;lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>40)step(dx<0?1:-1)},{passive:true});
+/* защита от копирования: без контекстного меню и перетаскивания картинок, без Ctrl/Cmd+S */
+['contextmenu','dragstart'].forEach(t=>document.addEventListener(t,e=>{if(e.target.closest('.lib,.lb'))e.preventDefault()}));
+addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&['s','S','ы','Ы'].includes(e.key))e.preventDefault()});
+/* лента тем: стрелки, когда темы не помещаются */
+const thArrL=document.querySelector('.th-arr.l'),thArrR=document.querySelector('.th-arr.r');
+const syncArr=()=>{const m=tEl.scrollWidth-tEl.clientWidth;thArrL.classList.toggle('show',tEl.scrollLeft>4);thArrR.classList.toggle('show',tEl.scrollLeft<m-4)};
+tEl.addEventListener('scroll',syncArr,{passive:true});addEventListener('resize',syncArr);
+thArrL.onclick=()=>tEl.scrollBy({left:-tEl.clientWidth*.7});thArrR.onclick=()=>tEl.scrollBy({left:tEl.clientWidth*.7});
+const drawThemesBase=drawThemes;drawThemes=()=>{const x=tEl.scrollLeft;drawThemesBase();tEl.scrollLeft=x;requestAnimationFrame(syncArr);setTimeout(syncArr,300)};
+document.getElementById('toolsBtn').addEventListener('click',e=>{const open=document.querySelector('.bar').classList.toggle('tools-open');e.currentTarget.setAttribute('aria-expanded',open);setStick()});
+/* поделиться ссылкой: системное меню на телефоне, иначе копируем в буфер */
+const toast=document.createElement('div');toast.className='lib-toast';document.body.appendChild(toast);
+const say=t=>{toast.textContent=t;toast.classList.add('show');clearTimeout(say.t);say.t=setTimeout(()=>toast.classList.remove('show'),2200)};
+async function share(url,title){if(navigator.share&&matchMedia('(pointer:coarse)').matches){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url);say('Ссылка скопирована')}catch(e){prompt('Скопируйте ссылку',url)}}
+document.getElementById('libShare').addEventListener('click',()=>share(stateURL(),'Картины в раме'+(theme?' — '+theme:'')+' | КУЛЬТКАРТИН'));
+document.getElementById('lbShare').addEventListener('click',()=>{if(cur)share(stateURL(cur.id),`Арт. ${cur.id} — Картины в раме | КУЛЬТКАРТИН`)});
+const libTop=document.getElementById('libTop');
+addEventListener('scroll',()=>libTop.classList.toggle('show',scrollY>innerHeight*.8),{passive:true});
+libTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+drawThemes();libRender();
+{const a=QS.get('art'),w=a&&DATA.find(x=>x.id===a);if(w)show(w);else syncURL()}
+if(theme)setTimeout(()=>{const b=tEl.querySelector('button.on');if(b)tEl.scrollLeft=b.offsetLeft-40;syncArr()},50);
+</script>
+</body>
+</html>

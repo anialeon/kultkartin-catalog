@@ -5,6 +5,7 @@
 !work/
 !work/build_seo.py
 !work/build_library.py
+!work/build_ramy.py
 !.github/
 !.github/**
 .DS_Store
