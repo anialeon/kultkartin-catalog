@@ -275,8 +275,8 @@ let drawThemes=()=>{
 };
 const list=()=>DATA.filter(w=>pass(w));
 /* ряд = серия в одной раме, паспарту и декоре */
-const rowKey=w=>w.t+'|'+w.s+'|'+w.r+w.pp+w.d;
-const rowInfo=w=>[`рама ${w.r}`,`паспарту ${w.pp}`,w.d&&`декор ${w.d}`].filter(Boolean).join(' · ');
+const rowKey=w=>w.t+'|'+w.s+'|'+w.sz+w.r+w.pp+w.d;
+const rowInfo=w=>[w.cm&&w.cm+' см',`рама ${w.r}`,`паспарту ${w.pp}`,w.d&&`декор ${w.d}`].filter(Boolean).join(' · ');
 const rowPrice=sw=>{const m=sw.reduce((a,w)=>(curr()==='RUB'?w.rub:w.kzt)<(curr()==='RUB'?a.rub:a.kzt)?w:a);return(sw.some(w=>w.kzt!==m.kzt)?'от ':'')+money(m)};
 const thumb=w=>`<button data-id="${w.id}" aria-label="${w.id}"><img loading="lazy" decoding="async" src="${img(w)}" width="${w.w}" height="${w.h}" alt="Картина в раме, артикул ${w.id}"><i>${w.id}</i></button>`;
 function libRender(){
