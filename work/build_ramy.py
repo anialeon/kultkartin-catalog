@@ -19,6 +19,11 @@ SQUARE = set('JCRNY')
 LAT = str.maketrans('АВСЕНКМОРТХ', 'ABCEHKMOPTX')
 BIG, SMALL = 1100, 420
 FIX = {'Черно белые орхидеи': 'Черно-белые орхидеи', 'Попугай': 'Попугаи'}  # опечатки в названиях папок
+# плакаты лежат одной папкой — серия по номеру иллюстрации (Анна, 2026-11-11)
+POSTERS = {'Паруса': '750 753 754 755 756 757 972 1101 1102 1103 1104', 'Нью-Йорк': '765 766 777 778 779',
+           'Гонки': '791 792 793 794 971', 'Города': '795 796 797 798', 'Гравюры': '787 788 789 790',
+           'Абстракция': '841 844 845 847 856 857', 'Папоротники': '4238'}
+POSTERS = {n: s for s, ns in POSTERS.items() for n in ns.split()}
 
 
 def get(url, tries=5):
@@ -119,6 +124,9 @@ def main(dry):
             else:
                 w['theme'] = w['theme'] or 'Разное'
                 w['series'] = w['theme']
+    for w in items.values():
+        if w['theme'] == 'Плакаты':
+            w['series'] = POSTERS.get(w['num'], 'Плакаты')
     print('фото', sum(1 for _ in items), 'нераспознано', len(bad))
     for b in bad: print('  ?', b)
     from collections import Counter
