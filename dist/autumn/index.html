@@ -113,8 +113,8 @@ body.schema [data-block]{outline:1px dashed rgba(154,74,42,.28);outline-offset:-
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* ---------- 02 concept ---------- */
-.concept{height:280vh;background:#241615}
-.concept-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center;padding:var(--hdr) var(--pad) 0}
+.concept{background:#241615} /* текст «О коллекции» виден сразу, без прокрутки по словам */
+.concept-sticky{position:relative;height:100vh;overflow:hidden;display:grid;place-items:center;padding:var(--hdr) var(--pad) 0}
 .concept-bg{position:absolute;inset:-14% 0;will-change:transform}
 .concept-bg .ph{height:100%;background:#8c7b6f}
 .concept-bg .ph::after{left:var(--pad);bottom:calc(14% + 22px);color:#d9cbbf}
@@ -123,7 +123,7 @@ body.schema [data-block]{outline:1px dashed rgba(154,74,42,.28);outline-offset:-
 .concept-txt .eyebrow{color:#e8d6c8;display:block;margin-bottom:30px}
 .concept p.words{font:400 clamp(30px,4.2vw,62px)/1.14 var(--serif);margin:0;letter-spacing:-.01em}
 .concept .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
-.concept .w>span{display:inline-block;transform:translateY(110%);opacity:0;transition:transform .9s var(--ease),opacity .7s var(--out)}
+.concept .w>span{display:inline-block}
 .concept .w.on>span{transform:none;opacity:1}
 .concept .w.it>span{font-style:italic;color:#e5ab7f}
 
@@ -638,11 +638,9 @@ body.on-theme .chapter{opacity:0}
   .cta{min-height:100svh;padding:calc(var(--hdr) + 20px) var(--pad) 40px}
 }
 @media (max-width:900px){
-  /* «О коллекции» на телефоне: блок ~65% экрана, слова проявляются волной сразу при появлении */
-  .concept{height:auto}
+  /* «О коллекции» на телефоне: блок ~65% экрана */
   .concept-sticky{position:relative;height:65svh;min-height:440px;padding:56px var(--pad)}
   .concept-txt .eyebrow{margin-bottom:20px}.concept p.words{font-size:clamp(26px,7.4vw,34px)}
-  .concept .w>span{transition-delay:calc(var(--i) * 22ms)}
 }
 @media (hover:none){
   .card .ov{display:none}
@@ -1345,8 +1343,6 @@ function loop(){
       const c=$('#concept'),cr=c.getBoundingClientRect(),cp=Math.min(1,Math.max(0,-cr.top/(c.offsetHeight-innerHeight)));
       const vis=cr.top<innerHeight&&cr.bottom>0;
       if(vis){const pp=(innerHeight-cr.top)/(c.offsetHeight+innerHeight);$('#conceptBg').style.transform=`translateY(${(pp-.5)*-16}%) scale(${1.12-pp*.1})`}
-      if(innerWidth<=900){if(cr.top<innerHeight*.8)words.forEach(w=>w.classList.add('on'))}
-      else words.forEach((w,i)=>w.classList.toggle('on',i/words.length<(cp-.04)/.6));
     }
     if(innerWidth>900){const r=hs.getBoundingClientRect(),d=hs.offsetHeight-innerHeight,p=Math.min(1,Math.max(0,-r.top/d));
       track.style.transform=`translateX(${-p*(track.scrollWidth-innerWidth)}px)`;
