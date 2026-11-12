@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<base href="/mishinadesign/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Евгения Мишина — дизайн интерьера</title>
+<meta name="description" content="Портфолио дизайнера интерьера Евгении Мишиной: квартиры и дома в Алматы и Москве.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Евгения Мишина — дизайн интерьера">
+<meta property="og:description" content="Портфолио: квартиры и дома, реализованные проекты.">
+<meta property="og:image" content="https://kultkartin.com/mishinadesign/img/almaty/1.webp">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* стиль как у barbarabarry.com/projects; Karla без кириллицы — вместо неё Manrope */
+:root{--ink:#222;--text:rgba(64,64,64,.6);--soft:rgba(15,15,15,.4);--line:#ddd;--foot:#f5efec;--sans:Manrope,Arial,sans-serif;--pad:50px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--text);font:400 18px/1.8 var(--sans);letter-spacing:.04em;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+img{display:block;max-width:100%}
+
+/* шапка */
+.hdr{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;max-width:calc(1700px + 2 * var(--pad));margin:0 auto;padding:34px var(--pad) 0;height:92px;color:var(--ink)}
+.hdr nav{display:flex;gap:39px;font-size:13px;line-height:1;letter-spacing:.15em;text-transform:uppercase}
+/* пункты по краям сетки, как у референса; -.15em убирает хвост letter-spacing справа */
+.hdr nav:last-of-type{justify-content:flex-end;margin-right:-.15em}
+.hdr nav a:hover{opacity:.6}
+.logo{font-size:28px;line-height:1;letter-spacing:.21em;text-transform:uppercase;white-space:nowrap;padding-left:.21em}
+.burger{display:none}
+
+/* проекты */
+.page{max-width:1700px;margin:0 auto;padding:88px var(--pad) 120px}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 39px;margin:0 0 72px;font-size:13px;line-height:1;letter-spacing:.15em;text-transform:uppercase}
+.tab{border:0;background:none;padding:0 0 6px;cursor:pointer;color:var(--soft);border-bottom:1px solid transparent;transition:color .2s}
+.tab:hover{color:var(--ink)}
+.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
+.place{max-width:604px;margin:0 auto;text-align:center;text-transform:uppercase}
+.place p{margin:0}
+.place .desc{text-transform:none;font-size:16px;line-height:1.85;margin:12px 0 22px}
+.place hr{border:0;height:1px;background:var(--line);margin:9px 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.cell{display:block;padding:0;border:0;background:#f3f1ef;aspect-ratio:1;overflow:hidden;cursor:pointer}
+.cell img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}
+.cell img.ld{opacity:1}
+.cell:focus-visible{outline:1px solid var(--ink);outline-offset:2px}
+.next{display:block;margin:72px auto 0;border:0;background:none;padding:0;cursor:pointer;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)}
+.next:hover{opacity:.6}
+
+/* обо мне и процесс */
+.about-me{max-width:1700px;margin:0 auto;padding:0 var(--pad) 140px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,120px);align-items:center;scroll-margin-top:40px}
+.about-me img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-me .txt{max-width:480px}
+.about-me .lbl{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--soft);margin:0 0 22px}
+.about-me h2{font-size:28px;font-weight:400;line-height:1.35;letter-spacing:.06em;color:var(--ink);margin:0 0 26px}
+.about-me p{font-size:16px;line-height:1.85;margin:0 0 14px}
+.process{max-width:1700px;margin:0 auto;padding:0 var(--pad) 140px;scroll-margin-top:40px}
+.process[hidden]{display:none}
+.cell.ph{cursor:default}
+
+/* контакты */
+.contact{background:#2c2b28;color:#efebe4;padding:120px var(--pad) 110px;text-align:center}
+.contact .lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a39d93;margin:0}
+.contact h2{font-weight:300;font-size:clamp(34px,4.4vw,58px);line-height:1.15;letter-spacing:.02em;color:#efebe4;margin:22px 0 18px}
+.contact .sub{font-size:16px;line-height:1.8;color:#b9b2a7;max-width:460px;margin:0 auto 46px}
+.c-links{display:flex;max-width:900px;margin:0 auto;border-top:1px solid rgba(239,235,228,.18);border-bottom:1px solid rgba(239,235,228,.18)}
+.c-links a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:26px 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;transition:background .25s}
+.c-links a+a{border-left:1px solid rgba(239,235,228,.18)}
+.c-links a:hover{background:rgba(239,235,228,.07)}
+.c-links .ln{width:18px;height:18px}
+
+/* футер */
+.ftr{background:#2c2b28;color:#8f897f;padding:0 var(--pad) 34px}
+.ftr-in{max-width:1700px;margin:0 auto;padding-top:28px;border-top:1px solid rgba(239,235,228,.12);display:flex;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;font-size:12px;line-height:1.6;letter-spacing:.12em;text-transform:uppercase}
+.ftr a:hover{color:#efebe4}
+
+/* стрелка наверх */
+.up{position:fixed;right:24px;bottom:24px;z-index:30;width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(34,34,34,.25);background:rgba(255,255,255,.92);color:var(--ink);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .3s,transform .3s,visibility .3s,background .2s,color .2s}
+.up.on{opacity:1;visibility:visible;transform:none}
+.up:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.up .ln{width:22px;height:22px;stroke-width:1.2}
+
+/* галерея на весь экран */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.95);display:none;user-select:none}
+.lb.open{display:block;animation:lbin .3s ease both}
+@keyframes lbin{from{opacity:0}}
+.lb-stage{position:absolute;inset:15px 20px;touch-action:pan-y}
+.lb-stage img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;transition:opacity .25s}
+.lb-stage img.fade{opacity:0}
+.lb button{position:absolute;border:0;background:none;padding:0;color:#ccc;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb button:hover{color:#fff}
+.lb-close{top:15px;right:21px;width:24px;height:24px}
+.lb-prev,.lb-next{top:50%;width:44px;height:44px;margin-top:-22px;opacity:0;transition:opacity .3s}
+.lb:hover .lb-prev,.lb:hover .lb-next{opacity:1}
+.lb-prev{left:20px}.lb-next{right:20px}
+.ln{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.lb-close .ln{width:24px;height:24px}
+.lb-prev .ln,.lb-next .ln{width:44px;height:44px;stroke-width:1}
+
+@media (max-width:767px){
+  :root{--pad:20px}
+  html{scroll-padding-top:60px}
+  .hdr{position:sticky;top:0;z-index:20;background:#fff;height:52px;padding:0 var(--pad);grid-template-columns:44px 1fr 44px}
+  .hdr nav{display:none}
+  .logo{grid-column:2;text-align:center;font-size:17px;letter-spacing:.2em;padding-left:.2em}
+  .burger{grid-column:3;justify-self:end;display:flex;flex-direction:column;justify-content:center;gap:7px;width:30px;height:44px;border:0;background:none;padding:0;cursor:pointer}
+  .burger i{display:block;height:1px;background:var(--ink)}
+  .menu{position:fixed;inset:52px 0 0;z-index:19;background:#fff;display:none;flex-direction:column;align-items:center;gap:30px;padding-top:60px;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)}
+  .menu.open{display:flex}
+  .menu-soc{display:flex;gap:28px;margin-top:22px;padding-top:30px;border-top:1px solid var(--line);color:rgba(34,34,34,.45)}
+  .menu-soc a{display:flex;padding:4px}
+  .menu-soc .ln{width:22px;height:22px}
+  .page{padding:60px var(--pad) 80px}
+  .tabs{gap:14px 24px;margin-bottom:48px;font-size:12px}
+  .place{font-size:16px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-me{grid-template-columns:1fr;gap:32px;padding-bottom:90px}
+  .about-me h2{font-size:22px}
+  .process{padding-bottom:90px}
+  .contact{padding:80px var(--pad) 70px}
+  .c-links{flex-direction:column}
+  .c-links a+a{border-left:0;border-top:1px solid rgba(239,235,228,.18)}
+  .ftr-in{flex-direction:column;align-items:center;text-align:center}
+  .lb-stage{inset:52px 0}
+  .up{right:16px;bottom:16px;width:44px;height:44px}
+  .lb-prev,.lb-next{display:none!important}
+}
+@media (min-width:768px){.menu{display:none!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <nav><a href="#about">Обо мне</a><a href="#projects">Проекты</a></nav>
+  <a class="logo" href="./">Евгения Мишина</a>
+  <nav><a href="#process">Процесс</a><a href="#contacts">Контакты</a></nav>
+  <button class="burger" id="burger" aria-label="Меню"><i></i><i></i></button>
+</header>
+<div class="menu" id="menu"><a href="#about">Обо мне</a><a href="#projects">Проекты</a><a href="#process">Процесс</a><a href="#contacts">Контакты</a>
+  <div class="menu-soc">
+    <a href="https://wa.me/77470546046" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ln" viewBox="0 0 24 24"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+    <a href="https://t.me/+79000969793" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ln" viewBox="0 0 24 24"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg></a>
+    <a href="https://www.instagram.com/mishinadesign" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ln" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg></a>
+  </div>
+</div>
+
+<main class="page" id="projects">
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="place" id="head"></div>
+  <div class="grid" id="grid"></div>
+  <button class="next" id="next"></button>
+</main>
+
+<section class="about-me" id="about">
+  <img src="img/about-s.webp" srcset="img/about-s.webp 720w, img/about.webp 960w" sizes="(max-width:767px) 100vw, 50vw" alt="Евгения Мишина в гостиной одного из своих проектов" loading="lazy" style="aspect-ratio:3/4">
+  <div class="txt">
+    <p class="lbl">Обо мне</p>
+    <h2>Евгения Мишина</h2>
+    <p>Я дизайнер интерьера. Проектирую квартиры и загородные дома под то, как живёт семья: планировку, свет, цвет стен, мебель, текстиль.</p>
+    <p>Люблю классику с характером: орнаментальные обои, глубокие цвета дверей, мрамор, старинную мебель рядом с современной. Веду проект от первого разговора и эскизов до момента, когда в доме расставлены вазы и висят картины.</p>
+    <p>Я основательница галереи <a href="https://kultkartin.com/" style="color:var(--ink);border-bottom:1px solid var(--line)">«Культкартин»</a>. Мы делаем картины для интерьеров, поэтому искусство в моих проектах появляется вместе с первыми эскизами, а не в последний день.</p>
+  </div>
+</section>
+
+<section class="process" id="process" hidden>
+  <div class="place"><p>Процесс работы</p><hr></div>
+  <div class="grid" id="pgrid"></div>
+</section>
+
+<section class="contact" id="contacts">
+  <p class="lbl">Контакты</p>
+  <h2>Обсудим ваш интерьер</h2>
+  <p class="sub">Расскажите о квартире или доме, я отвечу и предложу формат работы.</p>
+  <div class="c-links">
+    <a href="https://wa.me/77470546046" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>WhatsApp</a>
+    <a href="https://t.me/+79000969793" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg>Telegram</a>
+    <a href="https://www.instagram.com/mishinadesign" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg>Instagram</a>
+  </div>
+</section>
+<footer class="ftr"><div class="ftr-in"><span>© 2026 Евгения Мишина · Дизайнер интерьеров</span><a href="tel:+77470546046">+7 747 054 60 46</a><a href="https://kultkartin.com/">Картины — Культкартин</a></div></footer>
+
+<button class="up" id="up" aria-label="Наверх"><svg class="ln" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6l6 6"/></svg></button>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Галерея проекта">
+  <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
+  <button class="lb-prev" id="lbPrev" aria-label="Предыдущее фото"><svg class="ln" viewBox="0 0 24 24"><path d="M15 6l-6 6l6 6"/></svg></button>
+  <button class="lb-next" id="lbNext" aria-label="Следующее фото"><svg class="ln" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></svg></button>
+  <button class="lb-close" id="lbClose" aria-label="Закрыть"><svg class="ln" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+</div>
+
+<script src="data.js?v=3"></script>
+<script>
+// Проекты: slug = папка в img/, cover = номер фото для вкладки
+const PROJECTS = [
+  {slug:'almaty',   title:'Квартира в Алматы',        place:'Алматы',  cover:1, about:'Светлая квартира в классическом духе: голубые обои с орнаментом, тёмно-синие двери, мраморные ванные и кухня с открытыми полками.'},
+  {slug:'klassika', title:'Дом в мятных тонах',       place:'Загородный дом', cover:11, about:'Мятные стены, кобальтовые акценты, лестница с белыми балясинами и детская с домиками-шкафами.'},
+  {slug:'cvetnaya', title:'Цветная квартира',         place:'Квартира', cover:5, about:'Смелые цвета: розовая спальня, ванные с волнами и птицами, гостиная с изумрудными порталами.'},
+  {slug:'dvushka',  title:'Двухкомнатная квартира',   place:'Квартира', cover:2, about:'Небольшая квартира с бирюзовыми дверями, синей нишей и ванной с рыбками на обоях.'}
+];
+PROJECTS.forEach(p => p.n = (window.ZH_PHOTOS[p.slug] || []).length);
+
+const $ = id => document.getElementById(id);
+// без висящих предлогов: после коротких слов и перед тире — неразрывный пробел
+const NB = /(^|[\s(«])(в|во|и|а|с|со|к|ко|о|об|от|до|на|по|за|из|у|не|но|ни|да|для|под|над|при|без|про|что|как|или|из-за)\s+/gi;
+function typo(root){
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  for (let n; (n = w.nextNode());) n.nodeValue = n.nodeValue.replace(NB, '$1$2\u00a0').replace(NB, '$1$2\u00a0').replace(/\s+—/g, '\u00a0—');
+  root.querySelectorAll('[alt]').forEach(i => i.alt = i.alt.replace(NB, '$1$2\u00a0'));
+}
+const src = (p, i, small) => `img/${p.slug}/${small ? 's/' : ''}${i}.webp`;
+let cur = 0;
+
+// вкладки
+$('tabs').innerHTML = PROJECTS.map((p, k) =>
+  `<button class="tab" role="tab" data-k="${k}">${p.title}</button>`).join('');
+$('tabs').addEventListener('click', e => { const b = e.target.closest('.tab'); if (b) show(+b.dataset.k, true); });
+
+function show(k, user){
+  cur = (k + PROJECTS.length) % PROJECTS.length;
+  const p = PROJECTS[cur];
+  document.querySelectorAll('.tab').forEach((t, j) => { t.classList.toggle('on', j === cur); t.setAttribute('aria-selected', j === cur); });
+  $('head').innerHTML = `<p>${p.title}</p><div class="desc">${p.about}</div><hr>`;
+  const g = $('grid');
+  g.innerHTML = Array.from({length: p.n}, (_, i) =>
+    `<button class="cell" data-i="${i + 1}" aria-label="Открыть фото ${i + 1}"><img src="${src(p, i + 1, 1)}" alt="${p.title}, фото ${i + 1}" loading="${i < 9 ? 'eager' : 'lazy'}" decoding="async" onload="this.classList.add('ld')"></button>`).join('');
+  $('next').textContent = 'Следующий проект →';
+  typo($('head'));
+  if (user){
+    history.replaceState(null, '', '#' + p.slug);
+    if ($('tabs').getBoundingClientRect().top < 0) $('projects').scrollIntoView({behavior:'smooth'});
+  }
+}
+$('next').onclick = () => show(cur + 1, true);
+$('grid').addEventListener('click', e => { const c = e.target.closest('.cell'); if (c) openLb(+c.dataset.i); });
+
+// галерея на весь экран
+let li = 1, set = null;
+const PROCESS = {slug:'process', title:'Процесс работы', n:(window.ZH_PHOTOS.process || []).length};
+function openLb(i, s){ li = i; set = s || PROJECTS[cur]; $('lb').classList.add('open'); document.body.style.overflow = 'hidden'; drawLb(); $('lbClose').focus(); }
+function closeLb(){ $('lb').classList.remove('open'); document.body.style.overflow = ''; const c = $(set === PROCESS ? 'pgrid' : 'grid').querySelector(`[data-i="${li}"]`); c && c.focus({preventScroll:false}); }
+function drawLb(){
+  const p = set, img = $('lbImg');
+  img.classList.add('fade');
+  const pre = new Image(); pre.src = src(p, li);
+  pre.onload = pre.onerror = () => { img.src = pre.src; img.alt = `${p.title}, фото ${li}`; img.classList.remove('fade'); };
+  [li + 1, li - 1].forEach(j => { if (j >= 1 && j <= p.n) new Image().src = src(p, j); });
+}
+function step(d){ const n = set.n; li = (li - 1 + d + n) % n + 1; drawLb(); }
+$('lbPrev').onclick = () => step(-1); $('lbNext').onclick = () => step(1); $('lbClose').onclick = closeLb;
+$('lbStage').addEventListener('click', e => { if (e.target === e.currentTarget) closeLb(); else step(e.clientX < innerWidth / 2 ? -1 : 1); });
+addEventListener('keydown', e => {
+  if (!$('lb').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb(); else if (e.key === 'ArrowRight') step(1); else if (e.key === 'ArrowLeft') step(-1);
+});
+let sx = null;
+$('lbStage').addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+$('lbStage').addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1); });
+
+// процесс работы: фото с айфона, папка img/process; пока фото нет — пустые квадраты
+$('process').hidden = false;
+if (!PROCESS.n) $('pgrid').innerHTML = '<div class="cell ph"></div>'.repeat(6);
+else {
+  $('pgrid').innerHTML = Array.from({length: PROCESS.n}, (_, i) =>
+    `<button class="cell" data-i="${i + 1}" aria-label="Открыть фото ${i + 1}"><img src="${src(PROCESS, i + 1, 1)}" alt="Процесс работы, фото ${i + 1}" loading="lazy" decoding="async" onload="this.classList.add('ld')"></button>`).join('');
+  $('pgrid').addEventListener('click', e => { const c = e.target.closest('.cell'); if (c) openLb(+c.dataset.i, PROCESS); });
+}
+
+// стрелка наверх: видна после первого экрана
+const up = $('up');
+const onUp = () => up.classList.toggle('on', scrollY > innerHeight * .8);
+addEventListener('scroll', onUp, {passive:true}); onUp();
+up.onclick = () => scrollTo({top:0, behavior:'smooth'});
+
+// мобильное меню
+$('burger').onclick = () => $('menu').classList.toggle('open');
+$('menu').onclick = () => $('menu').classList.remove('open');
+
+// старт: проект из адреса (#klassika) или первый
+const start = PROJECTS.findIndex(p => '#' + p.slug === location.hash);
+show(start < 0 ? 0 : start, false);
+typo(document.body);
+
+</script>
+</body>
+</html>
