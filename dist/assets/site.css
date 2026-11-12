@@ -448,7 +448,7 @@ html body .reason-list{overflow-x:clip}
 .product-image img.pod{object-fit:contain;background:#fff}
 
 /* Мобильный каталог: нижняя панель разделов на всю ширину, чат прячется, пока она на экране */
-@media(max-width:850px){.cat-dock{left:0;right:0;bottom:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom));gap:6px;background:#fff;border:0;border-top:1px solid #e3d3c0;border-radius:0;box-shadow:0 -8px 24px rgba(68,5,18,.08)}
+@media(max-width:850px){.cat-dock{left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));padding:5px;gap:5px;background:#fff;border:1px solid #e3d3c0;border-radius:14px;box-shadow:0 10px 28px rgba(68,5,18,.16)}
 .cat-dock button{flex:1;padding:14px 4px;font:500 14px/1 var(--sans);letter-spacing:0;color:#440512;border-radius:10px;transition:background .25s,color .25s}
 .cat-dock button.active{background:var(--dark);color:#fff}
 .cat-dock button.active::after,.cat-dock button+button::before{display:none}
