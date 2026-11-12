@@ -184,7 +184,7 @@ img{display:block;max-width:100%}
     <a href="https://www.instagram.com/mishinadesign" target="_blank" rel="noopener"><svg class="ln" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg>Instagram</a>
   </div>
 </section>
-<footer class="ftr"><div class="ftr-in"><span>© 2026 Евгения Мишина · Дизайнер интерьеров</span><a href="tel:+77470546046">+7 747 054 60 46</a><a href="https://kultkartin.com/">Картины — Культкартин</a></div></footer>
+<footer class="ftr"><div class="ftr-in"><span>© 2026 Евгения Мишина · Дизайнер интерьеров</span><a href="https://kultkartin.com/">Картины — Культкартин</a></div></footer>
 
 <button class="up" id="up" aria-label="Наверх"><svg class="ln" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6l6 6"/></svg></button>
 
@@ -274,7 +274,14 @@ else {
 
 // стрелка наверх: видна после первого экрана
 const up = $('up');
-const onUp = () => up.classList.toggle('on', scrollY > innerHeight * .8);
+const ftrLine = document.querySelector('.ftr-in');
+const onUp = () => {
+  up.classList.toggle('on', scrollY > innerHeight * .8);
+  // у футера стрелка поднимается над линией, чтобы не закрывать текст
+  const base = innerWidth < 768 ? 16 : 24, top = ftrLine.getBoundingClientRect().top;
+  up.style.bottom = Math.max(base, innerHeight - top + 16) + 'px';
+};
+addEventListener('resize', onUp);
 addEventListener('scroll', onUp, {passive:true}); onUp();
 up.onclick = () => scrollTo({top:0, behavior:'smooth'});
 
