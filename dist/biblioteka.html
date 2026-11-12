@@ -117,7 +117,8 @@ h1{font:300 clamp(56px,9vw,120px)/.95 var(--serif);letter-spacing:-.01em;margin:
 .mosaic{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:6px}
 .mosaic button{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}.mosaic img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transition:transform .3s,opacity .3s}
 .mosaic button:hover img{transform:scale(1.06);opacity:.9}
-.index{position:sticky;top:170px;align-self:start;display:grid;gap:6px;font-size:13px}
+.index{position:sticky;top:calc(var(--stick,150px) + 20px);align-self:start;display:grid;gap:6px;font-size:13px;max-height:calc(100vh - var(--stick,150px) - 180px);overflow-y:auto;scrollbar-width:thin;padding-right:6px}
+.ov-sec{scroll-margin-top:calc(var(--stick,150px) + 12px)}
 .index a{color:var(--muted);text-decoration:none;display:flex;justify-content:space-between;border-bottom:1px solid #eee3d5;padding:4px 0}
 .index a:hover{color:var(--wine)}
 /* лайтбокс */
@@ -265,6 +266,9 @@ function libRender(){
   v.innerHTML=`<div class="ov"><div>${groups.map(([t,ws],i)=>`<section class="ov-sec" id="t${i}"><h3>${t}<span>${ws.length}</span></h3><div class="mosaic">${ws.map(thumb).join('')}</div></section>`).join('')}</div><nav class="index">${groups.map(([t,ws],i)=>`<a href="#t${i}">${t}<span>${ws.length}</span></a>`).join('')}</nav></div>`;
  }
  setStick();
+ /* после смены фильтра — к началу результатов, а не туда, куда упёрлась прокрутка (иначе выкидывает в футер) */
+ const y=document.querySelector('.count-row').getBoundingClientRect().top+scrollY-parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--stick'));
+ if(scrollY>y)scrollTo({top:y,behavior:'instant'});
 }
 /* заголовок темы прилипает сразу под шапкой и панелью фильтров (их закреплённая высота, а не текущее положение) */
 function setStick(){const top=document.querySelector('.nav').offsetHeight,bar=document.querySelector('.bar');document.querySelector('.bar').style.top=top+'px';document.documentElement.style.setProperty('--stick',(top+bar.offsetHeight)+'px')}
