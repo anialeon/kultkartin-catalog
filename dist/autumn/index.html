@@ -916,7 +916,8 @@ body.on-theme .chapter{opacity:0}
 <script>
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const WA='77071010814';
-const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const wa=(t,link='https://kultkartin.com/autumn/')=>`https://wa.me/${WA}?text=${encodeURIComponent(t+'\n\n'+link)}`;
+const workLink=w=>`https://kultkartin.com/autumn/?w=${w.id}`;
 const fmt=n=>n.toLocaleString('ru-RU').replace(/,/g,' ');
 // Валюта: цены хранятся в тенге, рубли — по курсу из таблицы сайта (5.33), округление до 100
 const RATE=5.33;
@@ -1002,7 +1003,7 @@ function syncFav(){
   const L=$('#favList');
   L.innerHTML=fav.length?fav.map(id=>{const w=byId(id);return `<div class="fi">${w.img?`<div class="ph has-img"><img src="${thumb(w.cover||w.img[0])}" alt=""></div>`:`<div class="ph" style="background:${PH_TONES[w.tone]}"></div>`}<div><b>${w.name}</b><small>${w.art}</small></div><button data-rm="${id}">Убрать</button></div>`}).join('')
     :'<div class="fav-empty">Здесь появятся работы,<br>отмеченные сердечком</div>';
-  const list=fav.map(id=>{const w=byId(id);return `— ${w.name} (${w.art})`}).join('\n');
+  const list=fav.map(id=>{const w=byId(id);return `— ${w.name} (${w.art}) ${workLink(w)}`}).join('\n');
   $('#favSend').href=wa(`Здравствуйте! Мне понравились работы из лукбука «Осень»:\n${list}\nПодскажите стоимость и варианты размеров.`);
   $('#favSend').target='_blank';
 }
@@ -1216,7 +1217,7 @@ function cardHTML(w,span){
       <div class="ov"><button data-open="${w.id}" data-tab="similar">Похожие</button><button data-open="${w.id}">Подробнее</button></div>
     </div>
     <div class="info"><div><h4>${w.name}</h4><div class="art">${w.art}${w.req?"":` · ${w.size?`${w.size} · ${w.gab} см`:"размер по запросу"}`}</div></div>
-      <div class="pr">${w.req?"Цена по запросу":(w.size?"":"от ")+mon(w.from,w.fromRub)}<a href="${wa(`Здравствуйте! Интересует стоимость работы «${w.name}» (${w.art}) из лукбука «Осень».`)}" target="_blank" rel="noopener">Узнать цену</a></div></div>
+      <div class="pr">${w.req?"Цена по запросу":(w.size?"":"от ")+mon(w.from,w.fromRub)}<a href="${wa(`Здравствуйте! Интересует стоимость работы «${w.name}» (${w.art}) из лукбука «Осень».`,workLink(w))}" target="_blank" rel="noopener">Узнать цену</a></div></div>
   </article>`;
 }
 const SPANS=[5,4,3,3,3,3,3,4,4,4,6,3,3];
@@ -1282,10 +1283,10 @@ function openSheet(id,tab){
   </div>
   <div class="similar" id="similar" data-block="14 · Похожие работы" data-anim="работы в той же гамме; клик открывает новую карточку"><h3>Похожие работы</h3><div class="sim-grid">${sim.map(x=>cardHTML(x)).join('')}</div></div>`;
   const upd=()=>{const s=SZ[st.s];
-    if(w.req)$('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень». Подскажите, в каких размерах она есть и сколько стоит.`);
+    if(w.req)$('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень». Подскажите, в каких размерах она есть и сколько стоит.`,workLink(w));
     else{setMon($('#shPrice'),s.kzt,s.rub);
     const cfg=`размер ${s.k} (${s.d} см)`;
-    $('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень»: ${cfg}. Подскажите точную стоимость.`);}
+    $('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень»: ${cfg}. Подскажите точную стоимость.`,workLink(w));}
     $('#shFav').innerHTML=HEART+(fav.includes(w.id)?'В избранном':'В избранное');};
   $('#sheet').onclick=e=>{
     if(e.target.closest('[data-close]'))return closeSheet();
@@ -1374,7 +1375,7 @@ function typo(t){return t.replace(/(^|[\s(«„"—–-])([A-Za-zА-Яа-яЁё]
 function typoNode(root){const tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE|TEXTAREA|INPUT)$/.test(n.parentNode.nodeName)||!n.data.trim()?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
   let n;while(n=tw.nextNode()){const v=typo(n.data);if(v!==n.data)n.data=v}}
 new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>n.nodeType===1?typoNode(n):n.nodeType===3&&n.parentNode&&typoNode(n.parentNode)))).observe(document.body,{childList:true,subtree:true});
-renderSelection(); mountTags(); observe(); syncFav(); route(); sizeHS();
+renderSelection(); mountTags(); observe(); syncFav(); route(); sizeHS(); {const qw=new URLSearchParams(location.search).get('w');if(qw&&byId(qw))setTimeout(()=>openSheet(qw),600)}
 setTimeout(()=>$$('#cover .rv').forEach(e=>e.classList.add('in')),300);
 typoNode(document.body);
 document.fonts?.ready.then(sizeHS);
