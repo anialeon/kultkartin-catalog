@@ -256,7 +256,7 @@ def llms(works, sizes, faq):
         '',
         '## Россия',
         '',
-        '- Заказ из любого города России: консультация и заказ в мессенджерах, цены в рублях, отправка по всем городам России. Подробно: ' + SITE + '/rossiya.html',
+        '- Заказ из любого города России: консультация и заказ в мессенджерах, цены в рублях, отправка по всем городам России. Сайт с ценами в рублях: ' + SITE + '/?cur=RUB (адрес для России — kultkartin.ru).',
         '- Менеджер для России: +7 900 096 97 93 (WhatsApp, Telegram, MAX).',
         '- Онлайн-примерка: пришлите фото стены — менеджер бесплатно подберёт картины, размеры и развеску и пришлёт коллаж с ценами.',
         '',
@@ -359,69 +359,6 @@ def product_page(template, w):
     return page
 
 
-RU_FAQ = [
-    ('Можно ли заказать картину из России?', 'Да. Консультация и заказ — в мессенджерах, цены на сайте указаны и в рублях. Отправляем картины во все города России; стоимость и срок доставки менеджер рассчитает под ваш город.'),
-    ('Сколько стоит картина в рублях?', 'Цена фиксированная и зависит только от размера: в неё уже входят рама, паспарту, декор, печать и бумага. Таблица цен — на этой странице, цена каждой работы — на её странице.'),
-    ('Сколько ждать заказ?', 'Изготовление — около 4–5 недель, затем доставка. Точный срок назовёт менеджер при оформлении.'),
-    ('Как понять, подойдёт ли картина к интерьеру?', 'Пришлите фото стены: менеджер бесплатно подберёт работы, размеры и развеску и пришлёт коллаж с ценами.'),
-]
-
-
-def russia_page(template, works, sizes):
-    """Страница «Картины с доставкой по России» (rossiya.html): цены в ₽, как заказать, контакты Москвы; ниже — каталог «Популярные» из site.js в рублях."""
-    e = lambda x: html.escape(x or '', quote=True)
-    url = SITE + '/rossiya.html'
-    title = 'Картины для интерьера с доставкой по России — в раме, цены в рублях | КУЛЬТКАРТИН'
-    rub = [x['rub'] for x in sizes if x['rub']]
-    desc = (f'Картины, гравюры и ботанические постеры в раме с паспарту с доставкой по России' + (f': от {money(min(rub))} ₽' if rub else '')
-            + '. 10 размеров, фиксированные цены в рублях, бесплатная онлайн-примерка по фото стены. Заказ в WhatsApp и Telegram.')
-    page = re.sub(r'<title>.*?</title>', f'<title>{e(title)}</title>', template, count=1, flags=re.S)
-    for attr, value in (('name="description"', desc), ('property="og:title"', title), ('property="og:description"', desc),
-                        ('property="og:url"', url), ('property="og:image"', OG_IMAGE), ('name="twitter:title"', title),
-                        ('name="twitter:description"', desc), ('name="twitter:image"', OG_IMAGE)):
-        page = re.sub(rf'(<meta {attr} content=")[^"]*(")', lambda m: m.group(1) + e(value) + m.group(2), page, count=1)
-    page = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), page, count=1)
-    page = page.replace("<script>document.documentElement.classList.add('kk-wait')</script>\n", '', 1)
-    ld = {'@context': 'https://schema.org', '@graph': [
-        {'@type': 'WebPage', '@id': url, 'url': url, 'name': title, 'description': desc, 'inLanguage': 'ru', 'about': {'@id': SITE + '/#store'},
-         'areaServed': {'@type': 'Country', 'name': 'Россия'}},
-        {'@type': 'OfferCatalog', 'name': 'Цены на картины в рублях', 'itemListElement': [
-            {'@type': 'Offer', 'name': f'Картина в раме, размер {x["code"]}' + (f', изображение {x["image"]} см' if x['image'] else ''),
-             'price': x['rub'], 'priceCurrency': 'RUB', 'areaServed': {'@type': 'Country', 'name': 'Россия'}, 'seller': {'@id': SITE + '/#store'}}
-            for x in sizes if x['rub']]},
-        {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in RU_FAQ]}]}
-    page = page.replace('</head>', '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace('<', '\\u003c') + '</script>\n'
-                        '<script>if(!/[?&]cur=/.test(location.search))history.replaceState(null,"",location.pathname+"?cur=RUB"+location.hash)</script>\n'
-                        '<style>.ru{max-width:1080px;margin:0 auto;padding:clamp(40px,6vw,80px) 20px 20px}.ru h1{font:500 clamp(34px,4.6vw,58px)/1.05 var(--serif);margin:0 0 18px}'
-                        '.ru .lead{max-width:680px;font-size:17px;line-height:1.6;color:#5d534b;margin:0 0 40px}.ru h2{font:500 clamp(26px,3vw,36px)/1.1 var(--serif);margin:48px 0 18px}'
-                        '.ru-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;list-style:none;padding:0;margin:0}.ru-steps li{border:1px solid var(--line);padding:18px;line-height:1.5;font-size:14px}'
-                        '.ru-steps b{display:block;font:500 20px var(--serif);margin-bottom:6px}.ru-prices{width:100%;border-collapse:collapse;font-size:15px}'
-                        '.ru-prices td,.ru-prices th{padding:12px 8px;border-bottom:1px solid var(--line);text-align:left}.ru-prices td:last-child,.ru-prices th:last-child{text-align:right;white-space:nowrap}'
-                        '.ru-note{font-size:14px;color:#6f6762;line-height:1.6}.ru-contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}.ru-contact a{border:1px solid var(--dark);padding:13px 22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}'
-                        '.ru-contact a:first-child{background:var(--dark);color:#fff}@media(max-width:850px){.ru-steps{grid-template-columns:1fr 1fr}}</style>\n</head>', 1)
-    steps = [('Выберите картины', 'Отметьте понравившиеся работы сердечком или пришлите их названия менеджеру.'),
-             ('Пришлите фото стены', 'Бесплатно подберём размер, раму и развеску и пришлём коллаж с ценами в рублях.'),
-             ('Подтвердите заказ', 'Менеджер рассчитает доставку до вашего города и назовёт срок.'),
-             ('Получите картину', 'Изготовление — около 4–5 недель, затем отправка в ваш город.')]
-    kinds = {'rect': 'прямоугольный', 'square': 'квадратный'}
-    rows = ''.join(f'<tr><td>{e(x["code"])}</td><td>{e(kinds.get(x["format"], ""))}</td><td>{e(x["image"] + " см" if x["image"] else "")}</td><td>{money(x["rub"])} ₽</td></tr>' for x in sizes if x['rub'])
-    faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in RU_FAQ)
-    body = (f'<section class="ru"><h1>Картины для интерьера с доставкой по России</h1>'
-            f'<p class="lead">Картины, гравюры и ботанические иллюстрации в раме с паспарту. Фиксированные цены в рублях, 10 размеров, '
-            f'бесплатная онлайн-примерка по фото вашей стены. Отправляем во все города России, консультация и заказ — в мессенджерах.</p>'
-            f'<div class="ru-contact"><a href="https://wa.me/79000969793" target="_blank" rel="noopener">Написать в WhatsApp</a>'
-            f'<a href="https://t.me/kult_kartin" target="_blank" rel="noopener">Telegram</a><a href="tel:+79000969793">+7 900 096 97 93</a></div>'
-            f'<h2>Как заказать из России</h2><ol class="ru-steps">' + ''.join(f'<li><b>{i + 1:02d}. {e(t)}</b>{e(d)}</li>' for i, (t, d) in enumerate(steps)) + '</ol>'
-            + (f'<h2>Цены в рублях</h2><table class="ru-prices"><thead><tr><th>Размер</th><th>Формат</th><th>Изображение</th><th>Цена за шт.</th></tr></thead><tbody>{rows}</tbody></table>'
-               '<p class="ru-note">Цена фиксированная и уже включает раму, паспарту, декор, печать и бумагу. Общий габарит зависит от рамы и указан на странице каждой картины. '
-               'Любое изображение можно сделать в другом размере и оформлении.</p>' if rows else '')
-            + f'<h2>Частые вопросы</h2><div class="ru-faq">{faq}</div></section>')
-    page = page.replace('<div class="product-page" id="app"></div>', body, 1)
-    page = page.replace('<h2 class="title">С этой картиной покупают</h2>', '<h2 class="title">Популярные картины</h2>', 1)
-    page = re.sub(r'<script>\s*const productApp=.*?</script>', '', page, count=1, flags=re.S)
-    return page
-
-
 def yml_feed(works):
     """Товарный фид для Яндекса (YML): каждая картина в каждом размере — отдельное предложение в рублях."""
     e = lambda x: html.escape(x or '', quote=False)
@@ -456,7 +393,7 @@ def main():
     page = replace_block(page, 'catalog', catalog_cards(works))
     open(index_path, 'w', encoding='utf-8').write(page)
 
-    urls = [(SITE + '/', '1.0'), (SITE + '/autumn/', '0.9'), (SITE + '/rossiya.html', '0.9')] + [(product_url(w), '0.8') for w in works]  # /autumn/ — лукбук «Осень» 2026
+    urls = [(SITE + '/', '1.0'), (SITE + '/autumn/', '0.9')] + [(product_url(w), '0.8') for w in works]  # /autumn/ — лукбук «Осень» 2026
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f'<url><loc>{html.escape(u)}</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>' for u, p in urls]
     sitemap.append('</urlset>')
@@ -483,7 +420,6 @@ def main():
         open(os.path.join(pages_dir, f'{w["id"]}.html'), 'w', encoding='utf-8').write(product_page(template, w))
     open(os.path.join(DIST, 'assets', 'pages.js'), 'w', encoding='utf-8').write(
         '// Сгенерировано work/build_seo.py: картины, у которых есть готовая страница kartiny/ID.html\nwindow.kkStaticPages=' + json.dumps([w['id'] for w in works]) + ';\n')
-    open(os.path.join(DIST, 'rossiya.html'), 'w', encoding='utf-8').write(russia_page(template, works, sizes))
     open(os.path.join(DIST, 'feed.yml'), 'w', encoding='utf-8').write(yml_feed(works))
     print(f'ok: {len(works)} картин, {len(sizes)} размеров, {len(faq)} вопросов')
 
