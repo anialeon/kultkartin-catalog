@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-11-16T18:22">
+<shop>
+<name>КУЛЬТКАРТИН</name>
+<company>Студия декора «Культкартин»</company>
+<url>https://kultkartin.com/</url>
+<currencies><currency id="RUR" rate="1"/></currencies>
+<categories>
+<category id="1">Живопись</category>
+<category id="2">Иллюстрация</category>
+<category id="3">Графика</category>
+<category id="4">Фотография</category>
+<category id="5">Абстракция</category>
+</categories>
+<offers>
+<offer id="9-M" group_id="9" available="true">
+<name>Белые розы I — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
+<url>https://kultkartin.com/kartiny/9.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1f2zoYTftAltiOqZvChbn0wy8E3dWlECw=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежная ботаническая иллюстрация с белыми розами в классической манере. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">41,5 × 51,5 см</param>
+</offer>
+<offer id="10-M" group_id="10" available="true">
+<name>Белые розы II — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
+<url>https://kultkartin.com/kartiny/10.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1_3bBnfFsC8tQlK6khyhh539g3ZydKT_q=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая ботаника в тёплой гамме: уместна в спальне, гостиной и кабинете. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">41,5 × 51,5 см</param>
+</offer>
+<offer id="11-M" group_id="11" available="true">
+<name>Нежная роза I — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
+<url>https://kultkartin.com/kartiny/11.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1JtFuuI2BB3eOyeogPqIxR0MlxnB0w5TC=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойный цветочный сюжет с мягкой палитрой. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">41,5 × 51,5 см</param>
+</offer>
+<offer id="12-M" group_id="12" available="true">
+<name>Нежная роза II — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
+<url>https://kultkartin.com/kartiny/12.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1AQ4xfy0tykzeG9KNVDmuZH3P6XhJwE3J=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, которую легко сочетать с другими в галерее. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">41,5 × 51,5 см</param>
+</offer>
+<offer id="13-L" group_id="13" available="true">
+<name>Орхидея на зелёном. Ветвь — картина в раме с паспарту, размер L, 60 × 70 см</name>
+<url>https://kultkartin.com/kartiny/13.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1l8b8G71xlrhZAvuHV9UrwLSsv4FCcBXw=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графика в нейтральной гамме для сдержанного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">60 × 70 см</param>
+</offer>
+<offer id="14-L" group_id="14" available="true">
+<name>Орхидея на зелёном. Цветок — картина в раме с паспарту, размер L, 60 × 70 см</name>
+<url>https://kultkartin.com/kartiny/14.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1U-rsZHoL3VehbNe-4kK-MmgSpCuLhw1Z=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика, которая работает как спокойный акцент. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">60 × 70 см</param>
+</offer>
+<offer id="15-L" group_id="15" available="true">
+<name>Орхидея на зелёном. Листья — картина в раме с паспарту, размер L, 60 × 70 см</name>
+<url>https://kultkartin.com/kartiny/15.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Uj2oVeCSXdnuHROZ_QKXkxrBVZTZFIWh=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная ботаническая графика для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">60 × 70 см</param>
+</offer>
+<offer id="16-L" group_id="16" available="true">
+<name>Орхидея на зелёном. Дуга — картина в раме с паспарту, размер L, 60 × 70 см</name>
+<url>https://kultkartin.com/kartiny/16.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1m292FhABVeOkYoZ5qwymFzZvQfUnBZVO=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Выразительная линия и мягкий фон: работа подойдёт в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">60 × 70 см</param>
+</offer>
+<offer id="17-A" group_id="17" available="true">
+<name>Зелёная ветвь I — картина в раме с паспарту, размер A, 72 × 82 см</name>
+<url>https://kultkartin.com/kartiny/17.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1dbMJgyq20kEYPDqlJEmps2DOGl1d2QS8=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Свежая ботаника, которая добавляет интерьеру природную спокойную ноту. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">72 × 82 см</param>
+</offer>
+<offer id="18-A" group_id="18" available="true">
+<name>Зелёная ветвь II — картина в раме с паспарту, размер A, 72 × 82 см</name>
+<url>https://kultkartin.com/kartiny/18.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1gtCEtND7a0bGyF_Qvzk24axUVGg_Zki8=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Натуральные цвета и чистая композиция для гостиной или кабинета. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">72 × 82 см</param>
+</offer>
+<offer id="19-A" group_id="19" available="true">
+<name>Крайслер-билдинг. Небо — картина в раме с паспарту, размер A, 72 × 82 см</name>
+<url>https://kultkartin.com/kartiny/19.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1I4ibYCepG7kW0KdWCvxPRgHdXghI-oJ7=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная чёрно-белая фотография с выразительным небом. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">72 × 82 см</param>
+</offer>
+<offer id="20-A" group_id="20" available="true">
+<name>Крайслер-билдинг. Ночной город — картина в раме с паспарту, размер A, 72 × 82 см</name>
+<url>https://kultkartin.com/kartiny/20.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1M8o1DKkGEneoTMEkpdA5UDGwgJH9FKjI=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Городской сюжет для кабинета, гостиной или лофта. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">72 × 82 см</param>
+</offer>
+<offer id="21-A" group_id="21" available="true">
+<name>Крайслер-билдинг. Фонарь — картина в раме с паспарту, размер A, 72 × 82 см</name>
+<url>https://kultkartin.com/kartiny/21.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/17gOP8RMYIM2BydaG098VSLGlE771Cimq=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная классика в монохроме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">72 × 82 см</param>
+</offer>
+<offer id="22-A" group_id="22" available="true">
+<name>Гран-при Монако, 1955 — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/22.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1DOX9F6tIlvjrHiW1NFoQ2ZHt0tUAkc0_=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Ретро-фотография большого автоспорта, подойдёт для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="23-A" group_id="23" available="true">
+<name>Гран-при Франции, Реймс, 1954 — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/23.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ujm79p5TgOSiQbm7LoQGas2yLdFelxkD=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Динамичный кадр из истории автоспорта. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="24-A" group_id="24" available="true">
+<name>Британский Гран-при, Сильверстоун, 1956 — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/24.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/10pGHXAl8KgCDB0j9PVp_4Jpo0Fl_0_eo=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Историческая фотография гонки для ценителей автомобильной классики. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="25-A" group_id="25" available="true">
+<name>Девять часов Гудвуда, 1953 — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/25.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/19aURzd0E0UDy88DG7tRaFfqw9h89dM0S=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Ретро-снимок гонки с характером. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="26-A" group_id="26" available="true">
+<name>Флоренция — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/26.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1RN4Voon0EUQtkCG9yeIzfn5paWvqQsdj=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Итальянский городской пейзаж в классической гравюре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="27-A" group_id="27" available="true">
+<name>Милан — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/27.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1nMmoo6RuBS51e6ToefG32fDlrN4DodhG=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная гравюра для интерьера в классическом стиле. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="28-A" group_id="28" available="true">
+<name>Рим — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/28.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1-PYpXvxSAKOvKg6ztSUIx8G6hj-SBEuv=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Римский сюжет в графике: хорошо смотрится в серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="29-A" group_id="29" available="true">
+<name>Венеция — картина в раме с паспарту, размер A, 82 × 72 см</name>
+<url>https://kultkartin.com/kartiny/29.html</url>
+<price>29000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/124HvuiPoQ1HRoJoUGLzxfljcRg0IP-OJ=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Венецианский пейзаж в тонкой штриховой графике. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">A</param>
+<param name="Габарит">82 × 72 см</param>
+</offer>
+<offer id="30-M" group_id="30" available="true">
+<name>Белый гербарий I — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/30.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1NrwEYhVQ31AAm3g08UTd2qInzrsYre_g=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичный гербарий с мягкой цветовой палитрой. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="31-M" group_id="31" available="true">
+<name>Белый гербарий II — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/31.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/13AyP1a-QwlVuE2_bVuAhXRO-ZaqGnYNZ=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лёгкий растительный сюжет, который удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="32-M" group_id="32" available="true">
+<name>Белый гербарий III — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/32.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1DNAeXGroxSRPpQXCg7ausLIyq1Rpxkex=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойная ботаника для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="33-M" group_id="33" available="true">
+<name>Белый гербарий IV — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/33.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/11GMl-fnHp0W5DNyVdBucrrQWTjzQEWHh=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная работа в природных тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="34-M" group_id="34" available="true">
+<name>Белый гербарий V — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/34.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1XzqXsXZfJpfTlDALPE1GcfC06CFFTGxb=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичный гербарий для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="35-M" group_id="35" available="true">
+<name>Белый гербарий VI — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/35.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1LAa2CDI8iXYfv3HaDpyZ2GW65hkIz8Ar=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежный растительный орнамент, хорошо работает в композиции из нескольких картин. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="36-M" group_id="36" available="true">
+<name>Бабочки I — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/36.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1aqY4_FJS6C2Ng-jFVUOZT6j6jXNHSxqO=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Яркий натуралистичный сюжет с тёплыми оттенками. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="37-M" group_id="37" available="true">
+<name>Бабочки II — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/37.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/16nGhkBiY6LxI0XeNtH1olGwctjJLLpzy=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Коллекционная энтомологическая иллюстрация. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="38-M" group_id="38" available="true">
+<name>Классический фасад I — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/38.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ZSfJ-WrJuG3H6iTw5KuIoDZWvRr4Tq-J=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная иллюстрация для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="39-M" group_id="39" available="true">
+<name>Классический фасад II — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/39.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1YZKz0c_exLzEoQwXgsWlmyNG0Hr49H7b=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная классика в спокойной гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="40-M" group_id="40" available="true">
+<name>Классический фасад III — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/40.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1l2VmQjjqXe7qqcEeWoD_TNwfn36v_zWH=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Историческая архитектура в акварельной манере. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="41-M" group_id="41" available="true">
+<name>Классический фасад IV — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/41.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1QpNd13lXKeN7uyDF7sWuJ_VjKtz2g4V1=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Элегантная архитектурная работа для интерьера в классическом стиле. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="42-M" group_id="42" available="true">
+<name>Берег. Парус — картина в раме с паспарту, размер M, 47 × 37 см</name>
+<url>https://kultkartin.com/kartiny/42.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/15RpnmEAd3MnDAi8zS23aDJeZ5nP36Xkw=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Морской сюжет в тонкой гравюре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">47 × 37 см</param>
+</offer>
+<offer id="43-M" group_id="43" available="true">
+<name>Берег. Холмы — картина в раме с паспарту, размер M, 47 × 37 см</name>
+<url>https://kultkartin.com/kartiny/43.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1wOkQ3QrmuONv11fWDTX23wiAe_F1EVF_=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойный пейзаж для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">47 × 37 см</param>
+</offer>
+<offer id="44-M" group_id="44" available="true">
+<name>Скалистый берег — картина в раме с паспарту, размер M, 47 × 37 см</name>
+<url>https://kultkartin.com/kartiny/44.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/13gmZ_fyndHwQ1CxJ64FBZcwR8RBeNLTJ=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графика для сдержанных интерьеров. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">47 × 37 см</param>
+</offer>
+<offer id="45-M" group_id="45" available="true">
+<name>Скала-арка — картина в раме с паспарту, размер M, 47 × 37 см</name>
+<url>https://kultkartin.com/kartiny/45.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1lZKRkU1QwmT-4KuzfMCt8h_lKZJozBge=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Выразительный морской пейзаж в штриховой технике. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">47 × 37 см</param>
+</offer>
+<offer id="46-M" group_id="46" available="true">
+<name>Гран-при Монако, 1955. Вариант 2 — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/46.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ggCm-hCrWvcENu6G_TltDNlJggwYLRrN=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Ретро-фотография автоспорта для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="47-M" group_id="47" available="true">
+<name>Гран-при Франции, Реймс, 1954. Вариант 2 — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/47.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1osNWLARtQagLBLvqnm0_97MKlPSJbAKa=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Динамичный кадр из истории автоспорта. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="48-M" group_id="48" available="true">
+<name>Британский Гран-при, Сильверстоун, 1956. Вариант 2 — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/48.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Ck04dj8wPUPqVXGAXIx2SIj3JuUcm0L9=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Историческая фотография гонки для ценителей автомобильной классики. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="49-M" group_id="49" available="true">
+<name>Девять часов Гудвуда, 1953. Вариант 2 — картина в раме с паспарту, размер M, 51,5 × 41,5 см</name>
+<url>https://kultkartin.com/kartiny/49.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/17ovAzK-6x61koVnTYXni8BuaYVvb160-=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Ретро-снимок гонки с характером. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">51,5 × 41,5 см</param>
+</offer>
+<offer id="50-M" group_id="50" available="true">
+<name>Античная ваза. Кубок — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/50.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1VGQiHLTpXIFwCV-wkVCGX1CKlSk3Oif6=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая иллюстрация для спокойного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="51-M" group_id="51" available="true">
+<name>Античная ваза. Урна с крышкой — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/51.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1PONxLPmkElXJLbD9MRv2jF-2ZEF_7H2a=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Элегантный предметный сюжет в серо-голубых тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="52-M" group_id="52" available="true">
+<name>Античная ваза. Кратер — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/52.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1usfVWIjSbD7eol_IsE3VgPZHy00EmM6q=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классика для гостиной и кабинета, удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="53-M" group_id="53" available="true">
+<name>Античная ваза. Ваза с ручками — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/53.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1dBFOwDnKwU9t1iU6BLDaPjIVBy9KYJ7V=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Предметная иллюстрация в благородной палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="54-M" group_id="54" available="true">
+<name>Античная ваза. Амфора — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/54.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/19Y6Wwill8FTvXqOB0_3rDry50JJDoz3s=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанный классический сюжет. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="55-M" group_id="55" available="true">
+<name>Античная ваза. Урна — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/55.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1JVskD7Q1zqyaN9xRwhYe16QAFQWLjI4p=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная работа в серо-голубой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="56-R" group_id="56" available="true">
+<name>Туманный пейзаж I — картина в раме с паспарту, размер R, 61 × 61 см</name>
+<url>https://kultkartin.com/kartiny/56.html</url>
+<price>22000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1C42mBcSfYD4Jo-7p2LPufTcMRt_KKW8s=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Мягкая абстракция для спокойного пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">R</param>
+<param name="Габарит">61 × 61 см</param>
+</offer>
+<offer id="57-R" group_id="57" available="true">
+<name>Туманный пейзаж II — картина в раме с паспарту, размер R, 61 × 61 см</name>
+<url>https://kultkartin.com/kartiny/57.html</url>
+<price>22000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/152phHxrIJWwJ7L-MDw7a5H3zXQcBGJ7y=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тёплая и светлая работа, которая хорошо смотрится в группе. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">R</param>
+<param name="Габарит">61 × 61 см</param>
+</offer>
+<offer id="58-R" group_id="58" available="true">
+<name>Туманный пейзаж III — картина в раме с паспарту, размер R, 61 × 61 см</name>
+<url>https://kultkartin.com/kartiny/58.html</url>
+<price>22000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1v8fgwvTxLwHjptW_4Wc2AF4TjaLzfy1i=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лёгкая абстракция для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">R</param>
+<param name="Габарит">61 × 61 см</param>
+</offer>
+<offer id="59-R" group_id="59" available="true">
+<name>Туманный пейзаж IV — картина в раме с паспарту, размер R, 61 × 61 см</name>
+<url>https://kultkartin.com/kartiny/59.html</url>
+<price>22000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/14yHb-apuygdyIA1A6_COJaZHJDM6G627=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойный пейзаж с нейтральной палитрой. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">R</param>
+<param name="Габарит">61 × 61 см</param>
+</offer>
+<offer id="60-S" group_id="60" available="true">
+<name>Орхидея. Чёрно-белая гравюра I — картина в раме с паспарту, размер S, 26,5 × 33 см</name>
+<url>https://kultkartin.com/kartiny/60.html</url>
+<price>11000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Dlaw0eI-4t3Fk-7EnT-_NYmZ803ILktK=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная ботаника для светлого и нейтрального интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">S</param>
+<param name="Габарит">26,5 × 33 см</param>
+</offer>
+<offer id="61-S" group_id="61" available="true">
+<name>Орхидея. Чёрно-белая гравюра II — картина в раме с паспарту, размер S, 26,5 × 33 см</name>
+<url>https://kultkartin.com/kartiny/61.html</url>
+<price>11000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Lk5g4vYcF-T7QNuMbxZ4R8-VwMFeXvi7=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">S</param>
+<param name="Габарит">26,5 × 33 см</param>
+</offer>
+<offer id="62-X" group_id="62" available="true">
+<name>Колибри I — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/62.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1VKJ1gsVaXGboHucCwuTH2Qx8wkC2Me4r=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Яркая птица на мягком фоне для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="63-X" group_id="63" available="true">
+<name>Колибри II — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/63.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1lIU9MrDhIbUIjGZAhE9dIvCa7vaWzORL=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Изящный орнитологический сюжет. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="64-X" group_id="64" available="true">
+<name>Колибри III — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/64.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ylqToc-EmJi6X_idGg0C1zXSYd8vzoPm=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежная и живая иллюстрация. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="65-X" group_id="65" available="true">
+<name>Колибри IV — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/65.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1oSqMp-mCd6KIgDgAkK7ZqWmFXO2xiE1l=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тёплый природный сюжет для интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="66-X" group_id="66" available="true">
+<name>Белая орхидея I — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/66.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1OURcM507gGlTEopuGUDLsrf44ZBFk4Jx=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Выразительная ботаника для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="67-X" group_id="67" available="true">
+<name>Белая орхидея II — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/67.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1EwYYhKJVjhPYl6M7txP7FIQskGjF1JTw=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежные цветы на спокойном фоне. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="68-X" group_id="68" available="true">
+<name>Белая орхидея III — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/68.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1lKU-TkX8u-m9d7TQiZavgYpYgX_-jlHk=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая ботаника в природной палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="69-X" group_id="69" available="true">
+<name>Белая орхидея IV — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/69.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1fBNRNoiUqnsZra15WQ25TlwDGTy90-lO=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Эффектная работа с крупным цветком. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="70-X" group_id="70" available="true">
+<name>Шиповник I — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/70.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1nbbdn27rEPXkpC0B9pyQtlQamqFTSE61=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежная ботаника для спокойного пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="71-X" group_id="71" available="true">
+<name>Шиповник II — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/71.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1RFxx6JZF44ehYTrAeWRVfJjJAvWgf96q=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая иллюстрация в мягкой палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="72-X" group_id="72" available="true">
+<name>Шиповник III — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/72.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1HyyFBxSYeoJ3BM5Drol-85NzQXdTeDNr=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лёгкий цветочный сюжет для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="73-X" group_id="73" available="true">
+<name>Шиповник IV — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/73.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ydTFFUUvGp5yV16skZ0ie6Tfkh58w33t=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаника для гостиной и кабинета. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="74-X" group_id="74" available="true">
+<name>Греческий храм — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/74.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1kzmws8LSfsJ98394X95nHX-QuWesw7Vq=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная работа для классического интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="75-X" group_id="75" available="true">
+<name>Палаццо с арочными окнами I — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/75.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1O4KfS-02om4XFgOGyrKT87c9mFBwWtF9=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая архитектурная иллюстрация для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="76-X" group_id="76" available="true">
+<name>Палаццо с арочными окнами II — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/76.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1oF6aznG1BIBS-LTsAZGdGI49qxeRBILA=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная классика в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="77-X" group_id="77" available="true">
+<name>Вилла с парадной лестницей — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/77.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1GNYuYA60ktbxYNSMu_ZDKex9yIzIfkyq=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Элегантный архитектурный сюжет для классического интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="78-X" group_id="78" available="true">
+<name>Городской дворец — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/78.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/18lopjdXj2xIqBwyIT8zsiAtijqwa1fvO=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Строгая и нарядная архитектурная работа. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="79-X" group_id="79" available="true">
+<name>Особняк с лепниной I — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/79.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1wZP0h0dgLamB_7o_qfkJ_UZhrjs9sF2v=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Архитектурная иллюстрация в спокойной палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="80-X" group_id="80" available="true">
+<name>Особняк с лепниной II — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/80.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1kqxMxGu2Tjw-9IgRfJLRTemeYHRgza3Q=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Историческая архитектура для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="81-X" group_id="81" available="true">
+<name>Триумфальная арка — картина в раме с паспарту, размер X, 60 × 50 см</name>
+<url>https://kultkartin.com/kartiny/81.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/14QIXXqeJ0KiOwKXgF1W-opAnxZabq17q=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Выразительный архитектурный акцент. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">60 × 50 см</param>
+</offer>
+<offer id="82-C" group_id="82" available="true">
+<name>Рододендрон I — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/82.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1oXfSf3XlGDEGYNRe3Y0qj_bhK7BMHitf=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежная ботаника в квадратном формате. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="83-C" group_id="83" available="true">
+<name>Магнолия — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/83.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1jblqegprfkqzF9qbv2MNckFheFYUwK39=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая ботаническая иллюстрация в природной палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="84-C" group_id="84" available="true">
+<name>Рододендрон II — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/84.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1sUAonYN-0R1bkKJCxkKQrGh_e8aNfR24=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойная цветочная работа для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="85-C" group_id="85" available="true">
+<name>Остров в отражении — картина в раме с паспарту, размер C, 48 × 48 см</name>
+<url>https://kultkartin.com/kartiny/85.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1JQvADJiJiKzpa9uZjvzElBPSJ7YJ2DZs=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тёплая пейзажная фотография в сепии для спокойного пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">48 × 48 см</param>
+</offer>
+<offer id="86-C" group_id="86" available="true">
+<name>Болотные травы на закате — картина в раме с паспарту, размер C, 48 × 48 см</name>
+<url>https://kultkartin.com/kartiny/86.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Rx7zpT3p6X_0yZrqOPhaIMZXcEwUzvfH=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Мягкий пейзаж, который хорошо смотрится в паре с «Островом в отражении». Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">48 × 48 см</param>
+</offer>
+<offer id="87-C" group_id="87" available="true">
+<name>Фиолетовые цветы I — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/87.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/11DCUQfH_0XNTr-QxQZn_BmnDw3r2LQ59=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Яркий цветочный акцент в светлой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="88-C" group_id="88" available="true">
+<name>Фиолетовые цветы II — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/88.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1E-0KGs31rAamRDl-uOLbxbJJvJ7xFtkH=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лёгкая ботаника для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="89-C" group_id="89" available="true">
+<name>Чернильные линии I — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/89.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1cBwSepOOrZcTGpxxhddjZtKFPFhqQK5J=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="90-C" group_id="90" available="true">
+<name>Чернильные линии II — картина в раме с паспарту, размер C, 48 × 48 см</name>
+<url>https://kultkartin.com/kartiny/90.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1I1gG45nQBOijgbFfaSaRj5dWDF91iGGC=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">48 × 48 см</param>
+</offer>
+<offer id="91-C" group_id="91" available="true">
+<name>Чернильные линии III — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/91.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Pg_j9xplpKMAi4ty-RctJAAjbLmBIlgk=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="92-C" group_id="92" available="true">
+<name>Чернильные линии IV — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/92.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1c6gbxSW2QU77nsnsGIRpfUHsRriN3krz=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="93-C" group_id="93" available="true">
+<name>Чернильные линии V — картина в раме с паспарту, размер C, 48 × 48 см</name>
+<url>https://kultkartin.com/kartiny/93.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1qBhThR7do1b8NXEI2fBeqvgUUwyFoKya=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">48 × 48 см</param>
+</offer>
+<offer id="94-C" group_id="94" available="true">
+<name>Чернильные линии VI — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/94.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1SG0ugBothSdVAC4V1aQaEMF49Iiwao8v=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичная абстракция с живой линией для современного интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="95-J" group_id="95" available="true">
+<name>Орхидея на белом I — картина в раме с паспарту, размер J, 34 × 34 см</name>
+<url>https://kultkartin.com/kartiny/95.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/19EuZaDbaUl_x7W91xvUx3nHhTdsbDDL2=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика в квадратном формате. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">J</param>
+<param name="Габарит">34 × 34 см</param>
+</offer>
+<offer id="96-J" group_id="96" available="true">
+<name>Орхидея на белом II — картина в раме с паспарту, размер J, 34 × 34 см</name>
+<url>https://kultkartin.com/kartiny/96.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1PU_3V7Hpij0FQMJ48jbWzEZXrPJ-Igsd=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика в квадратном формате. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">J</param>
+<param name="Габарит">34 × 34 см</param>
+</offer>
+<offer id="97-J" group_id="97" available="true">
+<name>Орхидея на белом III — картина в раме с паспарту, размер J, 34 × 34 см</name>
+<url>https://kultkartin.com/kartiny/97.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1-wSDm1CUkuyaCYbLtY9hFXPjNJPvFHI8=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика в квадратном формате. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">J</param>
+<param name="Габарит">34 × 34 см</param>
+</offer>
+<offer id="98-J" group_id="98" available="true">
+<name>Орхидея на белом IV — картина в раме с паспарту, размер J, 34 × 34 см</name>
+<url>https://kultkartin.com/kartiny/98.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1J24V-V2La-XTH4py9sV0hblYUGE1mJQR=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая штриховая графика в квадратном формате. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">J</param>
+<param name="Габарит">34 × 34 см</param>
+</offer>
+<offer id="99-L" group_id="99" available="true">
+<name>Травы в сепии I — картина в раме с паспарту, размер L, 64,5 × 74,5 см</name>
+<url>https://kultkartin.com/kartiny/99.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1BUMvtosaZmKd75RWB7nzyA1YAKhJy-hk=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная ботаника в тёплых тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">64,5 × 74,5 см</param>
+</offer>
+<offer id="100-L" group_id="100" available="true">
+<name>Травы в сепии II — картина в раме с паспарту, размер L, 64,5 × 74,5 см</name>
+<url>https://kultkartin.com/kartiny/100.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1nuqe1B13NNUg7WXlol92jsFxj93XxY_k=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная ботаника в тёплых тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">64,5 × 74,5 см</param>
+</offer>
+<offer id="101-L" group_id="101" available="true">
+<name>Травы в сепии III — картина в раме с паспарту, размер L, 64,5 × 74,5 см</name>
+<url>https://kultkartin.com/kartiny/101.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1O6vcwFkHNmN16dmyJnkSkk6tb4nw1ODg=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная ботаника в тёплых тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">64,5 × 74,5 см</param>
+</offer>
+<offer id="102-L" group_id="102" available="true">
+<name>Травы в сепии IV — картина в раме с паспарту, размер L, 64,5 × 74,5 см</name>
+<url>https://kultkartin.com/kartiny/102.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1dkWo7H1sY7WFRj9ln8ZADwpKk4-cqB6h=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная ботаника в тёплых тонах. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">64,5 × 74,5 см</param>
+</offer>
+<offer id="103-L" group_id="103" available="true">
+<name>Лаванда. Силуэт — картина в раме с паспарту, размер L, 62,8 × 72,8 см</name>
+<url>https://kultkartin.com/kartiny/103.html</url>
+<price>21000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1mIsi4YEqVi70lTjRMXnAs8gVadBTqmMV=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичный растительный сюжет для светлых интерьеров. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">L</param>
+<param name="Габарит">62,8 × 72,8 см</param>
+</offer>
+<offer id="104-M" group_id="104" available="true">
+<name>Роза Альба — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/104.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/15aZFObLZQhqfs3gZ3UiCTEtivD0G25fG=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Классическая ботаника для спокойного пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="105-M" group_id="105" available="true">
+<name>Шиповник V — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/105.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1p_6DOq31rK2p0wEaj1aRb8-IEViv4OMY=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, удобная для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="106-M" group_id="106" available="true">
+<name>Шиповник VI — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/106.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1pYa8wUfnhFmqf7Q51_U3sTyei23yKFrZ=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, удобная для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="107-M" group_id="107" available="true">
+<name>Шиповник VII — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/107.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1LNk-QKqWg03NfMBhfwUiXAsgrgZTZou1=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, удобная для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="108-M" group_id="108" available="true">
+<name>Шиповник VIII — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/108.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1NAUrCLvASxFSUE-JfiFJIDtC-iEFspbr=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, удобная для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="109-M" group_id="109" available="true">
+<name>Шиповник IX — картина в раме с паспарту, размер M, 37 × 47 см</name>
+<url>https://kultkartin.com/kartiny/109.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1d5U1zU2EaNeCnmmydfXnDgXfevr4ksNN=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Деликатная ботаническая работа, удобная для серии. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">37 × 47 см</param>
+</offer>
+<offer id="110-M" group_id="110" available="true">
+<name>Травы в сепии V — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/110.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/19cPJ_ZJITWxdegUyDg8TMJO0qcGhcycm=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная ботаника для нейтрального интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="111-M" group_id="111" available="true">
+<name>Травы в сепии VI — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/111.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/18x7AddTjLFlXVQbAOlNKhxaz2HZHIww3=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная ботаника для нейтрального интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="112-M" group_id="112" available="true">
+<name>Травы в сепии VII — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/112.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1U29OkrtV-X-4V5CArG_HMSCxLjFJa1Gh=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная ботаника для нейтрального интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="113-M" group_id="113" available="true">
+<name>Травы в сепии VIII — картина в раме с паспарту, размер M, 35 × 45 см</name>
+<url>https://kultkartin.com/kartiny/113.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1JcUuHR0jSqDItKmWBpbsb7_i45EjO34O=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная ботаника для нейтрального интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">35 × 45 см</param>
+</offer>
+<offer id="114-M" group_id="114" available="true">
+<name>Сиреневые соцветия I — картина в раме с паспарту, размер M, 36 × 46 см</name>
+<url>https://kultkartin.com/kartiny/114.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1UFHMQLmwWb_NDSTjk2WevSRNEj8yhNSq=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежный цветочный акцент. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">36 × 46 см</param>
+</offer>
+<offer id="115-M" group_id="115" available="true">
+<name>Сиреневые соцветия II — картина в раме с паспарту, размер M, 36 × 46 см</name>
+<url>https://kultkartin.com/kartiny/115.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1aWUHk6eOqtZck0wSz8AWWtOK36SnvR5-=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойная ботаника в светлой палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">36 × 46 см</param>
+</offer>
+<offer id="116-M" group_id="116" available="true">
+<name>Орхидеи на песочном I — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/116.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1sIsG7yZfSu5xwfuIjlMcfnbsKNxIvNHP=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="117-M" group_id="117" available="true">
+<name>Орхидеи на песочном II — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/117.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/195ZQjsOsUoW17o1kEJJ83QU0BhU8iACJ=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="118-M" group_id="118" available="true">
+<name>Орхидеи на песочном III — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/118.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1nTo7_hPH_mVJOuidVNg1OsJ2_kmahRkM=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="119-M" group_id="119" available="true">
+<name>Орхидеи на песочном IV — картина в раме с паспарту, размер M, 34 × 44 см</name>
+<url>https://kultkartin.com/kartiny/119.html</url>
+<price>14000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Od5mkDJSpmRcVd9WXwuFZDc1B-P4TfIB=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">M</param>
+<param name="Габарит">34 × 44 см</param>
+</offer>
+<offer id="120-X" group_id="120" available="true">
+<name>Орхидеи на песочном V — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/120.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1mQlZ9jyX_IimJqDSwxBFBp45TEeDABKL=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="121-X" group_id="121" available="true">
+<name>Орхидеи на песочном VI — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/121.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/12cUNwqJi9DW0g-pmSVS9w6-i3d4tlVJP=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="122-X" group_id="122" available="true">
+<name>Орхидеи на песочном VII — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/122.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1VXgYA4vgxkcVcJhVi0LEfex33nk787De=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="123-X" group_id="123" available="true">
+<name>Орхидеи на песочном VIII — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/123.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1zmUPHjvj3wjoAJyJZp18UyOSACGmhD_Y=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тонкая графика, которую удобно собирать в серию. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="124-X" group_id="124" available="true">
+<name>Фаленопсис I — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/124.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1VGfIY4qxqLdLuhkPzUrvNAJipjmGVLw0=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Свежий цветочный сюжет для гостиной и спальни. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="125-X" group_id="125" available="true">
+<name>Фаленопсис II — картина в раме с паспарту, размер X, 54,5 × 64,5 см</name>
+<url>https://kultkartin.com/kartiny/125.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1DItyyCb-xJzR2kzKb7_RrrhA4a9SN84Y=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Нежная и выразительная ботаника. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">54,5 × 64,5 см</param>
+</offer>
+<offer id="126-X" group_id="126" available="true">
+<name>Орхидея. Линия I — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/126.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1FEM0B2PzMclZq3roa_R1MJts3pQenNAI=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная графика для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="127-X" group_id="127" available="true">
+<name>Орхидея. Линия II — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/127.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1M2sMkHaqeh7_1sR4CfJB_4-KE2bY8J9S=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная графика для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="128-X" group_id="128" available="true">
+<name>Орхидея. Линия III — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/128.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1D-5QPngCjhWBRhLWa6CcL88DqI_XWsVT=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная графика для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="129-X" group_id="129" available="true">
+<name>Орхидея. Линия IV — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/129.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1r6ood66y-h4IWc6ttYUqrHuyW8-TtyQk=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лаконичная графика для светлого пространства. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="130-X" group_id="130" available="true">
+<name>Травы в сепии IX — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/130.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ga6kB2Af4HQeUg7B6xVKbIC1W9N3MChd=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная работа в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="131-X" group_id="131" available="true">
+<name>Травы в сепии X — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/131.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1Tn49FIqEjWmP15tlERutUURipenRjmhv=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная работа в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="132-X" group_id="132" available="true">
+<name>Травы в сепии XI — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/132.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1upYpOPLfrimsmZdZI-5H4oHD6Dm2Sr-Z=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная работа в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="133-X" group_id="133" available="true">
+<name>Травы в сепии XII — картина в раме с паспарту, размер X, 48 × 58 см</name>
+<url>https://kultkartin.com/kartiny/133.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1gd35odR3aeAMlLVZnN6JlDD-K8srD9gH=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Сдержанная работа в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">48 × 58 см</param>
+</offer>
+<offer id="134-X" group_id="134" available="true">
+<name>Веточка. Силуэт — картина в раме с паспарту, размер X, 50 × 60 см</name>
+<url>https://kultkartin.com/kartiny/134.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/164f2czwrw72C_5v31CP2ZCKKUc7RtT0S=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Графичный лаконичный сюжет. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">X</param>
+<param name="Габарит">50 × 60 см</param>
+</offer>
+<offer id="135-C" group_id="135" available="true">
+<name>Папоротники I — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/135.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/16wlgFvqivEVlc3xjt8txE5_pMveqIugH=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Лёгкий растительный сюжет в нейтральной гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="136-C" group_id="136" available="true">
+<name>Папоротники II — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/136.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1I_G0emjFwG2qWVmn8mx-7M7QW2-QsKlw=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Спокойная работа для светлых интерьеров. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="137-C" group_id="137" available="true">
+<name>Абстракция. Коричневые мазки I — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/137.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1cXU6zW3kKwgn__6Zbj9137QhI7S2Nuur=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Современная абстракция в природной гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="138-C" group_id="138" available="true">
+<name>Абстракция. Коричневые мазки II — картина в раме с паспарту, размер C, 50 × 50 см</name>
+<url>https://kultkartin.com/kartiny/138.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1m7uGSrWCzWFXxA7wFuljTMiej66rzaOC=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Тёплая абстракция для гостиной и кабинета. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">50 × 50 см</param>
+</offer>
+<offer id="139-C" group_id="139" available="true">
+<name>Абстракция. Синий и охра — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/139.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1ThYvJE8R0Vk8-sdADVjcSOR03lQ1Ta8f=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Яркая и живая работа-акцент. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+<offer id="140-C" group_id="140" available="true">
+<name>Абстракция. Линии и акварель — картина в раме с паспарту, размер C, 49 × 49 см</name>
+<url>https://kultkartin.com/kartiny/140.html</url>
+<price>16000</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://lh3.googleusercontent.com/d/1g712LJ8l5MAX8nopbG-6c0WkCrDRNgWC=w1200-rj</picture>
+<vendor>КУЛЬТКАРТИН</vendor>
+<description>Динамичная абстракция с лёгкой линией. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
+<param name="Размер">C</param>
+<param name="Габарит">49 × 49 см</param>
+</offer>
+</offers>
+</shop>
+</yml_catalog>
