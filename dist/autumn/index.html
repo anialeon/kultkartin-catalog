@@ -1380,6 +1380,8 @@ setTimeout(()=>$$('#cover .rv').forEach(e=>e.classList.add('in')),300);
 typoNode(document.body);
 document.fonts?.ready.then(sizeHS);
 requestAnimationFrame(loop);
+// Метрика: цели «wa_click» (какая кнопка) и «phone_click»
+document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a)return;const h=a.getAttribute('href')||'',g=(n,p)=>{try{window.ym&&ym(113787938,'reachGoal',n,p)}catch(_){}};if(/wa\.me\//.test(h)){const b=a.id==='shAsk'?'Осень: карточка работы':a.id==='favSend'?'Осень: избранное':a.id==='decorAsk'?'Осень: размеры':a.closest('#mgr')?'Осень: менеджер онлайн':a.closest('.pr')?'Осень: узнать цену':'Осень: '+a.textContent.trim().slice(0,40);g('wa_click',{knopka:b,stranica:'/autumn/'+location.search})}else if(/^tel:/.test(h))g('phone_click',{stranica:'/autumn/'})},true);
 </script>
 </body>
 </html>
