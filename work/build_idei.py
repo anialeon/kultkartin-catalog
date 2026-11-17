@@ -63,7 +63,7 @@ CSS = """<style>
 .idea-body{display:grid;grid-template-columns:minmax(0,720px);justify-content:center;gap:clamp(26px,4vw,44px)}
 .idea-body h2{font:500 clamp(28px,3.2vw,40px)/1.1 var(--serif);margin:0 0 12px}
 .idea-body p{font-size:17px;line-height:1.7;margin:0 0 12px;color:#2c2725}
-.idea .btn-wa{display:inline-block;background:var(--dark);color:#fff;padding:15px 26px;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.btn-wa{display:inline-block;background:var(--dark);color:#fff;padding:15px 26px;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}
 .idea-pick{margin-top:clamp(40px,6vw,80px)}
 .idea-pick .title{margin-bottom:10px}
 .idea-pick .sub{text-align:center;color:#6f6762;margin:0 auto 28px;max-width:560px}
