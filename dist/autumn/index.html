@@ -916,7 +916,8 @@ body.on-theme .chapter{opacity:0}
 <script>
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const WA='77071010814';
-const wa=(t,link='https://kultkartin.com/autumn/')=>`https://wa.me/${WA}?text=${encodeURIComponent(t+'\n\n'+link)}`;
+const SRCN=(()=>{const det=()=>{const q=new URLSearchParams(location.search);let ref='';try{ref=new URL(document.referrer).hostname}catch(_){}if(ref&&ref.replace(/^www\./,'')===location.hostname.replace(/^www\./,''))return'';if(q.get('utm_source')){const m={instagram:'Instagram',whatsapp:'рассылка WhatsApp',facebook:'Facebook',telegram:'Telegram'};const v=q.get('utm_source').toLowerCase();return m[v]||v}for(const[re,n]of[[/instagram/,'Instagram'],[/facebook/,'Facebook'],[/threads/,'Threads'],[/google/,'Google'],[/yandex|ya\.ru/,'Яндекс'],[/pinterest/,'Pinterest'],[/t\.me|telegram/,'Telegram'],[/whatsapp/,'WhatsApp'],[/chatgpt|openai/,'ChatGPT']])if(re.test(ref))return n;if(q.get('fbclid'))return'Instagram/Facebook';return ref||'прямой заход'};try{let v=sessionStorage.getItem('kk-src');if(!v){v=det();if(v)sessionStorage.setItem('kk-src',v)}return v}catch(_){return det()}})();
+const wa=(t,link='https://kultkartin.com/autumn/',what='каталог «Осень»')=>`https://wa.me/${WA}?text=${encodeURIComponent(t+'\n\n[с сайта: '+what+(SRCN?' · пришёл из: '+SRCN:'')+']\n'+link)}`;
 const workLink=w=>`https://kultkartin.com/autumn/?w=${w.id}`;
 const fmt=n=>n.toLocaleString('ru-RU').replace(/,/g,' ');
 // Валюта: цены хранятся в тенге, рубли — по курсу из таблицы сайта (5.33), округление до 100
@@ -1217,7 +1218,7 @@ function cardHTML(w,span){
       <div class="ov"><button data-open="${w.id}" data-tab="similar">Похожие</button><button data-open="${w.id}">Подробнее</button></div>
     </div>
     <div class="info"><div><h4>${w.name}</h4><div class="art">${w.art}${w.req?"":` · ${w.size?`${w.size} · ${w.gab} см`:"размер по запросу"}`}</div></div>
-      <div class="pr">${w.req?"Цена по запросу":(w.size?"":"от ")+mon(w.from,w.fromRub)}<a href="${wa(`Здравствуйте! Интересует стоимость работы «${w.name}» (${w.art}) из лукбука «Осень».`,workLink(w))}" target="_blank" rel="noopener">Узнать цену</a></div></div>
+      <div class="pr">${w.req?"Цена по запросу":(w.size?"":"от ")+mon(w.from,w.fromRub)}<a href="${wa(`Здравствуйте! Интересует стоимость работы «${w.name}» (${w.art}) из лукбука «Осень».`,workLink(w),`«Осень», работа «${w.name}»`)}" target="_blank" rel="noopener">Узнать цену</a></div></div>
   </article>`;
 }
 const SPANS=[5,4,3,3,3,3,3,4,4,4,6,3,3];
@@ -1283,10 +1284,10 @@ function openSheet(id,tab){
   </div>
   <div class="similar" id="similar" data-block="14 · Похожие работы" data-anim="работы в той же гамме; клик открывает новую карточку"><h3>Похожие работы</h3><div class="sim-grid">${sim.map(x=>cardHTML(x)).join('')}</div></div>`;
   const upd=()=>{const s=SZ[st.s];
-    if(w.req)$('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень». Подскажите, в каких размерах она есть и сколько стоит.`,workLink(w));
+    if(w.req)$('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень». Подскажите, в каких размерах она есть и сколько стоит.`,workLink(w),`«Осень», работа «${w.name}»`);
     else{setMon($('#shPrice'),s.kzt,s.rub);
     const cfg=`размер ${s.k} (${s.d} см)`;
-    $('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень»: ${cfg}. Подскажите точную стоимость.`,workLink(w));}
+    $('#shAsk').href=wa(`Здравствуйте! Интересует «${w.name}» (${w.art}) из лукбука «Осень»: ${cfg}. Подскажите точную стоимость.`,workLink(w),`«Осень», работа «${w.name}»`);}
     $('#shFav').innerHTML=HEART+(fav.includes(w.id)?'В избранном':'В избранное');};
   $('#sheet').onclick=e=>{
     if(e.target.closest('[data-close]'))return closeSheet();
