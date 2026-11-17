@@ -6,7 +6,7 @@
 Пока статья в черновике (draft=True) — noindex и не попадает в sitemap.
 Запуск: python3 work/build_idei.py  (нужен Pillow для визуализаций)
 """
-import html, json, os, re, sys, urllib.parse
+import hashlib, html, json, os, re, sys, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_seo as b
 
@@ -130,6 +130,7 @@ def img_out(slug, src, name, size):
     os.makedirs(out, exist_ok=True)
     im = Image.open(os.path.join(MOCK, src)).convert('RGB')
     im.thumbnail(size)
+    name = name.replace('.webp', '-' + hashlib.md5(src.encode()).hexdigest()[:6] + '.webp')  # новое фото — новое имя, без старого кеша
     im.save(os.path.join(out, name), 'WEBP', quality=82)
     return f'idei/{slug}/img/{name}'
 
