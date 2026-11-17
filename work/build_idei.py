@@ -22,7 +22,7 @@ ARTICLES = [{
     'desc': 'Какие картины повесить в спальне, какой размер выбрать над кроватью и как развесить пару или четыре работы. Подборка спокойных картин и постеров в раме с ценами.',
     'h1': 'Картины для спальни',
     'lead': 'Спокойные сюжеты, правильный размер над кроватью и аккуратная развеска — разбираем на примерах из нашего каталога.',
-    'hero': 's5-krovat-temnaya/C2P_34B5_2шт/3-расстановка.jpg',
+    'hero': 's7-krovat-dub/J1W1_02B5_4шт/3-расстановка.jpg',
     'wa': 'Здравствуйте! Хочу подобрать картины для спальни.',
     'facts': [('⅔', 'ширины кровати', 'столько должна занимать композиция над изголовьем'),
               ('20–30', 'см', 'от изголовья до нижнего края рамы'),
@@ -57,7 +57,7 @@ ARTICLES = [{
 
 CSS = """<style>
 .idea-hero{position:relative;min-height:min(78vh,720px);display:grid;align-items:end;color:#fff;overflow:hidden;background:#2a1f1b}
-.idea-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.idea-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .idea-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,10,.72) 0%,rgba(20,12,10,.35) 45%,rgba(20,12,10,0) 70%)}
 .idea-hero-in{position:relative;z-index:1;width:min(1180px,100%);margin:0 auto;padding:0 20px clamp(36px,6vw,72px)}
 .idea-crumbs{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8;margin-bottom:18px}.idea-crumbs a{text-decoration:underline}
@@ -185,7 +185,7 @@ def page(template, a, works):
     facts = ''.join(f'<div><b>{e(n)}<small>{e(u)}</small></b><span>{e(s)}</span></div>' for n, u, s in a['facts'])
     faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(ans)}</p></details>' for q, ans in a['faq'])
     main = (f'<main>'
-            f'<section class="idea-hero"><img src="{hero}" alt="{e(a["h1"])}: пейзажи в сепии над кроватью" fetchpriority="high">'
+            f'<section class="idea-hero"><img src="{hero}" alt="{e(a["h1"])}: четыре графичных гербария над кроватью" fetchpriority="high">'
             f'<div class="idea-hero-in"><div class="idea-crumbs"><a href="index.html">Главная</a> · Идеи для интерьера</div>'
             f'<h1>{e(a["h1"])}</h1><p>{e(a["lead"])}</p><div class="btns"><a class="btn-wa" href="#podborka">Смотреть подборку</a>'
             f'<a class="btn-line" href="{wa}" target="_blank" rel="noopener">Подобрать под мою спальню</a></div></div></section>'
