@@ -178,13 +178,13 @@ def scheme_svg(kind):
 
 
 def marquee(n=22):
-    """Лента работ из библиотеки (dist/assets/lib): разные темы, без детской."""
+    """Лента работ из библиотеки (dist/assets/lib): разные темы, без детской и «стиля» (там флаконы с логотипами)."""
     page_html = open(os.path.join(DIST, 'biblioteka.html'), encoding='utf-8').read()
     data = json.loads(re.search(r'const DATA=(\[.*?\]);', page_html, re.S).group(1))
     seen, picked = set(), []
     for item in data:
         key = (item.get('m'), item.get('t'))
-        if item.get('m') == 'kids' or key in seen:
+        if item.get('m') in ('kids', 'style') or key in seen:
             continue
         seen.add(key); picked.append(item)
     by_kind = {}
