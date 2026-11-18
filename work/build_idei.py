@@ -65,12 +65,12 @@ ARTICLES = [{
 }]
 
 CSS = """<style>
-.idea-hero{position:relative;min-height:min(78vh,720px);display:grid;align-items:end;color:#fff;overflow:hidden;background:#2a1f1b}
+.idea-hero{position:relative;min-height:min(56vh,500px);display:grid;align-items:end;color:#fff;overflow:hidden;background:#2a1f1b}
 .idea-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .idea-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,10,.72) 0%,rgba(20,12,10,.35) 45%,rgba(20,12,10,0) 70%)}
-.idea-hero-in{position:relative;z-index:1;width:min(1180px,100%);margin:0 auto;padding:0 20px clamp(36px,6vw,72px)}
+.idea-hero-in{position:relative;z-index:1;width:min(1180px,100%);margin:0 auto;padding:0 20px clamp(28px,4vw,52px)}
 .idea-crumbs{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8;margin-bottom:18px}.idea-crumbs a{text-decoration:underline}
-.idea-hero h1{font:500 clamp(46px,7vw,96px)/.95 var(--serif);margin:0 0 18px;max-width:9em}
+.idea-hero h1{font:500 clamp(40px,5.6vw,76px)/.95 var(--serif);margin:0 0 14px;max-width:11em}
 .idea-hero p{max-width:520px;font-size:clamp(16px,1.5vw,19px);line-height:1.55;margin:0 0 26px;opacity:.92}
 .btn-wa{display:inline-block;background:var(--dark);color:#fff;padding:16px 28px;font:600 12.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
 .btn-line{display:inline-block;border:1px solid currentColor;padding:15px 26px;font:600 12.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
@@ -118,7 +118,7 @@ CSS = """<style>
 .idea-cta p{max-width:560px;margin:0 auto 26px;line-height:1.6;opacity:.85}
 .idea-cta .btn-wa{background:#f7eddd;color:var(--dark)}
 @media(max-width:900px){.idea-text,.idea-how,.idea-faq,.look{grid-template-columns:1fr}.look{direction:ltr!important}.idea-scheme{position:static}.idea-facts{grid-template-columns:1fr}.idea-facts div{border-right:0;border-bottom:1px solid var(--line)}.idea-facts div:last-child{border-bottom:0}}
-@media(max-width:520px){.look-items{grid-template-columns:1fr}.idea-hero{min-height:82vh}}
+@media(max-width:520px){.look-items{grid-template-columns:1fr}.idea-hero{min-height:62vh}}
 </style>"""
 
 SCHEME = """<svg viewBox="0 0 420 300" role="img" aria-label="Схема: композиция над кроватью 160 см шириной около 105 см, нижний край на 20–30 см выше изголовья">
@@ -274,13 +274,12 @@ def page(template, a, works):
             f'<div class="idea-hero-in"><div class="idea-crumbs"><a href="index.html">Главная</a> · Идеи для интерьера</div>'
             f'<h1>{e(a["h1"])}</h1><p>{e(a["lead"])}</p><div class="btns"><a class="btn-wa" href="#podborka">Смотреть подборку</a>'
             f'<a class="btn-line" href="{wa}" target="_blank" rel="noopener">Подобрать под мою спальню</a></div></div></section>'
-            f'<div class="idea-wrap"><div class="idea-facts">{facts}</div>'
-            f'<section class="idea-text"><div><div class="idea-kicker">С чего начать</div><h2>{e(a["intro"][0])}</h2></div><div>{paras(a["intro"][1])}</div></section>'
-            + marquee() + f'<section class="idea-looks"><div><div class="idea-kicker">Образы</div><h2>Три спальни — три настроения</h2></div>{looks}</section>'
+            + '<div class="idea-wrap">'
             + f'<section class="idea-schemes"><div class="idea-schemes-head"><div><div class="idea-kicker">Размер и развеска</div><h2>{e(a["schemes_title"])}</h2></div><p>{e(a["schemes_lead"])}</p></div>'
             + '<div class="scheme-grid">' + ''.join(
                 f'<article class="scheme">{scheme_svg(k)}<div><h3>{e(t)}</h3><p>{e(sz)}</p><p>{e(note)}</p></div></article>' for k, t, sz, note in a['schemes'])
             + '</div></section>'
+            + f'<section class="idea-looks"><div><div class="idea-kicker">Образы</div><h2>Три спальни — три настроения</h2></div>{looks}</section>'
             + f'<section class="idea-pick" id="podborka"><div class="idea-pick-head"><div><div class="idea-kicker">Подборка</div><h2>Подойдут для спальни</h2>'
             f'<p>Спокойные тона, ботаника, пейзажи и мягкая графика. Каждую работу можно заказать в другом размере и оформлении.</p></div>'
             f'<a href="index.html#catalog">Весь каталог&nbsp;→</a></div>'
