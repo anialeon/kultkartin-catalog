@@ -373,6 +373,13 @@ def product_page(template, w):
     return page
 
 
+def hidden_ids():
+    """Работы, скрытые из выдачи каталога (catalogHiddenIds в site.js): в фиды и выгрузки для площадок не идут."""
+    js = open(os.path.join(DIST, 'assets', 'site.js'), encoding='utf-8').read()
+    m = re.search(r'catalogHiddenIds=new Set\(\[([^\]]*)\]', js)
+    return {int(x) for x in m.group(1).split(',') if x.strip()} if m else set()
+
+
 def yml_feed(works):
     """Товарный фид для Яндекса (YML): каждая картина в каждом размере — отдельное предложение в рублях."""
     e = lambda x: html.escape(x or '', quote=False)
@@ -385,6 +392,8 @@ def yml_feed(works):
     out += [f'<category id="{i}">{e(c)}</category>' for c, i in cats.items()]
     out += ['</categories>', '<offers>']
     for w in works:
+        if w['id'] in hidden_ids():
+            continue
         for x in w['sizes']:
             if not x['rub']:
                 continue

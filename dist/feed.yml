@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-17T14:47">
+<yml_catalog date="2026-11-20T16:19">
 <shop>
 <name>КУЛЬТКАРТИН</name>
 <company>Студия декора «Культкартин»</company>
@@ -34,30 +34,6 @@
 <picture>https://lh3.googleusercontent.com/d/1_3bBnfFsC8tQlK6khyhh539g3ZydKT_q=w1200-rj</picture>
 <vendor>КУЛЬТКАРТИН</vendor>
 <description>Классическая ботаника в тёплой гамме: уместна в спальне, гостиной и кабинете. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">M</param>
-<param name="Габарит">41,5 × 51,5 см</param>
-</offer>
-<offer id="11-M" group_id="11" available="true">
-<name>Нежная роза I — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
-<url>https://kultkartin.com/kartiny/11.html</url>
-<price>14000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1JtFuuI2BB3eOyeogPqIxR0MlxnB0w5TC=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Спокойный цветочный сюжет с мягкой палитрой. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">M</param>
-<param name="Габарит">41,5 × 51,5 см</param>
-</offer>
-<offer id="12-M" group_id="12" available="true">
-<name>Нежная роза II — картина в раме с паспарту, размер M, 41,5 × 51,5 см</name>
-<url>https://kultkartin.com/kartiny/12.html</url>
-<price>14000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1AQ4xfy0tykzeG9KNVDmuZH3P6XhJwE3J=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Деликатная ботаническая работа, которую легко сочетать с другими в галерее. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
 <param name="Размер">M</param>
 <param name="Габарит">41,5 × 51,5 см</param>
 </offer>
@@ -793,54 +769,6 @@
 <param name="Размер">X</param>
 <param name="Габарит">54,5 × 64,5 см</param>
 </offer>
-<offer id="74-X" group_id="74" available="true">
-<name>Греческий храм — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/74.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1kzmws8LSfsJ98394X95nHX-QuWesw7Vq=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Архитектурная работа для классического интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="75-X" group_id="75" available="true">
-<name>Палаццо с арочными окнами I — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/75.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1O4KfS-02om4XFgOGyrKT87c9mFBwWtF9=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Классическая архитектурная иллюстрация для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="76-X" group_id="76" available="true">
-<name>Палаццо с арочными окнами II — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/76.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1oF6aznG1BIBS-LTsAZGdGI49qxeRBILA=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Архитектурная классика в тёплой гамме. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="77-X" group_id="77" available="true">
-<name>Вилла с парадной лестницей — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/77.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1GNYuYA60ktbxYNSMu_ZDKex9yIzIfkyq=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Элегантный архитектурный сюжет для классического интерьера. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
 <offer id="78-X" group_id="78" available="true">
 <name>Городской дворец — картина в раме с паспарту, размер X, 60 × 50 см</name>
 <url>https://kultkartin.com/kartiny/78.html</url>
@@ -850,42 +778,6 @@
 <picture>https://lh3.googleusercontent.com/d/18lopjdXj2xIqBwyIT8zsiAtijqwa1fvO=w1200-rj</picture>
 <vendor>КУЛЬТКАРТИН</vendor>
 <description>Строгая и нарядная архитектурная работа. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="79-X" group_id="79" available="true">
-<name>Особняк с лепниной I — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/79.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1wZP0h0dgLamB_7o_qfkJ_UZhrjs9sF2v=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Архитектурная иллюстрация в спокойной палитре. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="80-X" group_id="80" available="true">
-<name>Особняк с лепниной II — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/80.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/1kqxMxGu2Tjw-9IgRfJLRTemeYHRgza3Q=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Историческая архитектура для кабинета и гостиной. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
-<param name="Размер">X</param>
-<param name="Габарит">60 × 50 см</param>
-</offer>
-<offer id="81-X" group_id="81" available="true">
-<name>Триумфальная арка — картина в раме с паспарту, размер X, 60 × 50 см</name>
-<url>https://kultkartin.com/kartiny/81.html</url>
-<price>16000</price>
-<currencyId>RUR</currencyId>
-<categoryId>2</categoryId>
-<picture>https://lh3.googleusercontent.com/d/14QIXXqeJ0KiOwKXgF1W-opAnxZabq17q=w1200-rj</picture>
-<vendor>КУЛЬТКАРТИН</vendor>
-<description>Выразительный архитектурный акцент. Поможем подобрать размер, раму и паспарту под ваш интерьер.</description>
 <param name="Размер">X</param>
 <param name="Габарит">60 × 50 см</param>
 </offer>
