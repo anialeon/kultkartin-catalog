@@ -380,26 +380,28 @@ def hidden_ids():
     return {int(x) for x in m.group(1).split(',') if x.strip()} if m else set()
 
 
-def yml_feed(works):
-    """Товарный фид для Яндекса (YML): каждая картина в каждом размере — отдельное предложение в рублях."""
+def yml_feed(works, cur='RUR'):
+    """Товарный фид для Яндекса (YML): каждая картина в каждом размере — отдельное предложение.
+    cur='RUR' — feed.yml (рубли, для России), cur='KZT' — feed-kz.yml (тенге, для Яндекс Бизнеса в Казахстане)."""
     e = lambda x: html.escape(x or '', quote=False)
     cats = {}
     for w in works:
         cats.setdefault(w['material'] or 'Картина', len(cats) + 1)
     out = ['<?xml version="1.0" encoding="UTF-8"?>', f'<yml_catalog date="{datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")}">', '<shop>',
            '<name>КУЛЬТКАРТИН</name>', '<company>Студия декора «Культкартин»</company>', f'<url>{SITE}/</url>',
-           '<currencies><currency id="RUR" rate="1"/></currencies>', '<categories>']
+           f'<currencies><currency id="{cur}" rate="1"/></currencies>', '<categories>']
     out += [f'<category id="{i}">{e(c)}</category>' for c, i in cats.items()]
     out += ['</categories>', '<offers>']
     for w in works:
         if w['id'] in hidden_ids():
             continue
         for x in w['sizes']:
-            if not x['rub']:
+            price = x['rub'] if cur == 'RUR' else (x['kzt'] or (round(x['rub'] * KZT_PER_RUB / 100) * 100 if x['rub'] else 0))
+            if not price:
                 continue
             name = f'{w["name"]} — картина в раме с паспарту, размер {x["code"]}' + (f', {x["dims"]}' if x['dims'] else '')
             out += [f'<offer id="{w["id"]}-{e(x["code"])}" group_id="{w["id"]}" available="true">', f'<name>{e(name)}</name>', f'<url>{product_url(w)}</url>',
-                    f'<price>{x["rub"]}</price>', '<currencyId>RUR</currencyId>', f'<categoryId>{cats[w["material"] or "Картина"]}</categoryId>',
+                    f'<price>{price}</price>', f'<currencyId>{cur}</currencyId>', f'<categoryId>{cats[w["material"] or "Картина"]}</categoryId>',
                     f'<picture>{e(w["og"])}</picture>', '<vendor>КУЛЬТКАРТИН</vendor>', f'<description>{e(w["description"] or seo_text(w))}</description>',
                     f'<param name="Размер">{e(x["code"])}</param>'] + ([f'<param name="Габарит">{e(x["dims"])}</param>'] if x['dims'] else []) + ['</offer>']
     out += ['</offers>', '</shop>', '</yml_catalog>', '']
@@ -444,6 +446,7 @@ def main():
     open(os.path.join(DIST, 'assets', 'pages.js'), 'w', encoding='utf-8').write(
         '// Сгенерировано work/build_seo.py: картины, у которых есть готовая страница kartiny/ID.html\nwindow.kkStaticPages=' + json.dumps([w['id'] for w in works]) + ';\n')
     open(os.path.join(DIST, 'feed.yml'), 'w', encoding='utf-8').write(yml_feed(works))
+    open(os.path.join(DIST, 'feed-kz.yml'), 'w', encoding='utf-8').write(yml_feed(works, 'KZT'))
     print(f'ok: {len(works)} картин, {len(sizes)} размеров, {len(faq)} вопросов')
 
 
