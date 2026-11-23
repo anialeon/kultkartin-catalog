@@ -438,7 +438,7 @@ def main():
     pages_dir = os.path.join(DIST, 'kartiny')
     os.makedirs(pages_dir, exist_ok=True)
     for name in os.listdir(pages_dir):
-        if name.endswith('.html'):
+        if name.endswith('.html') and name != 'index.html':  # index.html — переадресация со старого адреса /kartiny (2026-11-23)
             os.remove(os.path.join(pages_dir, name))
     template = open(os.path.join(DIST, 'product.html'), encoding='utf-8').read()
     for w in works:
