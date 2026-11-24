@@ -28,3 +28,9 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      # GitHub иногда не успевает зарегистрировать архив («No artifacts named github-pages») — повтор через 30 с (2026-11-24)
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
