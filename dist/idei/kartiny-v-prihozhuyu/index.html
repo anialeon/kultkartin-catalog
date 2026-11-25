@@ -133,6 +133,78 @@ html body .idea-cta h2{font:500 clamp(32px,4vw,52px)/1.05 var(--serif);margin:0 
 @media(max-width:900px){.idea-text,.idea-how,.idea-faq,.look{grid-template-columns:1fr}.look{direction:ltr!important}.idea-scheme{position:static}.idea-facts{grid-template-columns:1fr}.idea-facts div{border-right:0;border-bottom:1px solid var(--line)}.idea-facts div:last-child{border-bottom:0}}
 @media(max-width:520px){.look-items{grid-template-columns:1fr}.idea-hero{min-height:62vh}}
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
+<style id="st12">
+:root{--t12:#4f3e35;--t12m:#8c7d73;--b12:#f3f0eb;--l12:#e7e2db}
+html body{font-weight:300;background:#fff;color:var(--t12);font:300 17px/1.65 'Jost',Arial,sans-serif;letter-spacing:.04em}
+html body .nav{background:#fff;border-bottom:1px solid var(--l12);box-shadow:none}
+html body .nav a,html body .nav-links a{font:300 13px 'Jost',sans-serif;letter-spacing:.05em;text-transform:none;color:var(--t12)}
+/* первый экран: подпись и заголовок по центру внизу, как баннеры 12 Storeez */
+html body .idea-hero{min-height:min(78vh,720px);background:#d9d2c8}
+html body .idea-hero::after{background:linear-gradient(180deg,transparent 45%,rgba(30,20,15,.45))}
+html body .idea-hero-in{text-align:center;max-width:760px;padding-bottom:44px}
+html body .idea-crumbs{font:300 11px 'Jost',sans-serif;letter-spacing:.14em;margin-bottom:14px}
+html body .idea-crumbs a{color:inherit}
+html body .idea-hero h1{font:500 clamp(36px,4.2vw,56px)/1.08 var(--serif);color:#fff;margin:0 0 14px}
+html body .idea-hero p{font-size:17px;line-height:1.6;margin:0 auto 24px;max-width:56ch;opacity:.92}
+html body .idea-hero .btns{justify-content:center}
+/* кнопки: квадратные, без капса */
+html body :is(.btn-wa,.btn-line){border-radius:0;font:400 13px/1 'Jost',sans-serif;letter-spacing:.06em;text-transform:none;padding:15px 28px;box-shadow:none}
+html body .btn-wa{background:var(--t12);color:#fff;border:1px solid var(--t12)}
+html body .idea-hero .btn-wa{background:#fff;color:var(--t12);border-color:#fff}
+html body .idea-hero .btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+/* сетка: во всю ширину с полями, как у 12 Storeez */
+html body .idea-kicker{font:300 11px 'Jost',sans-serif;letter-spacing:.16em;color:var(--t12m);margin-bottom:10px}
+html body :is(.idea-schemes,.idea-looks,.idea-pick,.idea-faq){border-bottom:0;padding:clamp(56px,7vw,104px) 0 0}
+html body :is(.idea-schemes-head,.idea-faq,.idea-pick-head) h2,html body .idea-looks h2{font:500 clamp(26px,2.4vw,34px)/1.15 var(--serif)}
+html body .idea-schemes-head p,html body .idea-pick-head p{font-size:17px;line-height:1.7;color:var(--t12)}
+html body .scheme-grid{gap:4px}
+html body .scheme{background:transparent;border:0}
+html body .scheme svg,html body .scheme>img{background:var(--b12)}
+html body .scheme div{padding:16px 2px 0}
+html body .scheme h3{font:500 21px/1.2 var(--serif)}
+html body .scheme p{font-size:15px;line-height:1.6;color:var(--t12)}
+html body .scheme p+p{color:var(--t12m)}
+html body .look{gap:clamp(24px,4vw,64px)}
+html body .look h3{font:500 clamp(24px,2.2vw,32px)/1.15 var(--serif)}
+html body .look p{font-size:17px;line-height:1.7}
+html body .look-img,html body .look-img img{border-radius:0}
+/* карточки каталога: 4 в ряд, почти без зазоров, подписи мелко */
+html body .products{gap:36px 4px}
+html body .product,html body .product-image,html body .product img{border-radius:0;box-shadow:none;border:0}
+html body .product-image{background:var(--b12)}
+html body .product .meta{padding:12px 2px 0}
+html body .product :is(h3,.title,.name){font:300 15px/1.45 'Jost',sans-serif;letter-spacing:.04em}
+html body .product .price{font:300 15px 'Jost',sans-serif;letter-spacing:.04em;color:var(--t12)}
+html body .idea-pick-head a{font:300 13px 'Jost',sans-serif;color:var(--t12);text-decoration:underline;text-underline-offset:4px}
+/* вопросы: тонкие линии */
+html body .idea-faq details{border-color:var(--l12)}
+html body .idea-faq summary{font:300 17px/1.5 'Jost',sans-serif;letter-spacing:.04em}
+html body .idea-faq details p{font-size:16px;color:var(--t12)}
+/* блок подбора */
+html body .idea-cta{margin-top:clamp(56px,7vw,104px);background:#d9d2c8}
+html body .idea-cta::after{background:rgba(40,28,22,.42)}
+html body .idea-cta h2{font:500 clamp(32px,4vw,52px)/1.08 var(--serif)}
+html body .idea-cta p{font-size:17px}
+html body .idea-cta .btn-wa{background:#fff;color:var(--t12);border-color:#fff}
+/* подвал светлый */
+html body .heart{border-radius:0}
+
+html body .idea-hero::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(30,20,15,.1) 20%,rgba(30,20,15,.72))}
+html body .idea-hero-in{margin:0 auto}
+html body .idea-cta h2{color:#fff}
+html body .look-items a{border-radius:0;border:0;background:var(--b12);padding:10px}
+html body .look-items img{background:#fff}
+html body .look-items b{font:500 18px/1.2 var(--serif)}
+html body .currency-switch{border-radius:0;border-color:var(--l12)}
+html body .currency-switch button{border-radius:0;font-family:'Jost',sans-serif;font-weight:400}
+html body .currency-switch button.active{background:var(--t12)}
+html body :is(.contact-widget button,.contact-widget>a,.to-top){border-radius:0}
+html body .idea-hero h1{margin:0 auto 14px;max-width:none}
+html body .nav-links :is(a,.ln,span),html body .nav .ln{font:300 13px 'Jost',sans-serif!important;letter-spacing:.05em!important;text-transform:none!important;color:var(--t12)}
+html body :is(p,li,span,summary,.meta,.price,.idea-crumbs){font-weight:300}
+</style>
+
 </head>
 <body>
 <header class="nav">

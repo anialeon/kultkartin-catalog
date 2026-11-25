@@ -470,6 +470,10 @@ def scheme_photo(kind, img, g):
     return f'<svg viewBox="{g["vb"]}" role="img" aria-label="Схема развески">{"".join(out)}</svg>'
 
 
+# стиль по мотивам 12 Storeez (текст, теги, вопросы, кнопки), утвердила Анна 2026-11-25
+STYLE12 = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'idei-style.html'), encoding='utf-8').read()
+
+
 def page(template, a, works):
     e = lambda s: html.escape(s or '', quote=True)
     url = f'{SITE}/idei/{a["slug"]}/'
@@ -512,7 +516,7 @@ def page(template, a, works):
             {'@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': SITE + '/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'Идеи для интерьера', 'item': SITE + '/idei/'},
             {'@type': 'ListItem', 'position': 3, 'name': a['h1'], 'item': url}]}]}
-    t = t.replace('</head>', '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace('<', '\\u003c') + '</script>\n' + CSS + '\n</head>', 1)
+    t = t.replace('</head>', '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace('<', '\\u003c') + '</script>\n' + CSS + '\n' + STYLE12 + '\n</head>', 1)
 
     paras = lambda ps: ''.join(f'<p>{e(p)}</p>' for p in ps)
     faq = ''.join(f'<details><summary>{e(q)}</summary><p>{e(ans)}</p></details>' for q, ans in a['faq'])
