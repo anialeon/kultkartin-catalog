@@ -402,7 +402,7 @@ def img_out(slug, src, name, size):
     if crop:
         im = im.crop((0, 0, im.width, int(im.height * crop)))
     im.thumbnail(size)
-    name = name.replace('.webp', '-' + hashlib.md5((src + str(crop)).encode()).hexdigest()[:6] + '.webp')  # новое фото — новое имя, без старого кеша
+    name = name.replace('.webp', '-' + hashlib.md5((src + str(crop) + str(int(os.path.getmtime(os.path.join(MOCK, src))))).encode()).hexdigest()[:6] + '.webp')  # новое фото — новое имя, без старого кеша
     im.save(os.path.join(out, name), 'WEBP', quality=82)
     return f'idei/{slug}/img/{name}'
 
@@ -483,7 +483,7 @@ def page(template, a, works):
     picked = [by[i] for i in a['works'] if i in by]
     wa = WA + urllib.parse.quote(a['wa'])
     hero = img_out(a['slug'], a['hero'], 'hero.webp', (2000, 1600))
-    cta_bg = img_out(a['slug'], a['cta_bg'], 'cta.webp', (1800, 1400))
+    cta_bg = img_out(a["slug"], a["cta_bg"], "cta.webp", (2400, 1400))
     live_html = ''
     if a.get('live'):
         imgs = [img_out(a['slug'], f"../для-статей/{a['live_dir']}/live/{n}.jpg", f'live-{n}.webp', (1400, 1400)) for n in a['live']]
