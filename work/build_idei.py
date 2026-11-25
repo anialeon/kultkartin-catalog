@@ -423,7 +423,8 @@ def scheme_photo(kind, img, g):
     g: k — px на см, cx — центр мебели, top — верх изголовья/спинки (px), w — ширина мебели (см), stands — центры тумб, vb — кадр."""
     k, cx, top, gap, lift = g['k'], g['cx'], g['top'], 6, 25
     base = top - lift * k
-    C, F = '#3a2a22', "font-family=\"Manrope,Arial,sans-serif\" font-size=\"34\" fill=\"#3a2a22\" text-anchor=\"middle\""
+    C, T = 'rgba(58,42,34,.55)', 'rgba(58,42,34,.8)'
+    F = f'font-family="Manrope,Arial,sans-serif" font-weight="300" font-size="24" fill="{T}" text-anchor="middle"'
     num = lambda v: (f'{v:g}').replace('.', ',')
     fr = []  # x, y, w, h (px), подпись
 
@@ -444,11 +445,11 @@ def scheme_photo(kind, img, g):
         row(SCHEME_FRAMES[kind], base)
     out = [f'<image href="{img}" x="0" y="0" width="{g["W"]}" height="{g["H"]}"/>']
     for x, y, w, h, t in fr:
-        out.append(f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" fill="rgba(255,255,255,.28)" stroke="{C}" stroke-width="4"/>'
-                   f'<text x="{x + w / 2:.0f}" y="{y + h / 2 + 10:.0f}" font-family="Manrope,Arial,sans-serif" font-size="{min(34, w * .88 / (len(t) * .56)):.0f}" fill="{C}" text-anchor="middle">{t}</text>')
+        out.append(f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" fill="rgba(255,255,255,.16)" stroke="{C}" stroke-width="1.6"/>'
+                   f'<text x="{x + w / 2:.0f}" y="{y + h / 2 + 8:.0f}" font-family="Manrope,Arial,sans-serif" font-weight="300" font-size="{min(24, w * .8 / (len(t) * .56)):.0f}" fill="{T}" text-anchor="middle">{t}</text>')
 
     def hdim(x1, x2, y, label, ly=None):
-        out.append(f'<path d="M{x1:.0f} {y:.0f}H{x2:.0f}M{x1:.0f} {y - 12:.0f}v24M{x2:.0f} {y - 12:.0f}v24" stroke="{C}" stroke-width="3" fill="none"/>'
+        out.append(f'<path d="M{x1:.0f} {y:.0f}H{x2:.0f}M{x1:.0f} {y - 8:.0f}v16M{x2:.0f} {y - 8:.0f}v16" stroke="{C}" stroke-width="1.3" fill="none"/>'
                    f'<text x="{(x1 + x2) / 2:.0f}" y="{(ly if ly is not None else y - 20):.0f}" {F}>{label}</text>')
     tops = min(y for x, y, w, h, t in fr)
     if kind == 'sides':
@@ -460,12 +461,12 @@ def scheme_photo(kind, img, g):
         cols = sorted({round(f[0]) for f in fr})
         for a, b2 in zip(cols, cols[1:]):  # зазоры между рамами
             ga = next(f for f in fr if round(f[0]) == a); gx = ga[0] + ga[2]
-            out.append(f'<path d="M{gx:.0f} {tops - 22:.0f}H{b2:.0f}" stroke="{C}" stroke-width="3"/>')
-            out.append(f'<text x="{(gx + b2) / 2:.0f}" y="{tops - 30:.0f}" font-family="Manrope,Arial,sans-serif" font-size="30" fill="{C}" text-anchor="middle">{gap} см</text>')
+            out.append(f'<path d="M{gx:.0f} {tops - 22:.0f}H{b2:.0f}" stroke="{C}" stroke-width="1.3"/>')
+            out.append(f'<text x="{(gx + b2) / 2:.0f}" y="{tops - 30:.0f}" font-family="Manrope,Arial,sans-serif" font-weight="300" font-size="22" fill="{T}" text-anchor="middle">{gap} см</text>')
     # высота над изголовьем
     rx = (min(f[0] for f in fr) + 35 * k + 34) if kind == 'sides' else max(f[0] + f[2] for f in fr) + 34
-    out.append(f'<path d="M{rx:.0f} {base:.0f}V{top:.0f}M{rx - 10:.0f} {base:.0f}h20M{rx - 10:.0f} {top:.0f}h20" stroke="{C}" stroke-width="3"/>'
-               f'<text x="{rx + 14:.0f}" y="{(base + top) / 2 + 12:.0f}" font-family="Manrope,Arial,sans-serif" font-size="30" fill="{C}">{lift} см</text>')
+    out.append(f'<path d="M{rx:.0f} {base:.0f}V{top:.0f}M{rx - 7:.0f} {base:.0f}h14M{rx - 7:.0f} {top:.0f}h14" stroke="{C}" stroke-width="1.3"/>'
+               f'<text x="{rx + 14:.0f}" y="{(base + top) / 2 + 12:.0f}" font-family="Manrope,Arial,sans-serif" font-weight="300" font-size="22" fill="{T}">{lift} см</text>')
     # ширина мебели
     hw = g['w'] * k / 2
     hdim(cx - hw, cx + hw, top - 14, f'{g["label"]} {g["w"]} см', top - 30)
