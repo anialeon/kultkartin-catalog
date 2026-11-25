@@ -43,7 +43,8 @@ ARTICLES = [{
          'Четыре квадратные работы в тонких рамах, повешенные квадратом, держат широкую стену над кроватью 180 см. Мягкая палитра не спорит с текстилем.', [56, 57, 58, 59]),
     ],
     'schemes_title': 'Размер и развеска: четыре схемы',
-    'schemes_lead': 'Композиция над кроватью занимает примерно две трети ширины изголовья. Нижний край рамы — на 20–30 см выше изголовья, между рамами — 5–8 см, центр композиции совпадает с центром кровати. Вот четыре проверенных варианта для кровати 160 см.',
+    'scheme_bg': ('../для-статей/spalnya/schemes.jpg', {'W': 2000, 'H': 1493, 'k': 3.9, 'cx': 1012, 'top': 815, 'w': 180, 'label': 'кровать', 'stands': (516, 1512), 'vb': '390 185 1270 952'}),
+    'schemes_lead': 'Композиция над кроватью занимает примерно две трети ширины изголовья. Нижний край рамы — на 20–30 см выше изголовья, между рамами — 5–8 см, центр композиции совпадает с центром кровати. Вот четыре проверенных варианта для кровати 180 см.',
     'schemes': [
         ('pair', 'Пара над изголовьем', 'Две вертикальные работы размера X, каждая 54,5 × 64,5 см с рамой. Ширина композиции — около 115 см.', 'Самый универсальный вариант для кровати 160–180 см.'),
         ('sides', 'Над прикроватными тумбами', 'По две работы размера M (около 35 × 45 см) столбиком над каждой тумбой.', 'Подходит, если над изголовьем бра, полка или высокое мягкое изголовье.'),
@@ -264,7 +265,7 @@ CSS = """<style>
 .idea-faq summary::after{content:"+";font-family:var(--sans);font-weight:300;font-size:26px;line-height:1}.idea-faq details[open] summary::after{content:"−"}
 .idea-faq summary::-webkit-details-marker{display:none}
 .idea-faq p{margin:12px 0 0;font-size:16.5px;line-height:1.7;color:#4f4743;max-width:62ch}
-.idea-cta{position:relative;color:#f3e8e8;text-align:center;padding:clamp(80px,12vw,160px) 20px;overflow:hidden;background:#2a1f1b}.idea-cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}.idea-cta::after{content:"";position:absolute;inset:0;background:rgba(32,14,14,.62)}.idea-cta>*:not(img){position:relative;z-index:1}.idea-marquee{overflow:hidden;padding:8px 0 clamp(48px,7vw,96px);border-bottom:1px solid var(--line);-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.idea-marquee-track{display:flex;gap:clamp(18px,2.5vw,36px);width:max-content;align-items:flex-end;animation:ideaMarq 70s linear infinite}.idea-marquee:hover .idea-marquee-track{animation-play-state:paused}.idea-marquee img{height:clamp(150px,18vw,240px);width:auto;display:block;filter:drop-shadow(0 10px 14px rgba(60,40,30,.16))}@keyframes ideaMarq{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.idea-marquee-track{animation:none}.idea-marquee{overflow-x:auto}}.idea-text{border-bottom:0!important}.idea-schemes{padding:clamp(48px,7vw,96px) 0;border-bottom:1px solid var(--line)}.idea-schemes-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:end;gap:clamp(24px,5vw,80px);margin-bottom:clamp(28px,4vw,48px)}.idea-schemes-head h2{font:500 clamp(32px,4vw,52px)/1.02 var(--serif);margin:0}.idea-schemes-head p{font-size:17px;line-height:1.75;margin:0;color:#2c2725;max-width:62ch}.scheme-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}.scheme{background:#fff;border:1px solid var(--line);display:grid;grid-template-rows:auto 1fr}.scheme svg,.scheme>img{width:100%;aspect-ratio:4/3;display:block;background:#efe9e1;object-fit:cover}.scheme div{padding:18px 18px 20px}.scheme h3{font:500 22px/1.15 var(--serif);margin:0 0 8px}.scheme p{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:#2c2725}.scheme p+p{color:#6f6762;margin:0}@media(max-width:1000px){.scheme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.idea-schemes-head{grid-template-columns:1fr}}@media(max-width:520px){.scheme-grid{grid-template-columns:1fr}}
+.idea-cta{position:relative;color:#f3e8e8;text-align:center;padding:clamp(80px,12vw,160px) 20px;overflow:hidden;background:#2a1f1b}.idea-cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}.idea-cta::after{content:"";position:absolute;inset:0;background:rgba(32,14,14,.62)}.idea-cta>*:not(img){position:relative;z-index:1}.idea-marquee{overflow:hidden;padding:8px 0 clamp(48px,7vw,96px);border-bottom:1px solid var(--line);-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.idea-marquee-track{display:flex;gap:clamp(18px,2.5vw,36px);width:max-content;align-items:flex-end;animation:ideaMarq 70s linear infinite}.idea-marquee:hover .idea-marquee-track{animation-play-state:paused}.idea-marquee img{height:clamp(150px,18vw,240px);width:auto;display:block;filter:drop-shadow(0 10px 14px rgba(60,40,30,.16))}@keyframes ideaMarq{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.idea-marquee-track{animation:none}.idea-marquee{overflow-x:auto}}.idea-text{border-bottom:0!important}.idea-schemes{padding:clamp(48px,7vw,96px) 0;border-bottom:1px solid var(--line)}.idea-schemes-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:end;gap:clamp(24px,5vw,80px);margin-bottom:clamp(28px,4vw,48px)}.idea-schemes-head h2{font:500 clamp(32px,4vw,52px)/1.02 var(--serif);margin:0}.idea-schemes-head p{font-size:17px;line-height:1.75;margin:0;color:#2c2725;max-width:62ch}.scheme-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}.scheme{background:#fff;border:1px solid var(--line);display:grid;grid-template-rows:auto 1fr}.scheme svg,.scheme>img{width:100%;aspect-ratio:4/3;display:block;background:#efe9e1;object-fit:cover}.scheme div{padding:18px 18px 20px}.scheme h3{font:500 22px/1.15 var(--serif);margin:0 0 8px}.scheme p{margin:0 0 8px;font-size:14.5px;line-height:1.55;color:#2c2725}.scheme p+p{color:#6f6762;margin:0}@media(max-width:1000px){.scheme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.idea-schemes-head{grid-template-columns:1fr}}@media(max-width:520px){.scheme-grid{grid-template-columns:1fr}}.scheme-grid.photo{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:700px){.scheme-grid.photo{grid-template-columns:1fr}}
 html body .idea-cta h2{font:500 clamp(32px,4vw,52px)/1.05 var(--serif);margin:0 auto 18px;max-width:12.5em;text-wrap:balance;color:#fff}
 .idea-cta p{max-width:560px;margin:0 auto 26px;line-height:1.6;opacity:.85}
 .idea-cta .btn-wa{background:#f7eddd;color:var(--dark)}
@@ -409,6 +410,66 @@ def money_pair(w):
     return f'{pre}{b.money(w["kzt"])} ₸', f'{pre}{b.money(w["rub"])} ₽'
 
 
+SCHEME_FRAMES = {  # размеры с рамой, см
+    'pair': [(54.5, 64.5)] * 2, 'panel': [(82, 72)], 'grid': [(48, 48)] * 4,
+    'row3': [(48, 48)] * 3, 'pairM': [(35, 45)] * 2,
+}
+
+
+def scheme_photo(kind, img, g):
+    """Схема развески поверх фото интерьера: контуры рам с размерами и размерные линии.
+    g: k — px на см, cx — центр мебели, top — верх изголовья/спинки (px), w — ширина мебели (см), stands — центры тумб, vb — кадр."""
+    k, cx, top, gap, lift = g['k'], g['cx'], g['top'], 6, 25
+    base = top - lift * k
+    C, F = '#3a2a22', "font-family=\"Manrope,Arial,sans-serif\" font-size=\"34\" fill=\"#3a2a22\" text-anchor=\"middle\""
+    num = lambda v: (f'{v:g}').replace('.', ',')
+    fr = []  # x, y, w, h (px), подпись
+
+    def row(sizes, bottom, x0=None):
+        tw = sum(w for w, h in sizes) + gap * (len(sizes) - 1)
+        x = (cx - tw * k / 2) if x0 is None else x0
+        for w, h in sizes:
+            fr.append((x, bottom - h * k, w * k, h * k, f'{num(w)}×{num(h)} см')); x += (w + gap) * k
+        return tw
+    if kind == 'sides':
+        for sx in g['stands']:
+            for i in range(2):
+                b = base - i * (45 + gap) * k
+                fr.append((sx - 35 * k / 2, b - 45 * k, 35 * k, 45 * k, '35×45 см'))
+    elif kind == 'grid':
+        row([(48, 48)] * 2, base); row([(48, 48)] * 2, base - (48 + gap) * k)
+    else:
+        row(SCHEME_FRAMES[kind], base)
+    out = [f'<image href="{img}" x="0" y="0" width="{g["W"]}" height="{g["H"]}"/>']
+    for x, y, w, h, t in fr:
+        out.append(f'<rect x="{x:.0f}" y="{y:.0f}" width="{w:.0f}" height="{h:.0f}" fill="rgba(255,255,255,.28)" stroke="{C}" stroke-width="4"/>'
+                   f'<text x="{x + w / 2:.0f}" y="{y + h / 2 + 10:.0f}" font-family="Manrope,Arial,sans-serif" font-size="{min(34, w * .88 / (len(t) * .56)):.0f}" fill="{C}" text-anchor="middle">{t}</text>')
+
+    def hdim(x1, x2, y, label, ly=None):
+        out.append(f'<path d="M{x1:.0f} {y:.0f}H{x2:.0f}M{x1:.0f} {y - 12:.0f}v24M{x2:.0f} {y - 12:.0f}v24" stroke="{C}" stroke-width="3" fill="none"/>'
+                   f'<text x="{(x1 + x2) / 2:.0f}" y="{(ly if ly is not None else y - 20):.0f}" {F}>{label}</text>')
+    tops = min(y for x, y, w, h, t in fr)
+    if kind == 'sides':
+        for sx in g['stands']:
+            x1 = sx - 35 * k / 2; hdim(x1, x1 + 35 * k, tops - 30, '35 см')
+    else:
+        x1, x2 = min(f[0] for f in fr), max(f[0] + f[2] for f in fr)
+        hdim(x1, x2, tops - 70, f'{num(round((x2 - x1) / k, 1))} см')
+        cols = sorted({round(f[0]) for f in fr})
+        for a, b2 in zip(cols, cols[1:]):  # зазоры между рамами
+            ga = next(f for f in fr if round(f[0]) == a); gx = ga[0] + ga[2]
+            out.append(f'<path d="M{gx:.0f} {tops - 22:.0f}H{b2:.0f}" stroke="{C}" stroke-width="3"/>')
+            out.append(f'<text x="{(gx + b2) / 2:.0f}" y="{tops - 30:.0f}" font-family="Manrope,Arial,sans-serif" font-size="30" fill="{C}" text-anchor="middle">{gap} см</text>')
+    # высота над изголовьем
+    rx = (min(f[0] for f in fr) + 35 * k + 34) if kind == 'sides' else max(f[0] + f[2] for f in fr) + 34
+    out.append(f'<path d="M{rx:.0f} {base:.0f}V{top:.0f}M{rx - 10:.0f} {base:.0f}h20M{rx - 10:.0f} {top:.0f}h20" stroke="{C}" stroke-width="3"/>'
+               f'<text x="{rx + 14:.0f}" y="{(base + top) / 2 + 12:.0f}" font-family="Manrope,Arial,sans-serif" font-size="30" fill="{C}">{lift} см</text>')
+    # ширина мебели
+    hw = g['w'] * k / 2
+    hdim(cx - hw, cx + hw, top - 14, f'{g["label"]} {g["w"]} см', top - 30)
+    return f'<svg viewBox="{g["vb"]}" role="img" aria-label="Схема развески">{"".join(out)}</svg>'
+
+
 def page(template, a, works):
     e = lambda s: html.escape(s or '', quote=True)
     url = f'{SITE}/idei/{a["slug"]}/'
@@ -417,6 +478,7 @@ def page(template, a, works):
     wa = WA + urllib.parse.quote(a['wa'])
     hero = img_out(a['slug'], a['hero'], 'hero.webp', (2000, 1600))
     cta_bg = img_out(a['slug'], a['cta_bg'], 'cta.webp', (1800, 1400))
+    sbg = img_out(a['slug'], a['scheme_bg'][0], 'schemes.webp', (2000, 1500)) if a.get('scheme_bg') else None
     t = template.replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n<base href="/">', 1)
     t = re.sub(r'<title>.*?</title>', f'<title>{e(a["title"])}</title>', t, count=1, flags=re.S)
     for attr, value in (('name="description"', a['desc']), ('property="og:title"', a['title']), ('property="og:description"', a['desc']),
@@ -461,8 +523,8 @@ def page(template, a, works):
             f'<a class="btn-line" href="{wa}" target="_blank" rel="noopener">{e(a["cta_short"])}</a></div></div></section>'
             + '<div class="idea-wrap">'
             + f'<section class="idea-schemes"><div class="idea-schemes-head"><div><div class="idea-kicker">Размер и развеска</div><h2>{e(a["schemes_title"]).replace(": ", ":<br>", 1)}</h2></div><p>{e(a["schemes_lead"])}</p></div>'
-            + '<div class="scheme-grid">' + ''.join(
-                f'<article class="scheme">{scheme_svg(k, a.get("furn", "bed"))}<div><h3>{e(t)}</h3><p>{e(sz)}</p><p>{e(note)}</p></div></article>' for k, t, sz, note in a['schemes'])
+            + f'<div class="scheme-grid{" photo" if sbg else ""}">' + ''.join(
+                f'<article class="scheme">{scheme_photo(k, sbg, a["scheme_bg"][1]) if sbg else scheme_svg(k, a.get("furn", "bed"))}<div><h3>{e(t)}</h3><p>{e(sz)}</p><p>{e(note)}</p></div></article>' for k, t, sz, note in a['schemes'])
             + '</div></section>'
             + f'<section class="idea-looks"><div><div class="idea-kicker">Образы</div><h2>{e(a["looks_title"])}</h2></div>{looks}</section>'
             + f'<section class="idea-pick" id="podborka"><div class="idea-pick-head"><div><div class="idea-kicker">Подборка</div><h2>{e(a["pick_title"])}</h2>'
