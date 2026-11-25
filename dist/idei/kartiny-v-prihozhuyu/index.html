@@ -156,9 +156,11 @@ html body .idea-hero .btn-line{background:transparent;color:#fff;border-color:rg
 /* сетка: во всю ширину с полями, как у 12 Storeez */
 html body .idea-kicker{font:300 11px 'Jost',sans-serif;letter-spacing:.16em;color:var(--t12m);margin-bottom:10px}
 html body :is(.idea-schemes,.idea-looks,.idea-pick,.idea-faq){border-bottom:0;padding:clamp(56px,7vw,104px) 0 0}
-html body :is(.idea-schemes-head,.idea-faq,.idea-pick-head) h2,html body .idea-looks h2{font:500 clamp(26px,2.4vw,34px)/1.15 var(--serif)}
+html body :is(.idea-schemes-head,.idea-faq,.idea-pick-head) h2{font:500 clamp(26px,2.4vw,34px)/1.15 var(--serif)}
+html body .idea-looks h2{font:500 clamp(36px,4.2vw,56px)/1.08 var(--serif);margin:0}
 html body .idea-schemes-head p,html body .idea-pick-head p{font-size:17px;line-height:1.7;color:var(--t12)}
 html body .scheme-grid{gap:4px}
+html body .scheme-grid.photo{gap:clamp(40px,5vw,64px) 16px}
 html body .scheme{background:transparent;border:0}
 html body .scheme svg,html body .scheme>img{background:var(--b12)}
 html body .scheme div{padding:16px 2px 0}
@@ -176,7 +178,7 @@ html body .product-image{background:var(--b12)}
 html body .product .meta{padding:12px 2px 0}
 html body .product :is(h3,.title,.name){font:300 15px/1.45 'Jost',sans-serif;letter-spacing:.04em}
 html body .product .price{font:300 15px 'Jost',sans-serif;letter-spacing:.04em;color:var(--t12)}
-html body .idea-pick-head a{font:300 13px 'Jost',sans-serif;color:var(--t12);text-decoration:underline;text-underline-offset:4px}
+html body .idea-pick-head a{font:300 13px 'Jost',sans-serif;color:var(--t12);text-decoration:none}
 /* вопросы: тонкие линии */
 html body .idea-faq details{border-color:var(--l12)}
 html body .idea-faq summary{font:300 17px/1.5 'Jost',sans-serif;letter-spacing:.04em}
@@ -194,7 +196,7 @@ html body .idea-hero::after{content:"";position:absolute;inset:0;z-index:0;backg
 html body .idea-hero-in{margin:0 auto}
 html body .idea-cta h2{color:#fff}
 html body .look-items a{border-radius:0;border:0;background:var(--b12);padding:10px}
-html body .look-items img{background:#fff}
+html body .look-items img{object-fit:cover;background:transparent}
 html body .look-items b{font:500 18px/1.2 var(--serif)}
 html body .currency-switch{border-radius:0;border-color:var(--l12)}
 html body .currency-switch button{border-radius:0;font-family:'Jost',sans-serif;font-weight:400}

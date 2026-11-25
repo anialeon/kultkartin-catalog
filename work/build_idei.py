@@ -530,7 +530,7 @@ def page(template, a, works):
             + f'<div class="scheme-grid{" photo" if sbg else ""}">' + ''.join(
                 f'<article class="scheme">{scheme_photo(k, sbg, a["scheme_bg"][1]) if sbg else scheme_svg(k, a.get("furn", "bed"))}<div><h3>{e(t)}</h3><p>{e(sz)}</p><p>{e(note)}</p></div></article>' for k, t, sz, note in a['schemes'])
             + '</div></section>'
-            + f'<section class="idea-looks"><div><div class="idea-kicker">Образы</div><h2>{e(a["looks_title"])}</h2></div>{looks}</section>'
+            + f'<section class="idea-looks"><div><div class="idea-kicker">Образы</div><h2>{e(a["looks_title"]).replace(" — ", " —<br>", 1)}</h2></div>{looks}</section>'
             + f'<section class="idea-pick" id="podborka"><div class="idea-pick-head"><div><div class="idea-kicker">Подборка</div><h2>{e(a["pick_title"])}</h2>'
             f'<p>{e(a["pick_sub"])}</p></div>'
             f'<a href="index.html#catalog">Весь каталог&nbsp;→</a></div>'
