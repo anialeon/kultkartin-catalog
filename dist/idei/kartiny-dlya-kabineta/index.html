@@ -205,6 +205,12 @@ html body :is(.contact-widget button,.contact-widget>a,.to-top){border-radius:0}
 html body .idea-hero h1{margin:0 auto 14px;max-width:none}
 html body .nav-links :is(a,.ln,span),html body .nav .ln{font:300 13px 'Jost',sans-serif!important;letter-spacing:.05em!important;text-transform:none!important;color:var(--t12)}
 html body :is(p,li,span,summary,.meta,.price,.idea-crumbs){font-weight:300}
+/* блок подбора: текст и кнопка слева, на пустой стене; затемнение только слева */
+html body .idea-cta{text-align:left;padding-left:max(20px,calc((100% - 1180px) / 2 + 20px));padding-right:20px}
+html body .idea-cta::after{background:linear-gradient(90deg,rgba(32,20,16,.72) 0%,rgba(32,20,16,.5) 38%,rgba(32,20,16,0) 70%)}
+html body .idea-cta h2{margin:0 0 18px;max-width:11em}
+html body .idea-cta p{margin:0 0 26px;max-width:30em}
+@media(max-width:700px){html body .idea-cta::after{background:rgba(32,20,16,.55)}}
 </style>
 
 </head>
