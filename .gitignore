@@ -10,3 +10,5 @@
 !.github/
 !.github/**
 .DS_Store
+!work/build_ru.py
+!work/ru-page.html
