@@ -1,741 +1,741 @@
 <?xml version="1.0" encoding="utf-8"?>
-<kaspi_catalog date="2026-11-27T13:48:10" xmlns="kaspiShopping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="kaspiShopping http://kaspi.kz/kaspishopping.xsd">
+<kaspi_catalog date="2026-11-27T14:03:14" xmlns="kaspiShopping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="kaspiShopping http://kaspi.kz/kaspishopping.xsd">
   <company>КУЛЬТКАРТИН</company>
   <merchantid>ВПИСАТЬ_MERCHANT_ID</merchantid>
   <offers>
-    <offer sku="KK-9-M">
+    <offer sku="KK9M">
       <model>КУЛЬТКАРТИН «Белые розы I», ботанический постер в раме, 41,5 × 51,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-10-M">
+    <offer sku="KK10M">
       <model>КУЛЬТКАРТИН «Белые розы II», ботанический постер в раме, 41,5 × 51,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-13-L">
+    <offer sku="KK13L">
       <model>КУЛЬТКАРТИН «Орхидея на зелёном. Ветвь», ботанический постер в раме, 60 × 70 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-14-L">
+    <offer sku="KK14L">
       <model>КУЛЬТКАРТИН «Орхидея на зелёном. Цветок», ботанический постер в раме, 60 × 70 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-15-L">
+    <offer sku="KK15L">
       <model>КУЛЬТКАРТИН «Орхидея на зелёном. Листья», ботанический постер в раме, 60 × 70 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-16-L">
+    <offer sku="KK16L">
       <model>КУЛЬТКАРТИН «Орхидея на зелёном. Дуга», ботанический постер в раме, 60 × 70 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-17-A">
+    <offer sku="KK17A">
       <model>КУЛЬТКАРТИН «Зелёная ветвь I», ботанический постер в раме, 72 × 82 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-18-A">
+    <offer sku="KK18A">
       <model>КУЛЬТКАРТИН «Зелёная ветвь II», ботанический постер в раме, 72 × 82 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-19-A">
+    <offer sku="KK19A">
       <model>КУЛЬТКАРТИН «Крайслер-билдинг. Небо», постер в раме, 72 × 82 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-20-A">
+    <offer sku="KK20A">
       <model>КУЛЬТКАРТИН «Крайслер-билдинг. Ночной город», постер в раме, 72 × 82 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-21-A">
+    <offer sku="KK21A">
       <model>КУЛЬТКАРТИН «Крайслер-билдинг. Фонарь», постер в раме, 72 × 82 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-22-A">
+    <offer sku="KK22A">
       <model>КУЛЬТКАРТИН «Гран-при Монако, 1955», ретро-постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-23-A">
+    <offer sku="KK23A">
       <model>КУЛЬТКАРТИН «Гран-при Франции, Реймс, 1954», ретро-постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-24-A">
+    <offer sku="KK24A">
       <model>КУЛЬТКАРТИН «Британский Гран-при, Сильверстоун, 1956», ретро-постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-25-A">
+    <offer sku="KK25A">
       <model>КУЛЬТКАРТИН «Девять часов Гудвуда, 1953», ретро-постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-26-A">
+    <offer sku="KK26A">
       <model>КУЛЬТКАРТИН «Флоренция», постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-27-A">
+    <offer sku="KK27A">
       <model>КУЛЬТКАРТИН «Милан», постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-28-A">
+    <offer sku="KK28A">
       <model>КУЛЬТКАРТИН «Рим», постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-29-A">
+    <offer sku="KK29A">
       <model>КУЛЬТКАРТИН «Венеция», постер в раме, 82 × 72 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>168000</price>
     </offer>
-    <offer sku="KK-30-M">
+    <offer sku="KK30M">
       <model>КУЛЬТКАРТИН «Белый гербарий I», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-31-M">
+    <offer sku="KK31M">
       <model>КУЛЬТКАРТИН «Белый гербарий II», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-32-M">
+    <offer sku="KK32M">
       <model>КУЛЬТКАРТИН «Белый гербарий III», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-33-M">
+    <offer sku="KK33M">
       <model>КУЛЬТКАРТИН «Белый гербарий IV», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-34-M">
+    <offer sku="KK34M">
       <model>КУЛЬТКАРТИН «Белый гербарий V», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-35-M">
+    <offer sku="KK35M">
       <model>КУЛЬТКАРТИН «Белый гербарий VI», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-36-M">
+    <offer sku="KK36M">
       <model>КУЛЬТКАРТИН «Бабочки I», постер с птицами в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-37-M">
+    <offer sku="KK37M">
       <model>КУЛЬТКАРТИН «Бабочки II», постер с птицами в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-38-M">
+    <offer sku="KK38M">
       <model>КУЛЬТКАРТИН «Классический фасад I», архитектурный постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-39-M">
+    <offer sku="KK39M">
       <model>КУЛЬТКАРТИН «Классический фасад II», архитектурный постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-40-M">
+    <offer sku="KK40M">
       <model>КУЛЬТКАРТИН «Классический фасад III», архитектурный постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-41-M">
+    <offer sku="KK41M">
       <model>КУЛЬТКАРТИН «Классический фасад IV», архитектурный постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-42-M">
+    <offer sku="KK42M">
       <model>КУЛЬТКАРТИН «Берег. Парус», постер в раме, 47 × 37 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-43-M">
+    <offer sku="KK43M">
       <model>КУЛЬТКАРТИН «Берег. Холмы», постер в раме, 47 × 37 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-44-M">
+    <offer sku="KK44M">
       <model>КУЛЬТКАРТИН «Скалистый берег», постер в раме, 47 × 37 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-45-M">
+    <offer sku="KK45M">
       <model>КУЛЬТКАРТИН «Скала-арка», постер в раме, 47 × 37 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-46-M">
+    <offer sku="KK46M">
       <model>КУЛЬТКАРТИН «Гран-при Монако, 1955. Вариант 2», ретро-постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-47-M">
+    <offer sku="KK47M">
       <model>КУЛЬТКАРТИН «Гран-при Франции, Реймс, 1954. Вариант 2», ретро-постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-48-M">
+    <offer sku="KK48M">
       <model>КУЛЬТКАРТИН «Британский Гран-при, Сильверстоун, 1956. Вариант 2», ретро-постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-49-M">
+    <offer sku="KK49M">
       <model>КУЛЬТКАРТИН «Девять часов Гудвуда, 1953. Вариант 2», ретро-постер в раме, 51,5 × 41,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-50-M">
+    <offer sku="KK50M">
       <model>КУЛЬТКАРТИН «Античная ваза. Кубок», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-51-M">
+    <offer sku="KK51M">
       <model>КУЛЬТКАРТИН «Античная ваза. Урна с крышкой», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-52-M">
+    <offer sku="KK52M">
       <model>КУЛЬТКАРТИН «Античная ваза. Кратер», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-53-M">
+    <offer sku="KK53M">
       <model>КУЛЬТКАРТИН «Античная ваза. Ваза с ручками», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-54-M">
+    <offer sku="KK54M">
       <model>КУЛЬТКАРТИН «Античная ваза. Амфора», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-55-M">
+    <offer sku="KK55M">
       <model>КУЛЬТКАРТИН «Античная ваза. Урна», постер с античной вазой в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-56-R">
+    <offer sku="KK56R">
       <model>КУЛЬТКАРТИН «Туманный пейзаж I», картина-пейзаж в раме, 61 × 61 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-57-R">
+    <offer sku="KK57R">
       <model>КУЛЬТКАРТИН «Туманный пейзаж II», картина-пейзаж в раме, 61 × 61 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-58-R">
+    <offer sku="KK58R">
       <model>КУЛЬТКАРТИН «Туманный пейзаж III», картина-пейзаж в раме, 61 × 61 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-59-R">
+    <offer sku="KK59R">
       <model>КУЛЬТКАРТИН «Туманный пейзаж IV», картина-пейзаж в раме, 61 × 61 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-60-S">
+    <offer sku="KK60S">
       <model>КУЛЬТКАРТИН «Орхидея. Чёрно-белая гравюра I», ботанический постер в раме, 26,5 × 33 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>68000</price>
     </offer>
-    <offer sku="KK-61-S">
+    <offer sku="KK61S">
       <model>КУЛЬТКАРТИН «Орхидея. Чёрно-белая гравюра II», ботанический постер в раме, 26,5 × 33 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>68000</price>
     </offer>
-    <offer sku="KK-62-X">
+    <offer sku="KK62X">
       <model>КУЛЬТКАРТИН «Колибри I», постер с птицами в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-63-X">
+    <offer sku="KK63X">
       <model>КУЛЬТКАРТИН «Колибри II», постер с птицами в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-64-X">
+    <offer sku="KK64X">
       <model>КУЛЬТКАРТИН «Колибри III», постер с птицами в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-65-X">
+    <offer sku="KK65X">
       <model>КУЛЬТКАРТИН «Колибри IV», постер с птицами в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-66-X">
+    <offer sku="KK66X">
       <model>КУЛЬТКАРТИН «Белая орхидея I», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-67-X">
+    <offer sku="KK67X">
       <model>КУЛЬТКАРТИН «Белая орхидея II», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-68-X">
+    <offer sku="KK68X">
       <model>КУЛЬТКАРТИН «Белая орхидея III», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-69-X">
+    <offer sku="KK69X">
       <model>КУЛЬТКАРТИН «Белая орхидея IV», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-70-X">
+    <offer sku="KK70X">
       <model>КУЛЬТКАРТИН «Шиповник I», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-71-X">
+    <offer sku="KK71X">
       <model>КУЛЬТКАРТИН «Шиповник II», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-72-X">
+    <offer sku="KK72X">
       <model>КУЛЬТКАРТИН «Шиповник III», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-73-X">
+    <offer sku="KK73X">
       <model>КУЛЬТКАРТИН «Шиповник IV», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-78-X">
+    <offer sku="KK78X">
       <model>КУЛЬТКАРТИН «Городской дворец», архитектурный постер в раме, 60 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-82-C">
+    <offer sku="KK82C">
       <model>КУЛЬТКАРТИН «Рододендрон I», ботанический постер в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-83-C">
+    <offer sku="KK83C">
       <model>КУЛЬТКАРТИН «Магнолия», ботанический постер в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-84-C">
+    <offer sku="KK84C">
       <model>КУЛЬТКАРТИН «Рододендрон II», ботанический постер в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-85-C">
+    <offer sku="KK85C">
       <model>КУЛЬТКАРТИН «Остров в отражении», картина-пейзаж в раме, 48 × 48 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-86-C">
+    <offer sku="KK86C">
       <model>КУЛЬТКАРТИН «Болотные травы на закате», картина-пейзаж в раме, 48 × 48 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-87-C">
+    <offer sku="KK87C">
       <model>КУЛЬТКАРТИН «Фиолетовые цветы I», ботанический постер в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-88-C">
+    <offer sku="KK88C">
       <model>КУЛЬТКАРТИН «Фиолетовые цветы II», ботанический постер в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-89-C">
+    <offer sku="KK89C">
       <model>КУЛЬТКАРТИН «Чернильные линии I», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-90-C">
+    <offer sku="KK90C">
       <model>КУЛЬТКАРТИН «Чернильные линии II», абстрактная картина в раме, 48 × 48 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-91-C">
+    <offer sku="KK91C">
       <model>КУЛЬТКАРТИН «Чернильные линии III», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-92-C">
+    <offer sku="KK92C">
       <model>КУЛЬТКАРТИН «Чернильные линии IV», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-93-C">
+    <offer sku="KK93C">
       <model>КУЛЬТКАРТИН «Чернильные линии V», абстрактная картина в раме, 48 × 48 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-94-C">
+    <offer sku="KK94C">
       <model>КУЛЬТКАРТИН «Чернильные линии VI», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-95-J">
+    <offer sku="KK95J">
       <model>КУЛЬТКАРТИН «Орхидея на белом I», ботанический постер в раме, 34 × 34 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>48000</price>
     </offer>
-    <offer sku="KK-96-J">
+    <offer sku="KK96J">
       <model>КУЛЬТКАРТИН «Орхидея на белом II», ботанический постер в раме, 34 × 34 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>48000</price>
     </offer>
-    <offer sku="KK-97-J">
+    <offer sku="KK97J">
       <model>КУЛЬТКАРТИН «Орхидея на белом III», ботанический постер в раме, 34 × 34 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>48000</price>
     </offer>
-    <offer sku="KK-98-J">
+    <offer sku="KK98J">
       <model>КУЛЬТКАРТИН «Орхидея на белом IV», ботанический постер в раме, 34 × 34 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>48000</price>
     </offer>
-    <offer sku="KK-99-L">
+    <offer sku="KK99L">
       <model>КУЛЬТКАРТИН «Травы в сепии I», ботанический постер в раме, 64,5 × 74,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-100-L">
+    <offer sku="KK100L">
       <model>КУЛЬТКАРТИН «Травы в сепии II», ботанический постер в раме, 64,5 × 74,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-101-L">
+    <offer sku="KK101L">
       <model>КУЛЬТКАРТИН «Травы в сепии III», ботанический постер в раме, 64,5 × 74,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-102-L">
+    <offer sku="KK102L">
       <model>КУЛЬТКАРТИН «Травы в сепии IV», ботанический постер в раме, 64,5 × 74,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-103-L">
+    <offer sku="KK103L">
       <model>КУЛЬТКАРТИН «Лаванда. Силуэт», ботанический постер в раме, 62,8 × 72,8 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>128000</price>
     </offer>
-    <offer sku="KK-104-M">
+    <offer sku="KK104M">
       <model>КУЛЬТКАРТИН «Роза Альба», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-105-M">
+    <offer sku="KK105M">
       <model>КУЛЬТКАРТИН «Шиповник V», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-106-M">
+    <offer sku="KK106M">
       <model>КУЛЬТКАРТИН «Шиповник VI», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-107-M">
+    <offer sku="KK107M">
       <model>КУЛЬТКАРТИН «Шиповник VII», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-108-M">
+    <offer sku="KK108M">
       <model>КУЛЬТКАРТИН «Шиповник VIII», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-109-M">
+    <offer sku="KK109M">
       <model>КУЛЬТКАРТИН «Шиповник IX», ботанический постер в раме, 37 × 47 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-110-M">
+    <offer sku="KK110M">
       <model>КУЛЬТКАРТИН «Травы в сепии V», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-111-M">
+    <offer sku="KK111M">
       <model>КУЛЬТКАРТИН «Травы в сепии VI», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-112-M">
+    <offer sku="KK112M">
       <model>КУЛЬТКАРТИН «Травы в сепии VII», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-113-M">
+    <offer sku="KK113M">
       <model>КУЛЬТКАРТИН «Травы в сепии VIII», ботанический постер в раме, 35 × 45 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-114-M">
+    <offer sku="KK114M">
       <model>КУЛЬТКАРТИН «Сиреневые соцветия I», ботанический постер в раме, 36 × 46 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-115-M">
+    <offer sku="KK115M">
       <model>КУЛЬТКАРТИН «Сиреневые соцветия II», ботанический постер в раме, 36 × 46 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-116-M">
+    <offer sku="KK116M">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном I», ботанический постер в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-117-M">
+    <offer sku="KK117M">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном II», ботанический постер в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-118-M">
+    <offer sku="KK118M">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном III», ботанический постер в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-119-M">
+    <offer sku="KK119M">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном IV», ботанический постер в раме, 34 × 44 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>78000</price>
     </offer>
-    <offer sku="KK-120-X">
+    <offer sku="KK120X">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном V», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-121-X">
+    <offer sku="KK121X">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном VI», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-122-X">
+    <offer sku="KK122X">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном VII», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-123-X">
+    <offer sku="KK123X">
       <model>КУЛЬТКАРТИН «Орхидеи на песочном VIII», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-124-X">
+    <offer sku="KK124X">
       <model>КУЛЬТКАРТИН «Фаленопсис I», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-125-X">
+    <offer sku="KK125X">
       <model>КУЛЬТКАРТИН «Фаленопсис II», ботанический постер в раме, 54,5 × 64,5 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-126-X">
+    <offer sku="KK126X">
       <model>КУЛЬТКАРТИН «Орхидея. Линия I», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-127-X">
+    <offer sku="KK127X">
       <model>КУЛЬТКАРТИН «Орхидея. Линия II», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-128-X">
+    <offer sku="KK128X">
       <model>КУЛЬТКАРТИН «Орхидея. Линия III», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-129-X">
+    <offer sku="KK129X">
       <model>КУЛЬТКАРТИН «Орхидея. Линия IV», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-130-X">
+    <offer sku="KK130X">
       <model>КУЛЬТКАРТИН «Травы в сепии IX», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-131-X">
+    <offer sku="KK131X">
       <model>КУЛЬТКАРТИН «Травы в сепии X», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-132-X">
+    <offer sku="KK132X">
       <model>КУЛЬТКАРТИН «Травы в сепии XI», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-133-X">
+    <offer sku="KK133X">
       <model>КУЛЬТКАРТИН «Травы в сепии XII», ботанический постер в раме, 48 × 58 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-134-X">
+    <offer sku="KK134X">
       <model>КУЛЬТКАРТИН «Веточка. Силуэт», ботанический постер в раме, 50 × 60 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-135-C">
+    <offer sku="KK135C">
       <model>КУЛЬТКАРТИН «Папоротники I», ботанический постер в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-136-C">
+    <offer sku="KK136C">
       <model>КУЛЬТКАРТИН «Папоротники II», ботанический постер в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-137-C">
+    <offer sku="KK137C">
       <model>КУЛЬТКАРТИН «Абстракция. Коричневые мазки I», абстрактная картина в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-138-C">
+    <offer sku="KK138C">
       <model>КУЛЬТКАРТИН «Абстракция. Коричневые мазки II», абстрактная картина в раме, 50 × 50 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-139-C">
+    <offer sku="KK139C">
       <model>КУЛЬТКАРТИН «Абстракция. Синий и охра», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
       <price>98000</price>
     </offer>
-    <offer sku="KK-140-C">
+    <offer sku="KK140C">
       <model>КУЛЬТКАРТИН «Абстракция. Линии и акварель», абстрактная картина в раме, 49 × 49 см</model>
       <brand>КУЛЬТКАРТИН</brand>
       <availabilities><availability available="yes" storeId="PP1"/></availabilities>
